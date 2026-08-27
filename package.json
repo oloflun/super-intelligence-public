@@ -1,0 +1,52 @@
+{
+  "name": "@super-intelligence/agent-stack",
+  "version": "0.4.5",
+  "description": "Complete multi-agent AI infrastructure: CARL context injection, a brand-derivation design gate with edit-boundary hook enforcement, Agent Chorus cross-agent messaging, 200+ skills, memory system, QMD search, Syncthing bridge, Hermes/WSL setup, Karpathy wiki, and auto-export pipeline. Installable in one shot by any AI agent.",
+  "keywords": [
+    "ai-agent",
+    "claude-code",
+    "codex",
+    "carl",
+    "agent-chorus",
+    "skills",
+    "memory",
+    "qmd",
+    "syncthing",
+    "hermes",
+    "karpathy-wiki",
+    "multi-agent",
+    "context-injection",
+    "cross-agent",
+    "design-system"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/oloflun/super-intelligence"
+  },
+  "scripts": {
+    "install": "node install.mjs",
+    "upgrade": "node upgrade.mjs",
+    "verify": "node scripts/verify-install.mjs",
+    "health": "node scripts/health-check.mjs"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "files": [
+    "install.mjs",
+    "upgrade.mjs",
+    "VERSION",
+    "carl/",
+    "hooks/",
+    "skills/",
+    "scripts/",
+    "templates/",
+    "chorus/",
+    "docs/",
+    "hermes/",
+    "syncthing/",
+    "karpathy/",
+    "wiki-ingest/"
+  ]
+}

@@ -1,0 +1,69 @@
+model = "gpt-5.5"
+model_reasoning_effort = "high"
+personality = "pragmatic"
+
+[marketplaces.openai-primary-runtime]
+last_updated = "2026-05-24T13:37:57Z"
+source_type = "local"
+source = '\\?\{{USER_HOME}}\.cache\codex-runtimes\codex-primary-runtime\plugins\openai-primary-runtime'
+
+[marketplaces.openai-bundled]
+last_updated = "2026-05-24T22:59:48Z"
+source_type = "local"
+source = '\\?\{{USER_HOME}}\.codex\.tmp\bundled-marketplaces\openai-bundled'
+
+[plugins."documents@openai-primary-runtime"]
+enabled = true
+
+[plugins."spreadsheets@openai-primary-runtime"]
+enabled = true
+
+[plugins."presentations@openai-primary-runtime"]
+enabled = true
+
+[plugins."browser@openai-bundled"]
+enabled = true
+
+[projects.'{{USER_HOME}}']
+trust_level = "trusted"
+
+[projects.'{{USER_HOME}}\example-app']
+trust_level = "trusted"
+
+[windows]
+sandbox = "elevated"
+
+[desktop]
+ambient-suggestions-enabled = true
+conversationDetailMode = "STEPS_COMMANDS"
+
+[features]
+js_repl = false
+
+[mcp_servers.node_repl]
+args = []
+command = '{{USER_HOME}}\AppData\Local\OpenAI\Codex\bin\3c238e29bbc930ff\node_repl.exe'
+startup_timeout_sec = 120
+
+[mcp_servers.node_repl.env]
+BROWSER_USE_AVAILABLE_BACKENDS = "iab"
+BROWSER_USE_MARKETPLACE_NAME = "openai-bundled"
+CODEX_CLI_PATH = '{{USER_HOME}}\AppData\Local\OpenAI\Codex\bin\3f4fb8cdd344abc7\codex.exe'
+CODEX_HOME = '{{USER_HOME}}\.codex'
+NODE_REPL_NATIVE_PIPE_CONNECT_TIMEOUT_MS = "1000"
+NODE_REPL_NODE_MODULE_DIRS = ""
+NODE_REPL_NODE_PATH = '{{USER_HOME}}\AppData\Local\OpenAI\Codex\bin\5b9024f90663758b\node.exe'
+NODE_REPL_TRUSTED_BROWSER_CLIENT_SHA256S = "167fdf579477181fba1773c1efb067b00c5a64fe85dafb50a2001bde198dc739"
+NODE_REPL_TRUSTED_CODE_PATHS = '{{USER_HOME}}\.codex'
+NODE_REPL_UNTRUSTED_ENV_ALLOWLIST = "BROWSER_USE_MARKETPLACE_NAME"
+
+[mcp_servers.agentmemory]
+command = "npx"
+args = ["-y", "@agentmemory/mcp"]
+
+[mcp_servers.agentmemory.env]
+AGENTMEMORY_URL = "http://localhost:3111"
+[mcp_servers.carl-mcp]
+command = "node"
+args = ["{{USER_HOME_FWD}}/.carl/carl-mcp/index.js"]
+startup_timeout_sec = 120

@@ -1,0 +1,36 @@
+name: health
+
+# Installed copies of this plugin follow the default branch commit by commit,
+# because plugin.json deliberately carries no version field. That means whatever
+# lands on main is what everyone gets on their next session -- so this workflow is
+# the gate, not a formality. A red run here is a broken auto-update prevented.
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  health:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Verify every layer
+        run: python health/check-all.py
+
+      # Runs even when the suite above failed, so a pull request shows every
+      # problem at once instead of one per push.
+      - name: Machine-readable result
+        if: always()
+        run: python health/check-all.py --json > health-result.json || true
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: health-result
+          path: health-result.json

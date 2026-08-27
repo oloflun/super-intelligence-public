@@ -1,0 +1,44 @@
+﻿# Obsidian vault — Super-Intelligence Agent Stack
+# Copy to your vault root as .gitignore
+
+# Obsidian workspace (per-machine)
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/cache/
+.obsidian/hotkey.json
+
+# Dependencies
+node_modules/
+
+# Build artifacts
+dist/
+build/
+.next/
+out/
+
+# Credentials
+.env
+.env.*
+*credentials*
+auth.json
+cap_sid
+*_token*
+
+# Session data (personal, per-agent)
+.carl/sessions/*
+!.carl/sessions/.gitkeep
+
+# Temp
+*.tmp
+*.log
+.cache/
+__pycache__/
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Syncthing
+.stfolder/
+.stversions/

@@ -1,0 +1,210 @@
+{
+  "version": "1.0",
+  "last_updated": "2026-06-21",
+  "entries": [
+    {
+      "name": "Remotion Brand Asset Pipeline",
+      "source": "Codex clearly explained (and how to use it) - The Startup Ideas Podcast",
+      "episode_page": "wiki/sources/2026-04-27-codex-explained.md",
+      "stack_analysis": {
+        "differences": "Codex-native Remotion with automated brand asset pulling (logos, colors, fonts) and motion graphics compositing vs. standalone remotion skill",
+        "improvement_potential": "Automated brand-consistent video generation from one prompt — Riley produces 1M+ view launch videos",
+        "selective_import_possible": true,
+        "conflicts": "None — complements existing remotion and brandkit skills"
+      },
+      "verdict": "HIGH — build automated brand asset pipeline for remotion",
+      "priority": "HIGH",
+      "implementation_plan": "wiki/projects/super-intelligence/plans/2026-06-12-remotion-brand-pipeline.md",
+      "status": "proposed"
+    },
+    {
+      "name": "Systematic Example Collection",
+      "source": "Codex clearly explained (and how to use it) - The Startup Ideas Podcast",
+      "episode_page": "wiki/sources/2026-04-27-codex-explained.md",
+      "stack_analysis": {
+        "differences": "Currently ad-hoc; Riley advocates collecting 5 golden examples per output type for consistent quality",
+        "improvement_potential": "Dramatic output quality improvement with 5 reference examples vs. instructions alone",
+        "selective_import_possible": true,
+        "conflicts": "None — stores in Obsidian vault"
+      },
+      "verdict": "HIGH — create wiki/examples/ with golden examples per output type",
+      "priority": "HIGH",
+      "implementation_plan": "wiki/projects/super-intelligence/plans/2026-06-12-example-collection.md",
+      "status": "proposed"
+    },
+    {
+      "name": "Vin-Style Slash Command Suite",
+      "source": "How I Use Obsidian + Claude Code to Run My Life - The Startup Ideas Podcast",
+      "episode_page": "wiki/sources/2026-02-23-obsidian-claude-code-run-my-life.md",
+      "stack_analysis": {
+        "differences": "Vin has comprehensive /today, /closed-day, /trace, /connect, /graduate, Ghost, Challenge, Emerge, Drift, Ideas commands — Anton has basic custom commands",
+        "improvement_potential": "Turns vault from passive storage into active OS — morning reviews, pattern detection, idea pipeline",
+        "selective_import_possible": true,
+        "conflicts": "None — uses existing Obsidian CLI + Claude Code"
+      },
+      "verdict": "HIGH — build /today, /graduate, and Emerge first",
+      "priority": "HIGH",
+      "implementation_plan": "wiki/projects/super-intelligence/plans/2026-06-12-slash-command-suite.md",
+      "status": "proposed"
+    },
+    {
+      "name": "Vault Scan System (30-60 Day)",
+      "source": "How I Use Obsidian + Claude Code to Run My Life - The Startup Ideas Podcast",
+      "episode_page": "wiki/sources/2026-02-23-obsidian-claude-code-run-my-life.md",
+      "stack_analysis": {
+        "differences": "Systematic cross-domain pattern detection over time vs. ad-hoc vault exploration",
+        "improvement_potential": "Surfaces avoidance patterns, unnamed ideas, cross-domain connections, generates concrete projects/contacts",
+        "selective_import_possible": true,
+        "conflicts": "None — read-only analysis of existing vault"
+      },
+      "verdict": "HIGH — implement weekly vault scan with concrete output",
+      "priority": "HIGH",
+      "implementation_plan": "wiki/projects/super-intelligence/plans/2026-06-12-vault-scan-system.md",
+      "status": "proposed"
+    },
+    {
+      "name": "Agent-Suggested Commands",
+      "source": "How I Use Obsidian + Claude Code to Run My Life - The Startup Ideas Podcast",
+      "episode_page": "wiki/sources/2026-02-23-obsidian-claude-code-run-my-life.md",
+      "stack_analysis": {
+        "differences": "Meta-pattern: agent analyzes vault and suggests commands — currently Anton invents commands manually",
+        "improvement_potential": "Agent's pattern recognition exceeds human's ability to see cross-domain connections in the vault",
+        "selective_import_possible": true,
+        "conflicts": "None — works with existing Claude Code + Obsidian CLI"
+      },
+      "verdict": "HIGH — implement monthly agent-suggested command review",
+      "priority": "HIGH",
+      "implementation_plan": "wiki/projects/super-intelligence/plans/2026-06-12-agent-suggested-commands.md",
+      "status": "proposed"
+    },
+    {
+      "name": "Obsidian Auto-Dashboard",
+      "source": "Hermes Agent clearly explained (and how to use it) - The Startup Ideas Podcast",
+      "episode_page": "wiki/sources/2026-04-20-hermes-agent-explained.md",
+      "stack_analysis": {
+        "differences": "Hermes auto-organizing Obsidian into daily dashboard after learning patterns vs. manual vault management",
+        "improvement_potential": "Home dashboard showing weekly priorities, tasks, travel, personal items — without manual setup",
+        "selective_import_possible": true,
+        "conflicts": "None — complements existing Hermes + Obsidian integration"
+      },
+      "verdict": "HIGH — build daily dashboard auto-generation",
+      "priority": "HIGH",
+      "implementation_plan": "wiki/projects/super-intelligence/plans/2026-06-12-obsidian-auto-dashboard.md",
+      "status": "proposed"
+    },
+    {
+      "name": "Android/Termux Hermes Agent",
+      "source": "Hermes Agent clearly explained (and how to use it) - The Startup Ideas Podcast",
+      "episode_page": "wiki/sources/2026-04-20-hermes-agent-explained.md",
+      "stack_analysis": {
+        "differences": "Running Hermes on a spare Android phone creates always-on agent with device-native posting (bypasses API reach nerfing)",
+        "improvement_potential": "Social media posting from real device, SMS access, camera, battery monitoring — unique capabilities",
+        "selective_import_possible": true,
+        "conflicts": "None — separate device, doesn't affect main setup"
+      },
+      "verdict": "MEDIUM — evaluate once a spare Android device is available",
+      "priority": "MEDIUM",
+      "implementation_plan": "wiki/projects/super-intelligence/plans/2026-06-12-android-hermes-agent.md",
+      "status": "proposed"
+    },
+    {
+      "name": "Claude Cowork Evaluation",
+      "source": "Claude Code's Creator Reveals Claude Cowork's Setup - The Startup Ideas Podcast",
+      "episode_page": "wiki/sources/2026-01-23-claude-cowork-setup.md",
+      "stack_analysis": {
+        "differences": "GUI agent for non-coding tasks (browser control, file management, MCP tools) vs. Hermes terminal approach",
+        "improvement_potential": "Browser-based tasks that Hermes CLI can't do easily — Google Sheets, Gmail, Chrome automation",
+        "selective_import_possible": true,
+        "conflicts": "None — complementary to Hermes, not a replacement"
+      },
+      "verdict": "MEDIUM — test for browser/GUI-heavy tasks",
+      "priority": "MEDIUM",
+      "implementation_plan": "wiki/projects/super-intelligence/plans/2026-06-12-claude-cowork-eval.md",
+      "status": "proposed"
+    },
+    {
+      "name": "Landing Page Tournament",
+      "source": "The Startup Ideas Podcast - You are using Claude Fable 5 wrong",
+      "episode_page": "wiki/sources/2026-06-11-you-are-using-claude-fable-5-wrong.md",
+      "stack_analysis": {
+        "differences": "Multi-judge adversarial scoring: 8 variants, 5 persona judges, kill losers, merge winners",
+        "improvement_potential": "Dramatically better copy than single-shot prompts. Directly applicable to example-app, Warehouse Handy, and any SaaS launch.",
+        "selective_import_possible": true,
+        "conflicts": "None — reusable prompt technique"
+      },
+      "verdict": "HIGH — create wiki/skills/landing-page-tournament/",
+      "priority": "HIGH",
+      "status": "proposed"
+    },
+    {
+      "name": "Interview-Before-Build",
+      "source": "The Startup Ideas Podcast - You are using Claude Fable 5 wrong",
+      "episode_page": "wiki/sources/2026-06-11-you-are-using-claude-fable-5-wrong.md",
+      "stack_analysis": {
+        "differences": "Staged prompting: AI interviews user before building, pushes back on vague answers, extracts failure scenes",
+        "improvement_potential": "Prevents one-shot prompts from producing polished but PMF-weak products. Applicable to project scoping.",
+        "selective_import_possible": true,
+        "conflicts": "None — reusable workflow pattern"
+      },
+      "verdict": "HIGH — create wiki/skills/interview-before-build/",
+      "priority": "HIGH",
+      "status": "proposed"
+    },
+    {
+      "name": "Self-Building Tools (Meta)",
+      "source": "The Startup Ideas Podcast - You are using Claude Fable 5 wrong",
+      "episode_page": "wiki/sources/2026-06-11-you-are-using-claude-fable-5-wrong.md",
+      "stack_analysis": {
+        "differences": "Agent studies its own usage patterns and auto-generates reusable skills/tools",
+        "improvement_potential": "Hermes could auto-generate skills by analyzing recurring command patterns. Directly applicable to agent-self-evolution.",
+        "selective_import_possible": true,
+        "conflicts": "None — complements existing skill system"
+      },
+      "verdict": "HIGH — create wiki/skills/self-building-agent/",
+      "priority": "HIGH",
+      "status": "proposed"
+    },
+    {
+      "name": "Droid (Factory.ai)",
+      "source": "The Startup Ideas Podcast - You are using Claude Fable 5 wrong",
+      "episode_page": "wiki/sources/2026-06-11-you-are-using-claude-fable-5-wrong.md",
+      "stack_analysis": {
+        "differences": "Model orchestration routing routine tasks to cheaper models, reserves Fable High for complexity",
+        "improvement_potential": "Would automate token cost optimization — we currently do manual model selection.",
+        "selective_import_possible": true,
+        "conflicts": "None — adds a new layer, no replacement needed"
+      },
+      "verdict": "investigate — token cost optimization for multi-model routing",
+      "priority": "MEDIUM",
+      "status": "investigate"
+    },
+    {
+      "name": "Kill Your Own Company",
+      "source": "The Startup Ideas Podcast - You are using Claude Fable 5 wrong",
+      "episode_page": "wiki/sources/2026-06-11-you-are-using-claude-fable-5-wrong.md",
+      "stack_analysis": {
+        "differences": "Adversarial threat modeling with real P&L/churn/support data — ranks threats by solo-executability",
+        "improvement_potential": "Surfaces vulnerabilities before competitors exploit them. Applicable to project-a and Warehouse Handy.",
+        "selective_import_possible": true,
+        "conflicts": "None — technique, not a tool"
+      },
+      "verdict": "MEDIUM — create wiki/skills/kill-your-own-company/",
+      "priority": "MEDIUM",
+      "status": "proposed"
+    },
+    {
+      "name": "Synthetic Focus Group",
+      "source": "The Startup Ideas Podcast - You are using Claude Fable 5 wrong",
+      "episode_page": "wiki/sources/2026-06-11-you-are-using-claude-fable-5-wrong.md",
+      "stack_analysis": {
+        "differences": "Review-based persona creation with multi-judge scoring for ad/image testing",
+        "improvement_potential": "Could improve example-app ad testing and validate product messaging pre-launch.",
+        "selective_import_possible": true,
+        "conflicts": "None — technique, not a tool"
+      },
+      "verdict": "investigate — example-app ad testing and product messaging validation",
+      "priority": "MEDIUM",
+      "status": "investigate"
+    }
+  ]
+}

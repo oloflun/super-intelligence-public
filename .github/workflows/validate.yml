@@ -1,0 +1,37 @@
+name: validate
+
+# `claude plugin validate` checks what our own health suite deliberately does not
+# duplicate: the manifest contract as Claude Code itself parses it. Keeping the two
+# separate means a change in the plugin format shows up here as a validation
+# failure rather than silently passing our home-grown checks.
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Install Claude Code
+        run: npm install -g @anthropic-ai/claude-code
+
+      # NOT --strict, deliberately. The validator warns when `version` is absent,
+      # but absence is the point: without it Claude Code uses the commit SHA as the
+      # version, which is what makes installed copies follow every commit. Running
+      # --strict here would fail the build on the very design decision the plugin
+      # is built around, and the only way to green it would be to reintroduce
+      # manual version bumps -- trading a real capability for a clean linter line.
+      #
+      # Errors still fail the build. Warnings are reviewed by a human, and this
+      # particular one is expected; if a second warning ever appears, it will be
+      # visible in the log next to this note rather than hidden by a passing gate.
+      - name: Validate plugin manifest
+        run: claude plugin validate .

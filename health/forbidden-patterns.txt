@@ -1,0 +1,58 @@
+# Patterns that must never appear in a shipped file.
+#
+# This is the sanitization gate. It is a TEST, not a cleanup step: the plugin is
+# extracted from a private working repo, and a cleanup someone does once will rot
+# the first time a file is copied across. Check 6 in check-all.py fails the build
+# on any match, and CI runs it on every push.
+#
+# One regex per line, case-insensitive. Lines starting with # are comments.
+# Keep each pattern narrow — a pattern broad enough to match ordinary prose makes
+# the gate noisy, and a noisy gate gets disabled.
+
+# --- identity ---
+# NOT listed: the GitHub handle `oloflun`. A repo cannot be published without its
+# owner's handle appearing in the manifest, the marketplace entry and the install
+# instructions -- banning it would fail the build on the act of publishing itself.
+# It is a public handle by definition. The patterns below are the personal
+# identity behind it, which is a different thing and must not ship.
+oloflundin
+Anton\s+L(undin)?\b
+anton-l\b
+
+# --- contact ---
+(?<![A-Za-z0-9._%+-])(?!(?:user|test|example|someone|admin|security-alert|no-?reply|you|me|first\.last|redacted-[0-9a-f]+)@)[A-Za-z0-9._%+-]+@(hotmail|gmail|outlook|live)\.[a-z]{2,}
+
+# --- private project names ---
+# The point of listing these is not the current content -- it is already clean --
+# but the next copy-paste from the private repo. A name that is not on this list
+# is a name the gate will wave through.
+haajp
+snipe-leads
+warehouse-handy
+klova-hamnkrog
+morgonpremium
+instatic
+alunix
+carl-os
+anti-slop-design
+finansanalys
+
+# --- credentials ---
+# Real key shapes only. Do not add a bare \b[a-f0-9]{32}\b here: it matches git
+# SHAs and content hashes and would fail on every legitimate commit reference.
+sk-ant-[A-Za-z0-9_-]{20,}
+sk-[A-Za-z0-9]{32,}
+gh[pousr]_[A-Za-z0-9]{36,}
+AIza[0-9A-Za-z_-]{35}
+xox[bapr]-[0-9A-Za-z-]{10,}
+-----BEGIN [A-Z ]*PRIVATE KEY-----
+# Telegram bot token: 8-10 digit id, colon, 35-char secret
+\b\d{8,10}:[A-Za-z0-9_-]{35}\b
+# Assigned secrets, e.g. API_KEY = "..." / token: '...'
+# The negative lookahead keeps documentation honest without making it unpublishable:
+# `GROQ_API_KEY = "gsk_your_key_here"` is a placeholder every setup guide needs, and
+# failing the build on it would push people to write worse docs, not safer ones.
+(api[_-]?key|auth[_-]?token|secret|password|passwd)\s*[:=]\s*["'](?!.*(?:your|example|placeholder|xxx|here|changeme|<|\.\.\.))[^"'\s]{16,}["']
+
+# --- host-specific paths that would break on anyone else's machine ---
+OneDrive\\Dokument\\Obsidian

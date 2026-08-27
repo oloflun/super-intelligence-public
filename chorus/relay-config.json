@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "projects": [
+    {
+      "name": "agent-chorus-fork",
+      "path": "{{USER_HOME_ESC}}\\agent-chorus-fork"
+    }
+  ]
+}

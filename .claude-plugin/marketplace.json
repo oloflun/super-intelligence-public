@@ -1,0 +1,14 @@
+{
+  "name": "super-intelligence",
+  "description": "The Super Intelligence agent stack: rule injection, memory that survives sessions, curated-first retrieval, ingestion, and cross-agent handoffs.",
+  "owner": {
+    "name": "oloflun"
+  },
+  "plugins": [
+    {
+      "name": "super-intelligence",
+      "source": ".",
+      "description": "Skills and hooks from the stack, installed as a plugin. For the parts a plugin cannot reach — CARL config, directory junctions, MCP servers, agent-chorus, scheduled jobs — run install.mjs as well."
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+﻿# Dependencies
+node_modules/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
+
+# Credentials (NEVER COMMIT)
+.env
+.env.*
+*credentials*
+*_token*
+*.pem
+auth.json
+cap_sid
+settings.local.json
+
+# Personal content (exclude entirely)
+/conversations/
+/plans/
+/session-logs/
+/trending-candidates/
+/watchlists/
+/.claude/
+
+# Build artifacts
+dist/
+build/
+.next/
+out/
+
+# Logs
+*.log
+
+# Obsidian per-machine
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/cache/
+
+# Syncthing
+.stfolder/
+.stversions/
+
+# Temp
+*.tmp
+.tmp/
+*.sync-conflict*
+# Root-level personal files (content lives in subdirectories)
+/auto-export-setup-guide.md
+/auto-wiki-ingest-v2.user.js
+/llm-wiki-setup-guide.md
+/hermes_self_improvement_deep_dive.md
+/index.md
+/STATUS.md
+/super-intelligence.md
+/watch-and-route-v2.sh

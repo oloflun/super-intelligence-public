@@ -1,0 +1,12 @@
+{
+  "name": "super-intelligence",
+  "displayName": "Super Intelligence Agent Stack",
+  "description": "A full agent-infrastructure stack: context-aware rule injection (CARL), a session memory protocol, curated-first vault retrieval, an ingestion pipeline, cross-agent handoffs, and 200+ skills. Installable as a plugin, or in full via install.mjs.",
+  "author": {
+    "name": "oloflun"
+  },
+  "homepage": "https://github.com/oloflun/super-intelligence-public",
+  "repository": "https://github.com/oloflun/super-intelligence-public",
+  "license": "MIT",
+  "defaultEnabled": false
+}

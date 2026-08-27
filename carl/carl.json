@@ -1,0 +1,604 @@
+{
+  "version": 1,
+  "last_modified": "2026-08-26T21:57:56.591Z",
+  "config": {
+    "devmode": false,
+    "post_compact_gate": true,
+    "global_exclude": [],
+    "context_brackets": {
+      "FRESH": {
+        "enabled": true,
+        "rules": []
+      },
+      "MODERATE": {
+        "enabled": true,
+        "rules": [
+          "Keep responses focused — avoid unnecessary exploration",
+          "Prefer targeted edits over full file rewrites"
+        ]
+      },
+      "DEPLETED": {
+        "enabled": true,
+        "rules": [
+          "Minimize tool calls — batch aggressively",
+          "Skip verbose explanations — action over narration",
+          "Consider suggesting /compact or spawning a subagent for remaining work"
+        ]
+      }
+    },
+    "commands": {}
+  },
+  "domains": {
+    "GLOBAL": {
+      "state": "active",
+      "always_on": true,
+      "recall": [
+        "universal"
+      ],
+      "exclude": [],
+      "rules": [
+        {
+          "id": 0,
+          "text": "NEVER use relative paths in code — use absolute. NEVER use absolute paths when referencing files to user — use relative.",
+          "added": null,
+          "last_reviewed": null,
+          "source": "template"
+        },
+        {
+          "id": 1,
+          "text": "NEVER run independent tool calls sequentially — batch them in parallel.",
+          "added": null,
+          "last_reviewed": null,
+          "source": "template"
+        },
+        {
+          "id": 2,
+          "text": "NEVER mark tasks complete without validation — test everything, require proof.",
+          "added": null,
+          "last_reviewed": null,
+          "source": "template"
+        },
+        {
+          "id": 3,
+          "text": "NEVER ignore an error — always investigate and fix it, including hook errors, shell failures, and non-zero exit codes surfaced in the conversation.",
+          "added": "2026-05-24",
+          "last_reviewed": null,
+          "source": "manual"
+        },
+        {
+          "id": 4,
+          "text": "Auto-standup (updated 2026-08-26, {{USER_NAME}}'s instruction): the fast SessionStart hook `session-start-brief.py` IS the sanctioned automatic standup for every session — pure file reads injected as context, no LLM cost, fast on any model (the old slowness that motivated the original ban is gone by construction). NEVER auto-fire the FULL /standup skill; it stays manual for deep project loading.",
+          "added": "2026-05-24",
+          "last_reviewed": null,
+          "source": "manual"
+        },
+        {
+          "id": 5,
+          "text": "NEVER push to `main` unless the user explicitly instructs it. Default working branch is `development`. Always confirm the current branch with `git branch --show-current` before any `git push`.",
+          "added": "2026-05-24",
+          "last_reviewed": null,
+          "source": "manual"
+        },
+        {
+          "id": 6,
+          "text": "Show code, not explanation — unless the user explicitly asks for an explanation.",
+          "added": "2026-05-24",
+          "last_reviewed": null,
+          "source": "manual"
+        },
+        {
+          "id": 7,
+          "text": "Never skip a failed, unavailable, or inapplicable workflow step silently; always tell the user explicitly what was skipped and why.",
+          "added": "2026-05-25",
+          "last_reviewed": null,
+          "source": "staging"
+        },
+        {
+          "id": 8,
+          "text": "When investigating clipboard-vision-mcp model errors (404 model_not_found, model unavailable), always check for stale VISION_MODEL, VISION_API_KEY, or VISION_BASE_URL in Windows HKCU\\Environment registry before deeper troubleshooting. The .mcp.json env block overrides system-level vars when Claude Code spawns the process, but these stale vars can cause confusion and indicate misconfiguration. Check with: `reg query HKCU\\Environment /v VISION_MODEL`. Clear with: `reg delete HKCU\\Environment /v VISION_MODEL /f`.",
+          "added": "2026-06-25",
+          "last_reviewed": null,
+          "source": "staging"
+        },
+        {
+          "id": 9,
+          "text": "NEVER create a new CARL domain, or add project-identifying content (project name, internal codenames, ports, paths specific to one repo) into an existing always_on domain, without asking the user first. Propose the domain name, scope, and whether it should be always_on, then wait for confirmation before writing it.",
+          "added": "2026-07-27",
+          "last_reviewed": null,
+          "source": "manual"
+        },
+        {
+          "id": 10,
+          "text": "`{{HERMES_VAULT}}` is DEAD — a legacy artifact from when Hermes ran on WSL. Hermes now runs as a native Windows desktop app. The canonical vault is `{{VAULT_PATH}}` and nothing else. All memory reads AND writes (MEMORY.md, USER.md, MEMORY-FULL.md, USER-FULL.md, BLOCKS.md, sessions.db, archive/) go directly to `...\\Knowledge Base\\memory\\`. Never write to `{{HERMES_VAULT}}`: it is a separate directory on disk (verified — different NTFS File IDs, no reparse point), reached only by a lagging propagation job, and the backup script, git and /standup all target the Knowledge Base. Writing there means the write is invisible until the job runs, and lost if it stops. If a skill or script still references `{{HERMES_VAULT}}`, that is a bug to fix, not a path to follow.",
+          "added": "2026-08-01",
+          "last_reviewed": null,
+          "source": "manual"
+        }
+      ],
+      "decisions": []
+    },
+    "DEVELOPMENT": {
+      "state": "active",
+      "always_on": true,
+      "recall": [
+        "write code for",
+        "fix this bug",
+        "implement this feature",
+        "build this component",
+        "refactor this",
+        "add this endpoint",
+        "programming task",
+        "code review"
+      ],
+      "exclude": [],
+      "rules": [
+        {
+          "id": 0,
+          "text": "TypeScript strict mode always. Never use `any` or `@ts-ignore` without a comment explaining why.",
+          "added": "2026-05-24",
+          "last_reviewed": null,
+          "source": "manual"
+        },
+        {
+          "id": 1,
+          "text": "Run type-check (`tsc --noEmit` or the project's type-check script) after any implementation changes.",
+          "added": "2026-05-24",
+          "last_reviewed": null,
+          "source": "manual"
+        },
+        {
+          "id": 2,
+          "text": "When starting a significant task (new feature, migration, fix spanning multiple files), write a checkpoint to `<project-path>/.agent-chorus/CHECKPOINT.md` with agent name, timestamp, branch, uncommitted file count, current task, and files being modified.",
+          "added": "2026-05-24",
+          "last_reviewed": null,
+          "source": "manual"
+        },
+        {
+          "id": 3,
+          "text": "Think Before Coding: state assumptions explicitly before implementing. If multiple interpretations exist, present them — don't pick silently. If something is unclear, stop, name what's confusing, and ask. Push back when a simpler approach exists.",
+          "added": "2026-05-24",
+          "last_reviewed": null,
+          "source": "manual"
+        },
+        {
+          "id": 4,
+          "text": "Simplicity First: write the minimum code that solves the problem. No features beyond what was asked, no abstractions for single-use code, no speculative flexibility. Self-check: 'Would a senior engineer say this is overcomplicated?' If yes, simplify. If it could be 50 lines, don't write 200.",
+          "added": "2026-05-24",
+          "last_reviewed": null,
+          "source": "manual"
+        },
+        {
+          "id": 5,
+          "text": "Surgical Changes: touch only what the request requires. Don't improve adjacent code, change quote style, add type hints, add docstrings, or refactor things that aren't broken. Match existing style. Remove only the imports/variables/functions YOUR changes made unused — not pre-existing dead code.",
+          "added": "2026-05-24",
+          "last_reviewed": null,
+          "source": "manual"
+        },
+        {
+          "id": 6,
+          "text": "Goal-Driven Execution: transform tasks into verifiable goals before starting. For bug fixes, write a test that reproduces the bug first, then fix it. For multi-step tasks state a brief plan (step → verify: check). Define what done looks like so you can loop independently.",
+          "added": "2026-05-24",
+          "last_reviewed": null,
+          "source": "manual"
+        },
+        {
+          "id": 7,
+          "text": "Activate `/ponytail full` when writing any implementation code. The decision ladder (YAGNI → stdlib → native → existing dep → one-liner → minimal code) must be applied. Never use `/ponytail ultra` unless the user explicitly requests it — ultra is YAGNI extremist mode that challenges requirements themselves and ships one-liners over full features.",
+          "added": "2026-06-16",
+          "last_reviewed": null,
+          "source": "manual"
+        },
+        {
+          "id": 8,
+          "text": "Run `/simplify` after completing each feature or task, before handing over to the user. When simplify skips a finding (Chesterton's Fence, out-of-scope, or not enough consumers to justify abstraction), write the skipped finding to `<project>/.agent-chorus/SIMPLIFY-SKIPPED.md` with: file, line, summary, reason skipped, and date. On the next `/simplify` run, read the previous skipped items first and re-evaluate each one against the current diff — if a previously skipped finding is now in-scope (more consumers, clearer pattern, larger diff), it must be applied rather than skipped again. Skippable entirely if the change is trivial (single-line fix, typo, config change).",
+          "added": "2026-06-16",
+          "last_reviewed": null,
+          "source": "manual"
+        },
+        {
+          "id": 9,
+          "text": "Avsluta ALDRIG en slutförd uppgift utan riktning: när det efterfrågade arbetet är klart, avsluta alltid svaret med nästa konkreta steg, förankrat i projektets GOALS.md (NASTA DELMAL-raden i projekt-digesten) eller STATUS.md:s \"Next recommended action\" — säg vilket delmål steget för framåt. Finns inget rimligt nästa steg är DET fyndet: säg att målbilden saknar det. ({{USER_NAME}}s instruktion 2026-08-26: \"allt stod stilla mellan insatserna — jag behöver proaktivitet som ständigt följer upp med grundade förslag.\")",
+          "added": "2026-08-26",
+          "last_reviewed": null,
+          "source": "manual"
+        }
+      ],
+      "decisions": []
+    },
+    "PROJECT": {
+      "state": "active",
+      "always_on": false,
+      "recall": [
+        "new project",
+        "create project",
+        "start project",
+        "new repo",
+        "set up project",
+        "initialize project",
+        "start a new"
+      ],
+      "exclude": [],
+      "rules": [
+        {
+          "id": 0,
+          "text": "When starting or creating any new project, the FIRST action is to create a vault junction: `New-Item -ItemType Junction -Path '{{VAULT_PATH}}\\wiki\\projects\\<name>' -Target '{{USER_HOME}}\\<name>'`. Then update 'Current linked projects' in CLAUDE.md. Skipping this makes the project invisible to Obsidian and other agents.",
+          "added": "2026-05-24",
+          "last_reviewed": null,
+          "source": "manual"
+        }
+      ],
+      "decisions": []
+    },
+    "SEARCH": {
+      "state": "active",
+      "always_on": false,
+      "recall": [
+        "search",
+        "find",
+        "look up",
+        "recall",
+        "what do you know",
+        "have we discussed",
+        "what's in the wiki",
+        "check the wiki",
+        "search the wiki",
+        "look it up",
+        "qmd",
+        "know about",
+        "tell me about",
+        "what happened with",
+        "any info on",
+        "check if we",
+        "dig up",
+        "pull up",
+        "retrieve"
+      ],
+      "exclude": [],
+      "rules": [
+        {
+          "id": 0,
+          "text": "For any search, lookup, recall, or 'what do you know about' query: use all three tools in order — (1) `qmd query \"<terms>\"` (CLI) or `mcp__qmd__query` (MCP) for fast coarse recall across the vault, (2) `mcp__agentmemory__memory_smart_search` or session search for exact conversation context, (3) `mcp__carl-mcp__carl_search_decisions` for authoritative decisions. Never answer from memory alone.",
+          "added": "2026-05-24",
+          "last_reviewed": null,
+          "source": "manual"
+        },
+        {
+          "id": 1,
+          "text": "After /ingest or after writing new files to the vault, run `qmd update` and update `.qmd-tracker.json` timestamps for each directory written to. If any directory timestamp is >24h old, run `qmd update` before querying.",
+          "added": "2026-05-24",
+          "last_reviewed": null,
+          "source": "manual"
+        }
+      ],
+      "decisions": []
+    },
+    "AGENTS": {
+      "state": "active",
+      "always_on": false,
+      "recall": [
+        "chorus",
+        "codex session",
+        "gemini session",
+        "what is codex doing",
+        "what is gemini doing",
+        "agent status",
+        "agent session",
+        "cross-agent",
+        "what codex",
+        "what gemini",
+        "tell codex",
+        "tell gemini",
+        "message codex",
+        "message gemini",
+        "notify codex",
+        "notify gemini",
+        "inform codex",
+        "inform gemini",
+        "let codex know",
+        "let gemini know",
+        "update codex",
+        "update gemini",
+        "coordinate with"
+      ],
+      "exclude": [],
+      "rules": [
+        {
+          "id": 0,
+          "text": "ALL chorus operations (send, read, messages, list, compare) MUST use the canonical global cwd: Windows: `{{VAULT_PATH}}`, Hermes/WSL: `{{HERMES_VAULT}}`. Never use project-specific cwds — the single global inbox is shared across all projects.",
+          "added": "2026-05-25",
+          "last_reviewed": null,
+          "source": "manual"
+        },
+        {
+          "id": 1,
+          "text": "When asked about another agent's status or session, run `chorus read --agent <target> --cwd '{{VAULT_PATH}}' --json` first. Answer with evidence from session output, not from memory.",
+          "added": "2026-05-24",
+          "last_reviewed": null,
+          "source": "manual"
+        },
+        {
+          "id": 2,
+          "text": "Gemini/Antigravity fallback: if `chorus read --agent gemini` returns NOT_FOUND, read the most recently modified .md file in `~/.agents/memory/<project-slug>/sessions/` instead.",
+          "added": "2026-05-24",
+          "last_reviewed": null,
+          "source": "manual"
+        },
+        {
+          "id": 3,
+          "text": "Always include the project name/context in every chorus message. Name the project or work area being discussed (e.g. 'Re: project-a-next —') so the receiver has context without reading session logs. If the message is global/infra with no single project, say so explicitly.",
+          "added": "2026-05-25",
+          "last_reviewed": null,
+          "source": "manual"
+        }
+      ],
+      "decisions": []
+    },
+    "DESIGN": {
+      "state": "active",
+      "always_on": false,
+      "recall": [
+        "design",
+        "ui",
+        "ux",
+        "layout",
+        "component",
+        "styling",
+        "color",
+        "typography",
+        "font",
+        "spacing",
+        "theme",
+        "visual",
+        "figma",
+        "wireframe",
+        "mockup",
+        "prototype",
+        "interface",
+        "landing page",
+        "redesign",
+        "look and feel",
+        "branding",
+        "aesthetic",
+        "dark mode",
+        "responsive",
+        "animation",
+        "motion",
+        "icon",
+        "illustration",
+        "logo",
+        "palette",
+        "gradient",
+        "shadow",
+        "border radius",
+        "design system",
+        "stitch",
+        "tailwind design",
+        "css design",
+        "make it look"
+      ],
+      "exclude": [],
+      "rules": [
+        {
+          "id": 0,
+          "text": "Before any UI edit, invoke Skill(design). It derives the visual direction from the project's own brand evidence (logo, existing tokens, deployed site) before writing any token — see the gate order in skills/design/SKILL.md. Do not invent a palette or reach for a themed skill when the project already has an identity to derive from.",
+          "added": "2026-07-09",
+          "last_reviewed": "2026-07-27",
+          "source": "manual"
+        },
+        {
+          "id": 1,
+          "text": "The design hook chain (PreToolUse design-gate.py, PostToolUse design-route.py) now enforces routing and token-contract compliance mechanically on every UI file write, project-side. This supersedes relying on the agent to manually state which skills it loaded — verify via the session's .impeccable/design-report-*.md instead of trusting a claim in chat.",
+          "added": "2026-07-27",
+          "last_reviewed": null,
+          "source": "manual"
+        },
+        {
+          "id": 2,
+          "text": "After implementation, run an interaction/animation audit with emil-design-eng. Every interaction must be smooth (eased, ~60fps, prefers-reduced-motion honored). Fix findings before calling a component done.",
+          "added": "2026-07-09",
+          "last_reviewed": "2026-07-27",
+          "source": "manual"
+        },
+        {
+          "id": 3,
+          "text": "Nothing is 'done' without a real screenshot taken via a live browser preview and, when reference material exists for the project, compared side-by-side against it. Never claim visual verification without having actually opened the render. See Skill(design-verify) for the inspection procedure.",
+          "added": "2026-07-09",
+          "last_reviewed": "2026-07-27",
+          "source": "manual"
+        },
+        {
+          "id": 4,
+          "text": "This protocol is the mandatory automatic trigger for ALL design work; it auto-injects on every design-recall prompt. Never skip a step silently -- if a step is skipped, state why.",
+          "added": "2026-07-09",
+          "last_reviewed": "2026-07-27",
+          "source": "manual"
+        },
+        {
+          "id": 5,
+          "text": "Rule 3 has a MANDATORY FALLBACK CHAIN, and computed styles are never a substitute for it. If the live browser preview cannot produce a screenshot (pane not compositing, tool unavailable, denied navigation), do NOT downgrade to DOM or computed-style assertions — fall back to local capture: drive Chromium via Playwright, write PNGs to disk, then READ each PNG with the Read tool so the image actually enters context. A screenshot you never opened does not count as having looked. Long pages must be captured in viewport-sized slices, because a downscaled full-page image hides the detail you are checking for. If no path works: stop, say so plainly, and solve the capture problem before the work continues. Never guess from the code.",
+          "added": "2026-07-29",
+          "last_reviewed": null,
+          "source": "manual"
+        },
+        {
+          "id": 6,
+          "text": "Identify the references before any visual work starts, and capture them. Name the segment's top players and the work you will be measured against; if the user has not named them, choosing them and saying which you chose is your job. Capture each reference as an image and read it — never from memory. Memory returns wrong facts about references: two market-leading pages turned out to centre their heroes, and one coloured words inside the headline rather than switching typeface, both the opposite of what was assumed before they were opened.",
+          "added": "2026-07-30",
+          "last_reviewed": null,
+          "source": "manual"
+        },
+        {
+          "id": 7,
+          "text": "Iterate until a full pass finds nothing, not until the output is acceptable. After the first result that looks finished, run another complete verification pass: read the render at fold, full page and mobile, squint test, breakpoint sweep, keyboard, contrast, production performance. Every pass that finds a defect obliges another one. Do not hand over until you can honestly say the result is better than every reference and every top player in the segment — and say plainly when a pass came back clean. Continuing past that point is churn; stopping before it ships defects. Six real defects have been found in passes run after a page already looked done, including a lying html lang attribute and a headline at 2.1:1 contrast.",
+          "added": "2026-07-30",
+          "last_reviewed": null,
+          "source": "manual"
+        },
+        {
+          "id": 8,
+          "text": "When a measurement disagrees with what you can see, suspect the measurement first and prove which one is wrong. Verifiers fail in both directions. Known traps: sampling a screenshot that still contains glyphs measures text against text, so hide the text and sample pure background; scrollWidth cannot see overflow that overflow-x clip is hiding, so test element bounds; img.complete && naturalWidth === 0 misses a lazy image that never loaded at all; dev-mode bundle size says nothing about production. Never report a metric as a pass without knowing what it would look like when failing — where possible, run the check against a version known to be broken and confirm it actually fails.",
+          "added": "2026-07-30",
+          "last_reviewed": null,
+          "source": "manual"
+        },
+        {
+          "id": 9,
+          "text": "A design system written only as prohibitions produces subtraction. Every rule in a DESIGN.md or equivalent that removes something must name what takes its place, and the file must carry an explicit section listing what CREATES the design: display type steps, accent at display scale, the structural line system, one tonal inversion, a moment that is not information, imagery or a stated reason for none. When a brief says \"drop X\", that changes the idiom, never the amount of visual information — confirm the replacement layer before deleting the old one.",
+          "added": "2026-07-30",
+          "last_reviewed": null,
+          "source": "manual"
+        },
+        {
+          "id": 10,
+          "text": "A reveal-on-scroll system must fail toward visible, never toward hidden. Any pattern where content starts at opacity 0 and JavaScript is what makes it appear can leave a heading with nothing under it, which is worse than having no animation. Required guards: threshold 0, because an element taller than the viewport can never reach a non-zero ratio; reveal everything already on or above the screen at mount, because landing mid-page means the elements above never intersect again; a timed failsafe that reveals the rest; and a noscript fallback. Leave behind a check that counts un-revealed elements across several routes and entry modes, and confirm it fails against the broken version before trusting it.",
+          "added": "2026-07-30",
+          "last_reviewed": null,
+          "source": "manual"
+        },
+        {
+          "id": 11,
+          "text": "Every marketing or landing page ships real imagery. Sourcing images is part of the job, not an optional extra, and \"no suitable image was available\" is not an acceptable outcome — go and find one. A page without imagery is only allowed when the user has explicitly asked for a text-only page. When the product's own surface cannot be captured, that is a problem to solve, not a reason to ship text: build or run the product locally and screenshot it, use real photography sourced and vendored properly, or commission a drawn form. Source candidates, render them as a contact sheet, LOOK at every candidate, verify each loads, then downsize, re-encode to WebP, vendor into the repo rather than hotlinking, and credit the photographer. The hero image is the largest contentful paint and must never depend on another company's CDN.",
+          "added": "2026-07-30",
+          "last_reviewed": null,
+          "source": "manual"
+        },
+        {
+          "id": 12,
+          "text": "Copy is never shipped from a first draft. Three passes, in order, every time, and each one actually invoked as a skill rather than approximated from memory: Skill(copywriting) for structure, offer and hierarchy; then Skill(copy-editing) for the seven sweeps; then Skill(humanizer) on every English string and Skill(humanizer-svenska) on every Swedish string. Both humanizers run on a bilingual page — running one and assuming the other is covered is skipping a step. State which passes ran. A page whose copy reads flat or machine-written has skipped one of them; the tells are declarative sentences of equal length, lists of three, abstract nouns where a verb belongs, and every sentence asserting rather than any showing. The humanizers remove AI tells and do NOT license rewriting content: if a pass changes what a sentence asserts, that pass has overreached and the change is discarded.",
+          "added": "2026-07-30",
+          "last_reviewed": null,
+          "source": "manual"
+        },
+        {
+          "id": 13,
+          "text": "Name the aesthetic lane in ONE concrete phrase before the first line of code (\"editorial luxury minimalism\", \"drenched navy + amber\"), never \"clean and modern\" — unnamed ambition becomes beige. Never converge on the same lane, palette, or font pairing as the previous generation. The craft floor in Skill(design) § \"The craft floor\" is resident context for every marketing build: kicker microformat, one accent at display scale, ledgers not card grids, buttons barely exist, composition contract (never three flat text sections in a row, one tonal inversion, one grid-break, one moment that is not information).",
+          "added": "2026-07-30",
+          "last_reviewed": null,
+          "source": "manual"
+        }
+      ],
+      "decisions": []
+    },
+    "CONCLUDE": {
+      "state": "active",
+      "always_on": false,
+      "recall": [
+        "conclude",
+        "wrap up",
+        "end session",
+        "session end",
+        "close out",
+        "/conclude"
+      ],
+      "exclude": [],
+      "rules": [
+        {
+          "id": 0,
+          "text": "During conclude, explicitly evaluate whether the session produced durable rules or guidelines that belong in CARL rather than a skill. If a rule is cross-session, declarative, and not a procedural workflow better captured as a skill, add or stage it for CARL review before finishing conclude.",
+          "added": "2026-05-24",
+          "last_reviewed": null,
+          "source": "manual"
+        },
+        {
+          "id": 1,
+          "text": "Upstream sync (supersedes the old proposal-only rule): during /conclude, if .carl/upstream.json exists, audit the session for changes to global agent infrastructure — skills added/updated in ~/.agents/skills, CARL domains/rules/carl-hook.py, MCP servers, hooks, installer-relevant templates/docs. If any changed: sync them into the super-intelligence repo (skills/, carl/, docs/, templates/), bump VERSION, add a CHANGELOG entry, and COMMIT locally so install.mjs/upgrade.mjs distribute them. Present the commit summary to the user. NEVER push without explicit instruction.",
+          "added": "2026-07-09",
+          "last_reviewed": null,
+          "source": "manual"
+        },
+        {
+          "id": 2,
+          "text": "Documentation sync at /conclude: if the session changed architecture or infrastructure (skills, hooks, routers, installers, CARL config, workflows, build/deploy pipelines), you MUST search the repo AND the vault for documentation describing what changed -- README, ROUTER/ARCHITECTURE docs, workflow guides, wiki project pages, CHANGELOG -- and update every file that is now stale. Do not rely on the session log alone; the log records what happened, the docs record how the system works. Report in the conclude summary which docs you checked and which you updated, and say explicitly when nothing needed changing.",
+          "added": "2026-07-28",
+          "last_reviewed": null,
+          "source": "manual"
+        },
+        {
+          "id": 3,
+          "text": "Vault hub doc: any session that changes architecture or infrastructure MUST leave a current single-document explanation of how the project works, at <repo-root>/<project-slug>.md (surfaces in the vault via the project junction). SEARCH FOR AN EXISTING ONE FIRST and update it -- a stale duplicate is worse than none, because the vault agent may read the old one. It must carry: what the project is, the core decision flow, a document map with one line per significant file, invariants that bite if broken, how to verify, and current status. Mark superseded docs as stale rather than deleting them.",
+          "added": "2026-07-28",
+          "last_reviewed": null,
+          "source": "manual"
+        },
+        {
+          "id": 4,
+          "text": "Installer sync is unconditional for infra work: if a session changed skills, hooks, routers, CARL config, installer scripts, templates or workflows, that change MUST reach the super-intelligence package before the session closes. Missing .carl/upstream.json gates the automated sync, never the obligation -- if it is absent, say so and apply the change by hand. Remember install.mjs's deployTemplate()/wf() SKIP existing destinations, so anything that must reach existing users needs an additive merge in both install.mjs and upgrade.mjs, not a file drop.",
+          "added": "2026-07-28",
+          "last_reviewed": null,
+          "source": "manual"
+        },
+        {
+          "id": 5,
+          "text": "Reindex search at /conclude: run `qmd update` whenever vault markdown changed (session logs, plans, wiki pages, hub docs). Project code/skill indexing (qmd projects.sqlite) refreshes nightly via qmd-daily-reindex -- no manual sync step here since `gbrain sync` was decommissioned 2026-08-25. Non-fatal -- on failure log a warning and continue. Report the outcome; never claim the vault is searchable without having run it.",
+          "added": "2026-07-28",
+          "last_reviewed": null,
+          "source": "manual"
+        }
+      ],
+      "decisions": []
+    },
+    "HERMES": {
+      "state": "active",
+      "always_on": false,
+      "recall": [
+        "hermes",
+        "wsl",
+        "vault-local"
+      ],
+      "exclude": [],
+      "rules": [
+        {
+          "id": 0,
+          "text": "STATUS.md global cross-agent status is auto-injected by carl-hook.py on FRESH sessions — it is NOT part of /standup. Never read STATUS.md manually at session start; it arrives automatically.",
+          "added": "2026-05-25",
+          "last_reviewed": null,
+          "source": "manual"
+        },
+        {
+          "id": 1,
+          "text": "Write new stable behavioral rules into the HERMES domain of ~/.carl/carl.json (which is {{HERMES_VAULT}}/.carl/carl.json via symlink). Never accumulate rules only in AGENTS.md or SOUL.md.",
+          "added": "2026-05-25",
+          "last_reviewed": null,
+          "source": "manual"
+        },
+        {
+          "id": 2,
+          "text": "At each /standup: scan AGENTS.md and SOUL.md for rules already captured in CARL. Remove duplicates from those files. Those files are reference-only; CARL is the canonical rule store.",
+          "added": "2026-05-25",
+          "last_reviewed": null,
+          "source": "manual"
+        },
+        {
+          "id": 3,
+          "text": "Project-specific design rules, per-project overrides, or episodic decisions do NOT belong in CARL. Offload them to MEMORY-FULL.md under a dated session block, or to the relevant project's STATUS.md.",
+          "added": "2026-05-25",
+          "last_reviewed": null,
+          "source": "manual"
+        },
+        {
+          "id": 4,
+          "text": "Hermes paths: python3 (not py/python), {{HERMES_VAULT}}/ (not /mnt/c/...), qmd via ~/.hermes/scripts/qmd-hermes. update-global-status.py uses Path.home()/'STATUS.md' which resolves via ~/STATUS.md symlink to {{HERMES_VAULT}}/STATUS.md.",
+          "added": "2026-05-25",
+          "last_reviewed": null,
+          "source": "manual"
+        },
+        {
+          "id": 5,
+          "text": "Relay completions for Hermes are delivered to ~/.hermes/inbox/ as .msg files. chorus-check.sh surfaces them automatically at session start. When a user asks about relay status or updates, also check: ls ~/.hermes/inbox/*.msg 2>/dev/null && cat ~/.hermes/inbox/relay-*.msg 2>/dev/null && rm -f ~/.hermes/inbox/relay-*.msg.",
+          "added": "2026-05-26",
+          "last_reviewed": null,
+          "source": "manual"
+        },
+        {
+          "id": 6,
+          "text": "At /standup: run: chorus messages --agent hermes --cwd '{{WSL_VAULT_PATH}}' --clear --json and surface any relay completion notices found there.",
+          "added": "2026-05-26",
+          "last_reviewed": null,
+          "source": "manual"
+        }
+      ],
+      "decisions": []
+    }
+  },
+  "staging": []
+}

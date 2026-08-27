@@ -1,0 +1,59 @@
+﻿# Syncthing — Super-Intelligence Agent Stack
+# Copy to your vault root as .stignore
+
+# Syncthing internals (never sync)
+.stfolder
+.stversions
+.syncthing*
+
+# Dependencies
+node_modules/
+.next/
+dist/
+build/
+out/
+
+# Obsidian workspace (per-machine)
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/cache/
+.obsidian/hotkey.json
+
+# Git internals
+.git/objects/
+.git/index
+.git/logs/
+.git/refs/
+.git/HEAD
+.git/config
+
+# Temp and cache
+*.tmp
+*.log
+.cache/
+.tmp/
+__pycache__/
+*.pyc
+
+# Credentials (never sync)
+.env
+.env.*
+*credentials*
+*_token*
+*.pem
+auth.json
+cap_sid
+
+# Personal session state (per-agent, don't sync)
+.carl/sessions/
+session-logs/
+.claude/sessions/
+.claude/history.jsonl
+.codex/sessions/
+.codex/logs_*.sqlite*
+.codex/state_*.sqlite
+
+# Platform-specific
+Thumbs.db
+.DS_Store
+desktop.ini

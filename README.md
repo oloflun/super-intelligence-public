@@ -120,6 +120,34 @@ node install.mjs --no-hermes --no-chorus --no-syncthing --yes
 | `--no-qmd` | Skip QMD search engine |
 | `--no-backup` | Skip vault backup scripts |
 
+### Plugin install (the other path)
+
+Everything in `skills/` and `hooks/` is also installable as a native Claude Code
+plugin — a second, independent way to get the same content, for people who want
+skills and hooks without the full OS-level integration (junctions, npm globals,
+vault wiring) that `install.mjs` sets up.
+
+```
+/plugin marketplace add oloflun/super-intelligence-public
+/plugin install super-intelligence@super-intelligence
+```
+
+`plugin.json` carries no `version` field on purpose, so Claude Code tracks the
+plugin by git commit SHA — every push to this repo is what "installed" means on
+your next session, no manual update step.
+
+**If you already ran `node install.mjs` on this machine** (this is the normal
+case for anyone who set this stack up before the plugin existed), installing
+the plugin on top would otherwise register every hook a second time — CARL,
+brief-context, the design/marketing gates, chorus — each firing twice per
+event. The plugin's first `SessionStart` after install runs
+`hooks/plugin-sync.py`, which detects and removes exactly those legacy
+duplicate registrations from `~/.claude/settings.json` (one-time backup to
+`settings.json.pre-plugin-sync.bak` before the first edit) and syncs the
+plugin's own `skills/` into `~/.agents/skills/` — additive only, it never
+deletes a hand-authored skill. This runs automatically; nothing to do by hand.
+On every ordinary session after that it's a single path comparison, no-op.
+
 ---
 
 ## <a name="what-you-get"></a>What You Get

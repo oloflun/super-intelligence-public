@@ -195,6 +195,15 @@
         "hooks": [
           {
             "type": "command",
+            "command": "python \"${CLAUDE_PLUGIN_ROOT}/hooks/plugin-sync.py\"",
+            "timeout": 30
+          }
+        ]
+      },
+      {
+        "hooks": [
+          {
+            "type": "command",
             "command": "python \"${CLAUDE_PLUGIN_ROOT}/hooks/session-start-brief.py\"",
             "timeout": 15
           }

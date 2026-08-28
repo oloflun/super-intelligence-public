@@ -29,7 +29,21 @@ if hasattr(sys.stdout, "reconfigure"):
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
 HOME = Path(os.path.expanduser("~"))
-FOREMAN_INDEX = HOME / ".agents" / "foreman-index.json"
+
+
+def resolve_foreman_index() -> Path:
+    """Prefer the live, growing local index on Anton's own machine; fall back
+    to the bundled snapshot shipped in data/ (this file's ../../data/) so
+    foreman-name lookups still work in Cowork/cloud where ~/.agents doesn't
+    exist. Bundled path resolves relative to this hook's own location, which
+    is CLAUDE_PLUGIN_ROOT/hooks/ wherever the plugin is installed."""
+    live = HOME / ".agents" / "foreman-index.json"
+    if live.exists():
+        return live
+    return Path(__file__).resolve().parent.parent / "data" / "foreman-index.json"
+
+
+FOREMAN_INDEX = resolve_foreman_index()
 
 KILL_SWITCH = "BUSINESS_HOOKS_DISABLED"
 UNIVERSAL_KILL_SWITCH = "CLAUDE_HOOKS_DISABLED"  # shared with every other hook family
@@ -313,27 +327,41 @@ def foreman_picks(domains, prompt: str):
 
 
 def build_block(domains, coaching_labels, foreman_names) -> str:
+    """Order matters: foreman is the FOUNDATION (Anton, 2026-08-28) -- the
+    framework grounding loads first, business-principles-integration fills
+    in on top of it, never the other way round.
+
+    foreman_names are invoked as Skill(foreman:<name>) -- the plugin skill,
+    not a local script. `python ~/.agents/scripts/foreman-core.py` only
+    exists on Anton's own machine; Skill() resolves identically local,
+    Cowork, and cloud once the foreman plugin is installed (see
+    cloud-plugin-bootstrap.sh / repo .claude/settings.json enabledPlugins).
+    """
     dom_list = sorted(domains, key=lambda d: int(d.lstrip("§")))
     lines = ["<business-brief>"]
     lines.append("Business-judgment intent detected. Domains: "
                  + (", ".join(dom_list) if dom_list else "unmatched -- scan KB headings") + ".")
-    lines.append("1. Load Skill(business-principles-integration).")
+    lines.append("1. Foreman first (the framework foundation): load "
+                 + (", ".join(f"Skill(foreman:{n})" for n in foreman_names) if foreman_names
+                    else "the closest matching foreman framework skill (see /foreman)")
+                 + ". Reason with it BEFORE touching the KB -- it is the analytical base, "
+                 "not an afterthought.")
+    step = 2
+    lines.append(f"{step}. Load Skill(business-principles-integration) -- this layer fills "
+                 "in on top of the foreman framework, it does not replace it.")
+    step += 1
     if coaching_labels:
         proto = ", ".join(sorted(set(coaching_labels)))
-        lines.append(f"2. Coaching trigger matched (Protocol {proto}) -- also load "
+        lines.append(f"{step}. Coaching trigger matched (Protocol {proto}) -- also load "
                      "Skill(business-coaching-protocols).")
-    lines.append("3. Framework first, KB second: apply the standard diagnostic/framework "
-                 "for the question type, THEN cite 1-3 KB principles by name + source + "
-                 "one-sentence application. Never quote-dump; never force-fit if nothing fits.")
+        step += 1
+    lines.append(f"{step}. Synthesize: foreman framework result FIRST, THEN 1-3 KB principles "
+                 "cited by name + source + one-sentence application on top of it. Never "
+                 "quote-dump; never force-fit if nothing fits.")
     for d in dom_list:
         fname = SECTION_FILES.get(d)
         if fname:
-            lines.append(f"   Read wiki/entrepreneurship/bp-sections/{fname}.md ({d}).")
-    if foreman_names:
-        lines.append("4. Foreman framework core (Framework + Anti-Patterns only, not the "
-                     "whole file):")
-        for n in foreman_names:
-            lines.append(f"   python ~/.agents/scripts/foreman-core.py {n}")
+            lines.append(f"   KB section for {d}: wiki/entrepreneurship/bp-sections/{fname}.md")
     lines.append("</business-brief>")
     return "\n".join(lines)
 

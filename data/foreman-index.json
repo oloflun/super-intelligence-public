@@ -1,0 +1,3415 @@
+{
+  "generated_from": "foreman-marketplace skills tree",
+  "count": 158,
+  "skills": [
+    {
+      "name": "ai-augmentation-not-automation",
+      "description": "Makes the strategic and moral case for AI augmentation over pure automation, providing leaders with frameworks for job redesign, creativity-driven AI deployment, and long-term workforce investment. Draws on the centaur model from chess and case studies across industries to demonstrate that human-AI collaboration outperforms either alone. Use when deciding between automating jobs and redesigning them, when AI adoption is eroding workforce skills, when boards pressure for automation-driven cost cuts, when designing new roles that pair human creativity with AI capabilities, or when facing the long-term consequences of over-automation.",
+      "stage": [
+        "idea",
+        "validation",
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "ai-leadership",
+      "tags": [
+        "augmentation",
+        "automation",
+        "job-redesign",
+        "creativity",
+        "human-ai-collaboration",
+        "workforce-development",
+        "centaur-model",
+        "innovation"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\ai-leadership\\ai-augmentation-not-automation.md"
+    },
+    {
+      "name": "ai-communication-culture",
+      "description": "Equips leaders to build flat, participative communication cultures that enable successful AI adoption by bridging technical and business teams, democratising data, and establishing feedback loops. Covers the symphony conductor model, soliciting expert feedback, removing bureaucratic obstacles, and building shared responsibility. Use when AI projects fail due to communication breakdowns, when data scientists and business leaders operate in silos, when employees lack channels to provide AI feedback, when hierarchical structures block information flow, or when leaders need to translate between technical and business perspectives.",
+      "stage": [
+        "idea",
+        "validation",
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "ai-leadership",
+      "tags": [
+        "communication-culture",
+        "flat-organisation",
+        "data-democratisation",
+        "feedback-loops",
+        "ai-adoption",
+        "cross-functional-teams",
+        "information-flow"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\ai-leadership\\ai-communication-culture.md"
+    },
+    {
+      "name": "ai-emotional-intelligence",
+      "description": "Argues that emotional intelligence becomes strategically critical precisely because of AI -- not despite it -- and provides leaders with practices for developing the soft skills that constitute the human competitive advantage in an AI-saturated economy. Covers empathy, self-awareness, communication beyond technical details, curiosity, proactive problem-solving, trust-building through vulnerability, and coaching teams in EI. Use when an AI project is failing due to poor leadership connection, when technical leaders cannot engage the workforce emotionally, when employees feel reduced to data points, when building the case for soft skills investment alongside AI investment, or when developing the human capabilities that AI cannot replicate.",
+      "stage": [
+        "idea",
+        "validation",
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "ai-leadership",
+      "tags": [
+        "emotional-intelligence",
+        "soft-skills",
+        "ai-leadership",
+        "empathy",
+        "trust",
+        "communication",
+        "curiosity",
+        "human-advantage"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\ai-leadership\\ai-emotional-intelligence.md"
+    },
+    {
+      "name": "ai-human-centered-approach",
+      "description": "Provides a comprehensive framework for deploying AI in ways that respect employee psychology, preserve human agency, and treat workforce well-being as a strategic priority rather than an afterthought. Addresses the hidden fears employees harbour about AI, the psychological damage of algorithmic supervision, and the practical steps for making human needs central to technology decisions. Use when employees resist AI adoption, when algorithmic monitoring is eroding morale, when AI-driven productivity targets create burnout, when planning an AI rollout that affects frontline workers, or when an AI project is failing and the technology is not the problem.",
+      "stage": [
+        "idea",
+        "validation",
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "ai-leadership",
+      "tags": [
+        "human-centered-ai",
+        "employee-experience",
+        "change-management",
+        "ai-adoption",
+        "psychological-safety",
+        "algorithmic-management",
+        "workforce-wellbeing",
+        "empathy"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\ai-leadership\\ai-human-centered-approach.md"
+    },
+    {
+      "name": "ai-inclusive-collaboration",
+      "description": "Provides a comprehensive framework for designing inclusive human-AI collaboration that keeps all stakeholders at the design table. Addresses exclusion dynamics, algorithm aversion, trust deficits, silo formation, and the human cost of automation-first strategies. Use when employees resist AI adoption, when AI design excludes non-technical voices, when human-AI collaboration feels extractive rather than empowering, when organisational silos hinder AI scaling, or when leaders need to reward human contributions in AI-augmented work.",
+      "stage": [
+        "idea",
+        "validation",
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "ai-leadership",
+      "tags": [
+        "human-ai-collaboration",
+        "inclusion",
+        "employee-engagement",
+        "algorithm-aversion",
+        "ai-trust",
+        "participatory-design",
+        "organisational-silos"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\ai-leadership\\ai-inclusive-collaboration.md"
+    },
+    {
+      "name": "ai-learning-for-leaders",
+      "description": "Guides non-technical leaders through building AI savviness without becoming AI experts, closing the gap between AI understanding and AI deployment. Applies the 'just savvy enough' principle and lifelong AI learning framework. Use when a leader feels inadequate about AI knowledge, defers too heavily to technologists, needs to build a business case for AI, wants to lead AI adoption without a technical background, or seeks to distinguish AI-knowledgeable from AI-savvy leadership.",
+      "stage": [
+        "idea",
+        "validation",
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "ai-leadership",
+      "tags": [
+        "ai-literacy",
+        "leadership-development",
+        "digital-transformation",
+        "ai-adoption",
+        "lifelong-learning",
+        "confidence-gap"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\ai-leadership\\ai-learning-for-leaders.md"
+    },
+    {
+      "name": "ai-purpose-driven-questions",
+      "description": "Teaches leaders to ground AI adoption in organisational purpose by asking the right questions before selecting tools. Applies the purpose-driven framework to prevent technology-for-technology's-sake deployments. Use when evaluating AI investments against business goals, when data scientists operate without strategic direction, when AI projects lack clear problem definitions, when aligning AI initiatives with company values, or when leaders are tempted to adopt AI because competitors have.",
+      "stage": [
+        "idea",
+        "validation",
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "ai-leadership",
+      "tags": [
+        "ai-strategy",
+        "purpose-alignment",
+        "data-driven-decisions",
+        "business-questions",
+        "ai-adoption",
+        "value-alignment"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\ai-leadership\\ai-purpose-driven-questions.md"
+    },
+    {
+      "name": "ai-stakeholder-balance",
+      "description": "Guides leaders through the ethical and strategic complexities of balancing multiple stakeholder interests during AI adoption, from employees and customers to society at large. Provides frameworks for responsible AI deployment, stakeholder impact mapping, and moral decision-making when efficiency gains conflict with human welfare. Use when evaluating whether an AI deployment will harm employees or customers, weighing automation against workforce impact, facing pressure to prioritise shareholders over other stakeholders, designing an AI ethics governance structure, or confronting the societal consequences of algorithmic decision-making.",
+      "stage": [
+        "idea",
+        "validation",
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "ai-leadership",
+      "tags": [
+        "stakeholder-management",
+        "ai-ethics",
+        "responsible-ai",
+        "risk-management",
+        "governance",
+        "societal-impact",
+        "fairness",
+        "ai-adoption"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\ai-leadership\\ai-stakeholder-balance.md"
+    },
+    {
+      "name": "ai-vision-and-strategy",
+      "description": "Guides leaders in developing and communicating a compelling AI vision that inspires rather than threatens, choosing augmentation over replacement as the strategic paradigm. Covers Perspective 1 (AI replaces humans) vs. Perspective 2 (AI augments humans), the tech-driving-tech trap, holistic communication, ethical foresight, and agile visionary leadership. Use when setting long-term AI strategy, when employees fear AI will eliminate their jobs, when AI adoption lacks a unifying narrative, when vision statements betray organisational identity, or when leaders need to translate AI potential into a story that builds commitment.",
+      "stage": [
+        "idea",
+        "validation",
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "ai-leadership",
+      "tags": [
+        "ai-vision",
+        "ai-strategy",
+        "augmentation-vs-replacement",
+        "holistic-communication",
+        "visionary-leadership",
+        "organisational-identity",
+        "agile-leadership"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\ai-leadership\\ai-vision-and-strategy.md"
+    },
+    {
+      "name": "creative-collaboration-and-context",
+      "description": "Explores how creative collaboration produces outcomes neither party could achieve alone, covering reference points without copying, the role of creative mythology, the prism of self as competitive advantage, context as meaning-maker, cross-domain adaptation, and translation as a creative act. Use when building creative partnerships, navigating co-founder dynamics, assembling creative teams, repositioning a product through context change, adapting business models across industries, translating technical innovation for new markets, or understanding why the same idea succeeds in one context and fails in another.",
+      "stage": [
+        "idea",
+        "validation",
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "creative",
+      "tags": [
+        "collaboration",
+        "context",
+        "adaptation",
+        "translation",
+        "point-of-view",
+        "reference",
+        "creative-teams",
+        "positioning"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\creative\\creative-collaboration-and-context.md"
+    },
+    {
+      "name": "creative-completion-and-renewal",
+      "description": "Addresses the hardest creative act -- finishing and releasing work -- covering the tension between experimenter and finisher mindsets, making choices when everything feels possible, accepting shades rather than absolutes, ending projects to begin anew, approaching new work with a clean slate, knowing when to stop refining, and recognising the energy living inside completed work. Use when struggling to ship a product, paralysed by perfectionism, unable to choose between competing directions, managing the transition between projects, deciding when a product version is ready for release, or recovering creative momentum after a major launch.",
+      "stage": [
+        "idea",
+        "validation",
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "creative",
+      "tags": [
+        "completion",
+        "perfectionism",
+        "shipping",
+        "decision-making",
+        "renewal",
+        "release",
+        "creative-energy",
+        "finishing"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\creative\\creative-completion-and-renewal.md"
+    },
+    {
+      "name": "creative-flow-and-inspiration",
+      "description": "Teaches the experiential practice of courting creative inspiration, sustaining openness, creating conditions for breakthrough ideas, staying in creative mode continuously, harnessing spontaneity, practising connected detachment, and using play as a serious creative method. Use when seeking breakthrough product ideas, preparing for creative sessions, diagnosing why innovation has stalled, designing environments for creative teams, recovering creative energy after burnout, or cultivating the founder's capacity for original thinking under pressure.",
+      "stage": [
+        "idea",
+        "validation",
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "creative",
+      "tags": [
+        "inspiration",
+        "flow",
+        "creativity",
+        "openness",
+        "spontaneity",
+        "play",
+        "detachment",
+        "innovation"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\creative\\creative-flow-and-inspiration.md"
+    },
+    {
+      "name": "creative-identity-and-purpose",
+      "description": "Applies the philosophy that creativity is a universal human capacity -- not a rare talent -- to help entrepreneurs reclaim their creative identity and redefine success on their own terms. Synthesises beginner's mind, the abundant mindset, non-competition, and creative freedom into a foundational framework for entrepreneurial self-expression. Use when doubting your creative ability, comparing yourself to competitors, trapped in scarcity thinking about ideas or market opportunity, struggling to define what success means for your venture, or needing permission to pursue an unconventional path.",
+      "stage": [
+        "idea",
+        "validation",
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "creative",
+      "tags": [
+        "creativity",
+        "identity",
+        "beginner-mind",
+        "abundance",
+        "non-competition",
+        "freedom",
+        "purpose",
+        "creative-confidence",
+        "creative-philosophy"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\creative\\creative-identity-and-purpose.md"
+    },
+    {
+      "name": "creative-obstacles",
+      "description": "Addresses the internal resistances that derail entrepreneurial creativity -- self-doubt, distraction, undermining voices, the danger of expectations, and impatience -- using a contemplative creative framework. Provides strategies for navigating the inner critic, managing creative possession, and cultivating patience as a creative virtue. Use when paralysed by self-doubt about your venture, overwhelmed by internal or external criticism, struggling with perfectionism or unrealistic expectations, unable to distinguish productive obsession from destructive compulsion, or losing patience with the creative timeline of building a company.",
+      "stage": [
+        "idea",
+        "validation",
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "creative",
+      "tags": [
+        "creativity",
+        "self-doubt",
+        "inner-critic",
+        "distraction",
+        "patience",
+        "expectations",
+        "resilience",
+        "creative-blocks",
+        "creative-philosophy"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\creative\\creative-obstacles.md"
+    },
+    {
+      "name": "creative-perception-and-awareness",
+      "description": "Develops the entrepreneur's capacity to receive creative signals by applying principles of tuning in, deep awareness, and perceptual sensitivity. Covers the vessel-and-filter model, seeing the unseen, nature as teacher, deep listening, the role of subconscious and memory, and how setting shapes creative output. Use when feeling creatively numb, missing market signals, unable to generate fresh product ideas, sensing that important information is passing you by, or needing to sharpen intuitive pattern recognition for innovation.",
+      "stage": [
+        "idea",
+        "validation",
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "creative",
+      "tags": [
+        "creativity",
+        "awareness",
+        "perception",
+        "tuning-in",
+        "listening",
+        "intuition",
+        "subconscious",
+        "pattern-recognition",
+        "creative-philosophy"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\creative\\creative-perception-and-awareness.md"
+    },
+    {
+      "name": "creative-practice-and-habit",
+      "description": "Transforms creativity from sporadic inspiration into daily discipline by applying principles of practice, habit formation, seed collection, experimentation, immersion in great works, and momentum management. Use when struggling to maintain a creative routine, waiting for inspiration to strike, unsure how to develop raw ideas into viable products, losing creative momentum mid-project, or wanting to improve the quality of creative inputs to elevate outputs.",
+      "stage": [
+        "idea",
+        "validation",
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "creative",
+      "tags": [
+        "creativity",
+        "practice",
+        "habits",
+        "experimentation",
+        "momentum",
+        "seeds",
+        "discipline",
+        "craft",
+        "creative-philosophy"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\creative\\creative-practice-and-habit.md"
+    },
+    {
+      "name": "creative-shaping-and-craft",
+      "description": "Guides the entrepreneur through shaping raw creative material into disciplined form, applying intention, rules, temporary constraints, assumption reversal, point-of-view discovery, pattern-breaking, and distillation to essence. Use when refining a product concept, setting creative direction for a brand, defining project constraints, challenging default assumptions about market or offering, finding a unique positioning voice, breaking creative stagnation, or stripping a pitch or product to its irreducible core.",
+      "stage": [
+        "idea",
+        "validation",
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "creative",
+      "tags": [
+        "creative-process",
+        "craft",
+        "constraints",
+        "intention",
+        "essence",
+        "refinement",
+        "point-of-view",
+        "assumptions"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\creative\\creative-shaping-and-craft.md"
+    },
+    {
+      "name": "choosing-and-executing",
+      "description": "Provides a toolkit for moving from deliberation to commitment and from commitment to results. Covers the cost of decision paralysis, the 70% rule for when to stop gathering information, implementation planning after the choice is made, transparency as a trust mechanism, handling challenges to decisions, and combating second-guessing through process review rather than outcome regret. Use when stuck in analysis paralysis, when a decision has been made but needs implementation momentum, when stakeholders challenge or resist a decision, when second-guessing erodes confidence, or when building a decision communication plan.",
+      "stage": [
+        "idea",
+        "validation",
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "decisions",
+      "tags": [
+        "analysis-paralysis",
+        "commitment",
+        "implementation",
+        "decision-communication",
+        "transparency",
+        "second-guessing",
+        "hindsight-bias",
+        "reversibility",
+        "decision-execution",
+        "stakeholder-trust"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\decisions\\choosing-and-executing.md"
+    },
+    {
+      "name": "decision-traps-and-roles",
+      "description": "Catalogues the invisible psychological traps that sabotage decisions -- anchoring, sunk cost, confirming evidence, framing, and status quo bias -- and pairs them with the RAPID model for clarifying who recommends, agrees, performs, inputs, and decides, plus a seven-step checklist for faster group decisions. Use when a team suspects cognitive bias is distorting a choice, when decision authority is ambiguous, when past investments are influencing current strategy, when negotiations are anchored by the other party's opening, or when organisational decisions stall because no one knows who owns the call.",
+      "stage": [
+        "idea",
+        "validation",
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "decisions",
+      "tags": [
+        "cognitive-bias",
+        "anchoring",
+        "sunk-cost",
+        "confirmation-bias",
+        "framing",
+        "status-quo",
+        "decision-roles",
+        "rapid-model",
+        "decision-checklist",
+        "group-decisions"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\decisions\\decision-traps-and-roles.md"
+    },
+    {
+      "name": "evaluating-options",
+      "description": "Provides six independent evaluation techniques for choosing among alternatives once they have been generated: joint evaluation (comparing options side by side rather than in isolation), the structural weaknesses of pros-and-cons lists and how to compensate, the Even Swaps method for rational trade-offs across incommensurable objectives, decision-making with limited data using satisficing and recognition-primed models, the CARVER six-part risk assessment tool, and a three-condition framework for calibrating when intuition is trustworthy versus dangerous. Use when evaluating multiple options against competing criteria, when a pros-and-cons list feels insufficient for a high-stakes choice, when trade-offs involve incomparable dimensions, when data is scarce and a decision cannot wait, when assessing risk across multiple assets or initiatives, or when debating whether to trust a gut feeling.",
+      "stage": [
+        "idea",
+        "validation",
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "decisions",
+      "tags": [
+        "evaluation",
+        "trade-offs",
+        "even-swaps",
+        "joint-evaluation",
+        "risk-assessment",
+        "carver",
+        "intuition",
+        "pros-and-cons",
+        "satisficing",
+        "decision-quality"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\decisions\\evaluating-options.md"
+    },
+    {
+      "name": "generating-solutions",
+      "description": "Assembles four independent techniques for producing better alternatives before evaluation begins: structured brainstorming with its known failure modes, the question burst method for reframing problems through questions rather than answers, BrainSwarming as a silent graph-based alternative to verbal brainstorming, design thinking's four phases (question, care, connect, commit), and the could-versus-should reframe that expands the solution space by suspending premature judgment. Use when brainstorming sessions feel stale, when a team converges on the first idea too quickly, when introverts are being drowned out, when a problem needs reframing before solutions are attempted, or when only two options seem to exist.",
+      "stage": [
+        "idea",
+        "validation",
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "decisions",
+      "tags": [
+        "brainstorming",
+        "idea-generation",
+        "brainswarming",
+        "design-thinking",
+        "reframing",
+        "question-burst",
+        "creative-problem-solving",
+        "could-vs-should",
+        "alternatives"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\decisions\\generating-solutions.md"
+    },
+    {
+      "name": "tough-decision-situations",
+      "description": "Addresses the four hardest decision scenarios founders face: teams that cannot reach consensus, choices where every option is bad, decisions that have already gone wrong, and calls that must be made under severe time pressure. Provides structured techniques for each scenario including disagree-and-commit protocols, least-worst analysis, early admission and course-correction frameworks, and recognition-primed decision heuristics. Use when the team is deadlocked and unable to converge, when all available options carry significant downside, when a prior decision has clearly failed and needs triage, when time pressure demands rapid judgment with incomplete information, or when standard decision frameworks assume conditions that do not exist.",
+      "stage": [
+        "idea",
+        "validation",
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "decisions",
+      "tags": [
+        "consensus",
+        "deadlock",
+        "bad-options",
+        "wrong-decision",
+        "time-pressure",
+        "sunk-cost",
+        "course-correction",
+        "disagree-and-commit",
+        "heuristics",
+        "triage",
+        "decision-recovery",
+        "value-complexity"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\decisions\\tough-decision-situations.md"
+    },
+    {
+      "name": "ambidexterity",
+      "description": "Applies O'Reilly and Tushman's organizational ambidexterity framework to balance exploitation of existing business with exploration of new opportunities. Assesses resource allocation between core operations and innovation initiatives, designs structurally or contextually ambidextrous organizations, and evaluates innovation portfolios. Use when a company needs to protect its core revenue while pursuing new growth, launching separate innovation units, or diagnosing why exploratory initiatives are being starved by day-to-day operations.",
+      "stage": [
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "frameworks",
+      "tags": [
+        "innovation",
+        "organizational-design",
+        "exploitation",
+        "exploration",
+        "dual-strategy"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\frameworks\\ambidexterity.md"
+    },
+    {
+      "name": "appreciative-inquiry",
+      "description": "Guides strengths-based organizational change using Cooperrider's Appreciative Inquiry 4D cycle: Discovery, Dream, Design, and Delivery. Surfaces peak experiences and positive patterns to amplify what works rather than fixing what is broken. Use when addressing team morale, redesigning processes, integrating acquisitions, reframing organizational challenges, or running culture transformation initiatives where traditional deficit-based problem-solving has stalled.",
+      "stage": [
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "frameworks",
+      "tags": [
+        "organisational-development",
+        "change-management",
+        "strengths-based",
+        "strategy",
+        "innovation"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\frameworks\\appreciative-inquiry.md"
+    },
+    {
+      "name": "art-of-war",
+      "description": "Applies Sun Tzu's strategic principles to competitive business situations, covering self-knowledge and competitor intelligence, winning without direct confrontation, speed and timing, terrain analysis, and strategic positioning. Use when assessing competitive landscapes, developing market entry strategies, evaluating when to fight or avoid competitors, conducting competitive intelligence audits, or designing stealth positioning for startups facing well-resourced incumbents.",
+      "stage": [
+        "validation",
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "frameworks",
+      "tags": [
+        "competitive-strategy",
+        "leadership",
+        "positioning",
+        "tactical-advantage",
+        "decision-making"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\frameworks\\art-of-war.md"
+    },
+    {
+      "name": "balanced-scorecard",
+      "description": "Builds and evaluates Kaplan and Norton's Balanced Scorecard across four perspectives: Financial, Customer, Internal Process, and Learning and Growth. Creates strategy maps linking causal chains from learning investments through process improvements to customer outcomes and financial results. Use when designing KPI systems, aligning teams around strategy, diagnosing why financial metrics are lagging, auditing measurement balance, or establishing leading indicators for organizational health.",
+      "stage": [
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "frameworks",
+      "tags": [
+        "performance-measurement",
+        "strategic-alignment",
+        "kpi-design",
+        "strategy-execution",
+        "management-systems"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\frameworks\\balanced-scorecard.md"
+    },
+    {
+      "name": "belbin-team-roles",
+      "description": "Analyzes team composition using Belbin's nine team roles across Thinking, Action, and People categories. Maps team members to roles such as Plant, Shaper, Coordinator, Implementer, and others to identify gaps, overlaps, and imbalances. Use when hiring to fill role gaps, diagnosing recurring team conflicts, auditing founding team balance, resolving execution problems caused by missing behavioral profiles, or assessing board composition.",
+      "stage": [
+        "validation",
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "frameworks",
+      "tags": [
+        "team-composition",
+        "hiring",
+        "roles",
+        "collaboration",
+        "team-building"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\frameworks\\belbin-team-roles.md"
+    },
+    {
+      "name": "black-swans",
+      "description": "Applies Taleb's Black Swan theory to assess and mitigate exposure to rare, high-impact unpredictable events. Distinguishes between Mediocristan and Extremistan domains, designs barbell strategies, builds antifragility, and audits business vulnerabilities including supply chain concentration, customer dependency, and regulatory risk. Use when stress-testing a business model, evaluating tail risks, designing resilience architecture, or building robust strategies that survive shocks rather than attempting to predict them.",
+      "stage": [
+        "validation",
+        "growth",
+        "scale"
+      ],
+      "category": "frameworks",
+      "tags": [
+        "risk-management",
+        "uncertainty",
+        "resilience",
+        "probability",
+        "tail-risk"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\frameworks\\black-swans.md"
+    },
+    {
+      "name": "blue-ocean-strategy",
+      "description": "Applies Kim and Mauborgne's Blue Ocean Strategy to create uncontested market space through value innovation. Uses the Strategy Canvas to map competitive factors, the ERRC Grid to Eliminate-Reduce-Raise-Create value elements, and the Three Tiers of Noncustomers to identify untapped demand. Use when entering saturated markets, escaping price-based competition, redesigning a value proposition, identifying noncustomer segments, or evaluating whether a new venture creates a genuinely new market category.",
+      "stage": [
+        "idea",
+        "validation",
+        "early-traction",
+        "growth"
+      ],
+      "category": "frameworks",
+      "tags": [
+        "market-creation",
+        "competitive-strategy",
+        "value-innovation",
+        "differentiation",
+        "strategic-positioning"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\frameworks\\blue-ocean-strategy.md"
+    },
+    {
+      "name": "business-model-canvas",
+      "description": "Structures and evaluates business models using Osterwalder's nine-block Business Model Canvas: Customer Segments, Value Propositions, Channels, Customer Relationships, Revenue Streams, Key Resources, Key Activities, Key Partnerships, and Cost Structure. Use when designing a new venture, comparing business model alternatives, stress-testing assumptions, planning pivots, exploring revenue model options, or identifying hidden dependencies between business model components.",
+      "stage": [
+        "idea",
+        "validation",
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "frameworks",
+      "tags": [
+        "business-model",
+        "value-proposition",
+        "startup-design",
+        "strategy",
+        "lean-methodology"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\frameworks\\business-model-canvas.md"
+    },
+    {
+      "name": "carnegie-win-friends",
+      "description": "Applies Dale Carnegie's interpersonal influence principles for building relationships, earning trust, and leading without authority. Covers techniques for handling people, making others feel valued, winning people to your thinking, and changing behavior without giving offense. Use when building advisory networks, repairing strained stakeholder relationships, improving investor communications, navigating co-founder conflicts, or developing the interpersonal skills that underpin hiring, sales, and fundraising.",
+      "stage": [
+        "idea",
+        "validation",
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "frameworks",
+      "tags": [
+        "interpersonal-skills",
+        "influence",
+        "leadership",
+        "networking",
+        "communication"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\frameworks\\carnegie-win-friends.md"
+    },
+    {
+      "name": "cialdini-influence",
+      "description": "Applies Cialdini's seven principles of ethical persuasion -- Reciprocity, Commitment and Consistency, Social Proof, Authority, Liking, Scarcity, and Unity -- to business contexts including sales, marketing, fundraising, and negotiation. Use when designing conversion funnels, optimizing sales processes, preparing fundraising strategies, auditing marketing materials for persuasive effectiveness, planning negotiation tactics, or building community-driven growth while maintaining ethical boundaries.",
+      "stage": [
+        "validation",
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "frameworks",
+      "tags": [
+        "persuasion",
+        "influence",
+        "psychology",
+        "sales",
+        "marketing",
+        "negotiation"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\frameworks\\cialdini-influence.md"
+    },
+    {
+      "name": "covey-seven-habits",
+      "description": "Applies Stephen Covey's Seven Habits framework for personal and interpersonal effectiveness, progressing from dependence through independence to interdependence. Covers proactivity, mission clarity, prioritization, Win/Win thinking, empathic listening, synergy, and renewal. Use when conducting personal effectiveness audits, drafting mission statements, preparing Win/Win negotiations, resolving co-founder conflicts, designing founder renewal plans to prevent burnout, or building character-based leadership culture.",
+      "stage": [
+        "idea",
+        "validation",
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "frameworks",
+      "tags": [
+        "personal-effectiveness",
+        "leadership",
+        "character-ethics",
+        "habits",
+        "interpersonal-skills",
+        "self-management"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\frameworks\\covey-seven-habits.md"
+    },
+    {
+      "name": "disruptive-innovation",
+      "description": "Analyzes market opportunities and threats using Christensen's Disruptive Innovation theory, distinguishing between sustaining and disruptive innovation, low-end and new-market disruption. Evaluates incumbent vulnerability, asymmetric advantages, and technology improvement trajectories. Use when assessing whether a startup has a genuinely disruptive position, mapping incumbent blind spots, designing market entry strategies that avoid direct competition, defending against disruption from below, or evaluating whether to pursue low-end or new-market footholds.",
+      "stage": [
+        "idea",
+        "validation",
+        "early-traction",
+        "growth"
+      ],
+      "category": "frameworks",
+      "tags": [
+        "disruption",
+        "competitive-strategy",
+        "market-entry",
+        "incumbent-vulnerability",
+        "innovation-theory"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\frameworks\\disruptive-innovation.md"
+    },
+    {
+      "name": "doblin-ten-types",
+      "description": "Maps and designs innovation strategy using Doblin's Ten Types of Innovation across Configuration (Profit Model, Network, Structure, Process), Offering (Product Performance, Product System), and Experience (Service, Channel, Brand, Customer Engagement). Use when auditing current innovation profile, identifying competitive white space, building multi-layered defensible advantages, breaking through competitive ceilings caused by product-only innovation, or designing a new business with structural moats from inception.",
+      "stage": [
+        "idea",
+        "validation",
+        "early-traction",
+        "growth"
+      ],
+      "category": "frameworks",
+      "tags": [
+        "innovation-strategy",
+        "business-model-design",
+        "competitive-advantage",
+        "value-creation",
+        "differentiation"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\frameworks\\doblin-ten-types.md"
+    },
+    {
+      "name": "eisenhower-matrix",
+      "description": "Prioritizes tasks and time allocation using the Eisenhower Matrix, classifying activities into four quadrants by urgency and importance: Do (urgent and important), Schedule (important but not urgent), Delegate (urgent but not important), and Eliminate (neither). Use when overwhelmed by competing demands, auditing how a founder spends their time, designing delegation frameworks, building QII-first weekly calendars, or shifting organizational time allocation from reactive firefighting to strategic work.",
+      "stage": [
+        "idea",
+        "validation",
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "frameworks",
+      "tags": [
+        "prioritization",
+        "time-management",
+        "productivity",
+        "decision-making"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\frameworks\\eisenhower-matrix.md"
+    },
+    {
+      "name": "emotional-intelligence",
+      "description": "Assesses and develops leadership emotional intelligence using Goleman's five-domain EQ framework: Self-Awareness, Self-Regulation, Motivation, Empathy, and Social Skill. Diagnoses interpersonal conflicts, evaluates team EQ profiles, and builds development plans for emotional competencies. Use when resolving co-founder tensions, preparing for high-stakes investor meetings, scaling team culture, diagnosing declining employee engagement, or developing the relational leadership skills that differentiate outstanding from average leaders.",
+      "stage": [
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "frameworks",
+      "tags": [
+        "leadership",
+        "self-awareness",
+        "empathy",
+        "team-dynamics",
+        "interpersonal-skills"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\frameworks\\emotional-intelligence.md"
+    },
+    {
+      "name": "flow-state",
+      "description": "Optimizes individual and team productivity using Csikszentmihalyi's flow state framework, covering the conditions for flow (clear goals, immediate feedback, challenge-skill balance), the four-stage flow cycle, and organizational flow design. Use when auditing personal or team focus time, diagnosing productivity loss from meeting overload and context-switching, designing flow-protective work schedules, calibrating challenge-skill balance on projects, or building recovery protocols to prevent founder burnout.",
+      "stage": [
+        "idea",
+        "validation",
+        "early-traction",
+        "growth"
+      ],
+      "category": "frameworks",
+      "tags": [
+        "productivity",
+        "creativity",
+        "peak-performance",
+        "focus",
+        "engagement"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\frameworks\\flow-state.md"
+    },
+    {
+      "name": "four-ps-marketing",
+      "description": "Designs and audits marketing strategy using McCarthy and Kotler's Four Ps framework: Product, Price, Place, and Promotion. Evaluates coherence across all four marketing mix elements to identify misalignments that undermine go-to-market effectiveness. Use when launching a new product, diagnosing why conversion rates are low despite strong product-market fit, redesigning pricing strategy, evaluating distribution channel options, planning go-to-market campaigns, or expanding from direct-to-consumer into retail.",
+      "stage": [
+        "validation",
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "frameworks",
+      "tags": [
+        "marketing",
+        "product-market-fit",
+        "pricing",
+        "go-to-market",
+        "positioning"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\frameworks\\four-ps-marketing.md"
+    },
+    {
+      "name": "giving-feedback",
+      "description": "Structures effective feedback conversations using the Situation-Behaviour-Impact (SBI) model from the Center for Creative Leadership. Separates observable behavior from interpretation, anchors feedback in specific situations, and articulates concrete impact. Use when preparing difficult performance conversations, constructing precise positive or corrective feedback, training first-time managers in feedback delivery, redesigning performance review systems, or building an organizational feedback culture.",
+      "stage": [
+        "validation",
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "frameworks",
+      "tags": [
+        "feedback",
+        "communication",
+        "management",
+        "performance",
+        "coaching"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\frameworks\\giving-feedback.md"
+    },
+    {
+      "name": "grow-model",
+      "description": "Facilitates coaching conversations and structured decision-making using Whitmore's GROW model: Goal (clarify objectives), Reality (assess current state honestly), Options (generate alternatives), and Will (commit to action). Use when coaching team members, making strategic decisions as a founder, breaking through analysis paralysis, conducting self-coaching sessions on difficult choices, preparing one-on-ones, or developing management capability across a growing leadership team.",
+      "stage": [
+        "idea",
+        "validation",
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "frameworks",
+      "tags": [
+        "coaching",
+        "goal-setting",
+        "problem-solving",
+        "one-on-ones",
+        "mentoring"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\frameworks\\grow-model.md"
+    },
+    {
+      "name": "growth-mindset",
+      "description": "Applies Carol Dweck's growth mindset framework to individual resilience and organizational culture, distinguishing between fixed mindset (ability is innate) and growth mindset (ability develops through effort and strategy). Use when processing failure and setbacks, reframing team responses to challenges, designing hiring interview protocols that assess learning orientation, transforming performance review systems, building learning cultures in startups, or diagnosing why a team avoids risk and experimentation.",
+      "stage": [
+        "idea",
+        "validation",
+        "early-traction",
+        "growth"
+      ],
+      "category": "frameworks",
+      "tags": [
+        "mindset",
+        "learning",
+        "resilience",
+        "talent-development",
+        "culture"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\frameworks\\growth-mindset.md"
+    },
+    {
+      "name": "growth-share-matrix",
+      "description": "Analyzes product and business unit portfolios using the BCG Growth Share Matrix, classifying offerings into Stars, Cash Cows, Question Marks, and Dogs based on market growth rate and relative market share. Use when making resource allocation decisions across multiple products or business lines, evaluating which initiatives to invest in or divest, prioritizing a product portfolio, diagnosing why certain products drain resources without returns, or planning strategic investment sequencing at growth and scale stages.",
+      "stage": [
+        "growth",
+        "scale"
+      ],
+      "category": "frameworks",
+      "tags": [
+        "portfolio-management",
+        "resource-allocation",
+        "product-strategy",
+        "strategic-planning",
+        "investment-prioritisation"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\frameworks\\growth-share-matrix.md"
+    },
+    {
+      "name": "hackman-enabling-conditions",
+      "description": "Diagnoses and designs team effectiveness using Hackman's six enabling conditions: a real team, compelling direction, right people, sound structure, supportive context, and expert coaching. Shifts focus from blaming team members to establishing the structural and environmental conditions that make high performance probable. Use when teams are underperforming despite talent, designing new team structures, onboarding a leadership hire, auditing why a specific team is stuck, or building the organizational infrastructure for effective teams at scale.",
+      "stage": [
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "frameworks",
+      "tags": [
+        "team-effectiveness",
+        "organizational-design",
+        "management",
+        "team-structure",
+        "leadership",
+        "performance"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\frameworks\\hackman-enabling-conditions.md"
+    },
+    {
+      "name": "johari-window",
+      "description": "Improves self-awareness, trust, and team communication using the Johari Window model with its four panes: Open (known to self and others), Blind Spot (known to others, not self), Hidden (known to self, not others), and Unknown. Use when building trust within teams, identifying leadership blind spots, improving co-founder communication, designing feedback rituals that expand the Open pane, diagnosing why a team suffers from misinterpretation and defensive posturing, or developing self-awareness as a leadership competency.",
+      "stage": [
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "frameworks",
+      "tags": [
+        "self-awareness",
+        "feedback",
+        "trust",
+        "team-dynamics",
+        "communication"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\frameworks\\johari-window.md"
+    },
+    {
+      "name": "kaizen-bpr",
+      "description": "Applies two complementary process improvement philosophies: Kaizen (continuous incremental improvement) and Business Process Reengineering (radical process redesign from scratch). Helps determine when to refine existing processes versus when to tear them up and rebuild. Use when operational efficiency is declining, processes have accumulated technical debt, preparing for rapid scaling, diagnosing bottlenecks, choosing between incremental optimization and transformative redesign, or building a culture of continuous improvement.",
+      "stage": [
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "frameworks",
+      "tags": [
+        "process-improvement",
+        "operational-excellence",
+        "continuous-improvement",
+        "transformation",
+        "lean-operations"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\frameworks\\kaizen-bpr.md"
+    },
+    {
+      "name": "kotter-change-model",
+      "description": "Guides organizational change initiatives using Kotter's eight-step model: creating urgency, forming a guiding coalition, developing a vision, communicating the vision, empowering action, generating short-term wins, consolidating gains, and anchoring changes in culture. Use when leading a strategic pivot, implementing organizational restructuring, driving cultural transformation, managing post-acquisition integration, rolling out new processes at scale, or diagnosing why previous change efforts have failed.",
+      "stage": [
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "frameworks",
+      "tags": [
+        "change-management",
+        "leadership",
+        "transformation",
+        "organizational-culture",
+        "implementation"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\frameworks\\kotter-change-model.md"
+    },
+    {
+      "name": "leadership-pipeline",
+      "description": "Diagnoses leadership development blockages using Charan's six passage transitions from individual contributor through enterprise manager. Evaluates skills, time allocation, and values shifts required at each leadership level. Use when founders cannot let go of operational tasks, managers are failing after promotion, succession planning is needed, or the organization is experiencing growth-stage leadership bottlenecks.",
+      "stage": [
+        "growth",
+        "scale"
+      ],
+      "category": "frameworks",
+      "tags": [
+        "leadership-development",
+        "succession-planning",
+        "organizational-design",
+        "management",
+        "talent",
+        "scaling"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\frameworks\\leadership-pipeline.md"
+    },
+    {
+      "name": "lean-in",
+      "description": "Applies Sandberg's Lean In framework to diagnose and address gender barriers in organizations, covering the ambition gap, mentor-sponsor deficit, and structural inclusion deficits. Use when designing inclusive hiring processes, building sponsorship programmes, analyzing gender diversity gaps, retaining senior women, or auditing promotion equity across the organization.",
+      "stage": [
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "frameworks",
+      "tags": [
+        "leadership",
+        "gender",
+        "diversity",
+        "career-development",
+        "inclusion"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\frameworks\\lean-in.md"
+    },
+    {
+      "name": "lewin-leadership-styles",
+      "description": "Assesses leadership approach using Lewin's three styles: autocratic, democratic, and laissez-faire. Evaluates the fit between a leader's dominant style and their organizational context. Use when diagnosing team dysfunction caused by management style, transitioning from founder-led to distributed decision-making, navigating a crisis requiring temporary style shifts, or auditing the founding team's leadership dynamics.",
+      "stage": [
+        "idea",
+        "validation",
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "frameworks",
+      "tags": [
+        "leadership",
+        "management-style",
+        "team-dynamics",
+        "organizational-culture",
+        "decision-making"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\frameworks\\lewin-leadership-styles.md"
+    },
+    {
+      "name": "maslow-hierarchy",
+      "description": "Analyzes human motivation through Maslow's five-tier hierarchy of needs: physiological, safety, belonging, esteem, and self-actualization. Maps customer need levels for product positioning and employee motivation for retention strategy. Use when diagnosing employee disengagement despite good pay, repositioning product value propositions, auditing organizational maturity, or aligning incentives with the actual need level of the audience.",
+      "stage": [
+        "idea",
+        "validation",
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "frameworks",
+      "tags": [
+        "motivation",
+        "customer-psychology",
+        "employee-engagement",
+        "product-design",
+        "human-needs",
+        "organizational-culture"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\frameworks\\maslow-hierarchy.md"
+    },
+    {
+      "name": "myers-briggs-type-indicator",
+      "description": "Maps team cognitive diversity using the MBTI four-dichotomy personality framework: Extraversion/Introversion, Sensing/Intuition, Thinking/Feeling, Judging/Perceiving. Use when diagnosing co-founder communication friction, designing cognitively diverse teams, adapting communication style for different audiences, resolving recurring interpersonal conflicts, or identifying blind spots in team composition.",
+      "stage": [
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "frameworks",
+      "tags": [
+        "personality",
+        "team-composition",
+        "communication",
+        "hiring",
+        "leadership-style",
+        "self-awareness"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\frameworks\\myers-briggs-type-indicator.md"
+    },
+    {
+      "name": "net-promoter-score",
+      "description": "Designs and analyzes Net Promoter Score programmes for measuring customer loyalty through promoter, passive, and detractor classification. Covers NPS calculation, segmented analysis, closed-loop feedback processes, and revenue impact modelling. Use when measuring product-market fit, diagnosing retention problems, benchmarking customer satisfaction, building a customer feedback system, or connecting loyalty metrics to revenue growth.",
+      "stage": [
+        "validation",
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "frameworks",
+      "tags": [
+        "customer-loyalty",
+        "customer-feedback",
+        "growth-metrics",
+        "retention",
+        "voice-of-customer"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\frameworks\\net-promoter-score.md"
+    },
+    {
+      "name": "neuro-linguistic-programming",
+      "description": "Applies NLP techniques for rapport-building, reframing, anchoring, and meta-model questioning in business communication. Covers representational system matching, pacing and leading, and linguistic precision tools. Use when preparing for investor pitches, improving sales close rates, navigating board disagreements, refining communication for different audience types, or extracting actionable insights from vague customer feedback.",
+      "stage": [
+        "validation",
+        "early-traction",
+        "growth"
+      ],
+      "category": "frameworks",
+      "tags": [
+        "communication",
+        "persuasion",
+        "rapport-building",
+        "reframing",
+        "sales"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\frameworks\\neuro-linguistic-programming.md"
+    },
+    {
+      "name": "organisational-culture",
+      "description": "Audits organizational culture using Schein's three-level model: visible artifacts, espoused values, and basic underlying assumptions. Diagnoses gaps between stated values and actual behaviour to reveal the invisible beliefs driving organizational dynamics. Use when experiencing culture dilution during rapid hiring, planning M&A cultural integration, diagnosing why culture change initiatives fail, or auditing founder imprint on company norms.",
+      "stage": [
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "frameworks",
+      "tags": [
+        "culture",
+        "leadership",
+        "organisational-design",
+        "values",
+        "assumptions"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\frameworks\\organisational-culture.md"
+    },
+    {
+      "name": "porters-five-forces",
+      "description": "Analyzes competitive industry dynamics using Porter's Five Forces framework. Evaluates threat of new entrants, supplier power, buyer power, substitution threats, and competitive rivalry. Use when assessing market entry decisions, developing competitive strategy, evaluating industry attractiveness, or analyzing pricing power.",
+      "stage": [
+        "idea",
+        "validation",
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "frameworks",
+      "tags": [
+        "competitive-analysis",
+        "industry-structure",
+        "strategy",
+        "market-entry",
+        "profitability"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\frameworks\\porters-five-forces.md"
+    },
+    {
+      "name": "product-life-cycle",
+      "description": "Diagnoses a product's current lifecycle phase -- introduction, growth, maturity, or decline -- and prescribes phase-appropriate strategy for pricing, marketing, investment, and competitive response. Use when assessing whether a product is entering maturity, planning portfolio balance across lifecycle stages, timing market entry, designing extension strategies for declining products, or deciding between harvest, niche, divest, and exit options.",
+      "stage": [
+        "idea",
+        "validation",
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "frameworks",
+      "tags": [
+        "product-strategy",
+        "market-timing",
+        "competitive-dynamics",
+        "pricing-strategy",
+        "portfolio-management"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\frameworks\\product-life-cycle.md"
+    },
+    {
+      "name": "psychological-safety",
+      "description": "Assesses and builds team psychological safety using Edmondson's framework and Clark's four developmental stages: inclusion, learner, contributor, and challenger safety. Identifies leadership behaviours that build or erode the shared belief that interpersonal risk-taking is safe. Use when team members withhold concerns, meetings lack candour, post-mortems reveal foreseeable failures that went unreported, or founders need to diagnose why innovation has narrowed.",
+      "stage": [
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "frameworks",
+      "tags": [
+        "team-performance",
+        "culture",
+        "trust",
+        "innovation",
+        "leadership"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\frameworks\\psychological-safety.md"
+    },
+    {
+      "name": "radical-candor",
+      "description": "Applies Kim Scott's Radical Candor framework to improve feedback culture by balancing caring personally with challenging directly. Maps management behaviour across four quadrants: Radical Candor, Ruinous Empathy, Obnoxious Aggression, and Manipulative Insincerity. Use when preparing difficult performance conversations, diagnosing a culture of avoidance, training new managers on feedback, or addressing top-performer attrition caused by insufficient challenge.",
+      "stage": [
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "frameworks",
+      "tags": [
+        "feedback",
+        "management",
+        "communication",
+        "leadership",
+        "culture"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\frameworks\\radical-candor.md"
+    },
+    {
+      "name": "scenario-planning",
+      "description": "Constructs multiple plausible future scenarios using a 2x2 matrix of critical uncertainties, then stress-tests strategy against each scenario to develop robust responses. Identifies no-regret moves, hedging actions, and strategic options. Use when facing major capital allocation decisions, evaluating market expansion under regulatory uncertainty, preparing for technology disruption, or building enterprise risk management into strategic planning cycles.",
+      "stage": [
+        "validation",
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "frameworks",
+      "tags": [
+        "strategy",
+        "uncertainty",
+        "planning",
+        "futures",
+        "decision-making"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\frameworks\\scenario-planning.md"
+    },
+    {
+      "name": "shamrock-organisation",
+      "description": "Designs workforce architecture using Handy's Shamrock Organisation model with three leaves: professional core, contractual fringe, and flexible labour force. Evaluates which roles belong in each leaf to optimize cost structure, agility, and institutional knowledge. Use when planning first hires, deciding what to outsource, preparing for international expansion, auditing workforce composition, or reducing fixed costs while preserving strategic capability.",
+      "stage": [
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "frameworks",
+      "tags": [
+        "organisational-design",
+        "workforce-strategy",
+        "outsourcing",
+        "flexible-labour",
+        "talent-management"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\frameworks\\shamrock-organisation.md"
+    },
+    {
+      "name": "situational-leadership",
+      "description": "Matches leadership style to follower development level using Hersey and Blanchard's Situational Leadership model. Maps four styles -- directing, coaching, supporting, delegating -- to four development levels based on competence and commitment per task. Use when diagnosing style mismatches causing disengagement, assessing delegation readiness, onboarding experienced hires who are new to the domain, or building a management training curriculum.",
+      "stage": [
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "frameworks",
+      "tags": [
+        "leadership",
+        "management",
+        "team-development",
+        "delegation",
+        "coaching"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\frameworks\\situational-leadership.md"
+    },
+    {
+      "name": "smart-goals",
+      "description": "Converts vague objectives into Specific, Measurable, Achievable, Relevant, and Time-bound goals. Provides structure for cascading company-level objectives into team-level commitments with accountability. Use when translating founder vision into execution milestones, aligning departments around shared metrics, converting OKRs into actionable goals, critiquing existing goals for rigour, or establishing quarterly planning discipline.",
+      "stage": [
+        "idea",
+        "validation",
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "frameworks",
+      "tags": [
+        "goal-setting",
+        "planning",
+        "execution",
+        "performance-management",
+        "accountability"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\frameworks\\smart-goals.md"
+    },
+    {
+      "name": "swot-pest-analysis",
+      "description": "Conducts integrated SWOT (Strengths, Weaknesses, Opportunities, Threats) and PEST (Political, Economic, Social, Technological) strategic analysis. Generates actionable strategies through the TOWS matrix by crossing internal capabilities with external forces. Use when evaluating market entry, preparing board strategy sessions, assessing competitive positioning, scanning the macro environment for regulatory or economic shifts, or generating evidence-backed strategic options.",
+      "stage": [
+        "idea",
+        "validation",
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "frameworks",
+      "tags": [
+        "strategic-analysis",
+        "environmental-scanning",
+        "competitive-positioning",
+        "opportunity-assessment",
+        "risk-mapping"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\frameworks\\swot-pest-analysis.md"
+    },
+    {
+      "name": "systems-thinking",
+      "description": "Analyzes complex business problems through systems thinking by mapping causal loops, identifying reinforcing and balancing feedback dynamics, and diagnosing system archetypes like Fixes That Fail, Shifting the Burden, and Limits to Growth. Use when quick fixes keep backfiring, growth plateaus unexpectedly, departments optimize locally at the expense of the whole, or interventions produce unintended consequences across the organization.",
+      "stage": [
+        "validation",
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "frameworks",
+      "tags": [
+        "systems-dynamics",
+        "feedback-loops",
+        "complexity",
+        "holistic-analysis",
+        "causal-reasoning",
+        "organisational-design"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\frameworks\\systems-thinking.md"
+    },
+    {
+      "name": "thinking-fast-and-slow",
+      "description": "Audits business decisions for cognitive biases using Kahneman's dual-process theory of System 1 (fast, intuitive) and System 2 (slow, analytical) thinking. Covers overconfidence, anchoring, loss aversion, planning fallacy, and availability heuristic. Use when conducting pre-mortems on major initiatives, debiasing fundraising projections, applying reference-class forecasting, sorting decisions by required processing mode, or building structured decision protocols.",
+      "stage": [
+        "validation",
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "frameworks",
+      "tags": [
+        "cognitive-bias",
+        "decision-making",
+        "behavioural-economics",
+        "heuristics",
+        "risk-assessment"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\frameworks\\thinking-fast-and-slow.md"
+    },
+    {
+      "name": "thomas-kilmann-conflict",
+      "description": "Diagnoses and resolves conflicts using the Thomas-Kilmann five-mode framework: competing, collaborating, compromising, avoiding, and accommodating, mapped across assertiveness and cooperativeness dimensions. Use when navigating co-founder disagreements, mediating cross-functional team friction, choosing the right conflict mode for high-stakes decisions, expanding personal conflict style range, or designing conflict resolution processes for the organization.",
+      "stage": [
+        "validation",
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "frameworks",
+      "tags": [
+        "conflict-resolution",
+        "negotiation",
+        "team-dynamics",
+        "communication",
+        "leadership"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\frameworks\\thomas-kilmann-conflict.md"
+    },
+    {
+      "name": "tipping-point",
+      "description": "Analyzes viral growth potential using Gladwell's Tipping Point framework through three rules: the Law of the Few (Connectors, Mavens, Salespeople), the Stickiness Factor, and the Power of Context. Use when product growth is stubbornly linear despite high satisfaction, designing launch strategies for organic adoption, engineering shareable product moments, identifying key influencers in a target market, or diagnosing why a superior product fails to spread.",
+      "stage": [
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "frameworks",
+      "tags": [
+        "virality",
+        "growth-strategy",
+        "network-effects",
+        "word-of-mouth",
+        "adoption"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\frameworks\\tipping-point.md"
+    },
+    {
+      "name": "trust-equation",
+      "description": "Diagnoses and builds trust using Maister's Trust Equation: Trust = (Credibility + Reliability + Intimacy) / Self-Orientation. Evaluates each variable with evidence-based scoring and prescribes targeted improvements. Use when losing investor confidence, experiencing customer churn despite strong product, repairing damaged stakeholder relationships, preparing fundraising trust strategies, or auditing team trust dynamics.",
+      "stage": [
+        "idea",
+        "validation",
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "frameworks",
+      "tags": [
+        "trust",
+        "relationships",
+        "credibility",
+        "leadership",
+        "sales"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\frameworks\\trust-equation.md"
+    },
+    {
+      "name": "tuckman-team-stages",
+      "description": "Diagnoses team development stage using Tuckman's five-phase model: Forming, Storming, Norming, Performing, and Adjourning. Prescribes stage-appropriate leadership actions and identifies progression barriers. Use when a new team is struggling to gel, conflict emerges after initial politeness, teams regress after adding new members, post-acquisition integration stalls, or leaders need to facilitate productive storming rather than suppress it.",
+      "stage": [
+        "idea",
+        "validation",
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "frameworks",
+      "tags": [
+        "team-development",
+        "team-dynamics",
+        "group-process",
+        "collaboration",
+        "conflict-management"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\frameworks\\tuckman-team-stages.md"
+    },
+    {
+      "name": "vuca-framework",
+      "description": "Classifies unpredictable environments into four distinct dimensions -- Volatility, Uncertainty, Complexity, and Ambiguity -- each requiring a different strategic response: Vision, Understanding, Clarity, and Agility respectively. Use when navigating regulatory grey zones, responding to sudden competitive disruption, reducing operational complexity during scaling, designing rapid experimentation programmes under ambiguity, or building organizational resilience.",
+      "stage": [
+        "validation",
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "frameworks",
+      "tags": [
+        "strategy",
+        "uncertainty",
+        "risk-management",
+        "adaptability",
+        "scenario-planning",
+        "resilience"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\frameworks\\vuca-framework.md"
+    },
+    {
+      "name": "win-win-negotiation",
+      "description": "Prepares and conducts negotiations using Fisher and Ury's principled negotiation method from Getting to Yes. Applies four principles: separate people from problems, focus on interests not positions, generate options for mutual gain, and insist on objective criteria. Use when negotiating term sheets, structuring enterprise contracts, resolving co-founder equity disputes, preparing for acquisition discussions, or debriefing completed negotiations for improvement.",
+      "stage": [
+        "validation",
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "frameworks",
+      "tags": [
+        "negotiation",
+        "conflict-resolution",
+        "partnerships",
+        "deal-making",
+        "strategy"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\frameworks\\win-win-negotiation.md"
+    },
+    {
+      "name": "coalition-and-partnership-games",
+      "description": "Analyses partnership structures, cofounder equity splits, and alliance formation using coalitional game theory. Applies Shapley Value for contribution-based allocation, imputation sets and the core for stability testing, and coalition disintegration models to predict breakups. Use when splitting equity among cofounders, structuring joint ventures, negotiating alliance terms, evaluating vendor partnerships, diagnosing why a partnership is failing, or determining fair cost-sharing among unequal participants.",
+      "stage": [
+        "idea",
+        "validation",
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "game-theory",
+      "tags": [
+        "coalitions",
+        "partnerships",
+        "equity-split",
+        "shapley-value",
+        "alliances",
+        "cofounder",
+        "game-theory",
+        "fair-allocation"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\game-theory\\coalition-and-partnership-games.md"
+    },
+    {
+      "name": "evolutionary-strategy",
+      "description": "Applies evolutionary game theory to competitive strategy and market dynamics. Models markets as populations of players adopting different strategies, using the Hawk-Dove game for aggression calibration, follow-the-crowd dynamics for herding analysis, and Evolutionarily Stable Strategy (ESS) for predicting which competitive behaviours persist. Use when choosing between aggressive and cooperative market positioning, analysing industry convergence or fragmentation, timing market entry, understanding why competitors behave as they do, evaluating whether a disruptive strategy can break an established equilibrium, or diagnosing herding behaviour in a market.",
+      "stage": [
+        "validation",
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "game-theory",
+      "tags": [
+        "evolutionary-game-theory",
+        "hawk-dove",
+        "competitive-strategy",
+        "market-dynamics",
+        "ess",
+        "herding",
+        "disruption",
+        "game-theory"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\game-theory\\evolutionary-strategy.md"
+    },
+    {
+      "name": "first-mover-strategy",
+      "description": "Analyzes first-mover advantage, second-mover advantage, credible commitments, and credible threats in sequential strategic games. Covers the Stackelberg leader-follower model, the Chicken Game for competitive standoffs, the market entry game for incumbent-entrant dynamics, and burning bridges as a commitment device. Use when deciding market entry timing, evaluating competitive positioning sequences, structuring partnership commitments, negotiating investor term sheets, or assessing whether to lead or follow in any strategic interaction.",
+      "stage": [
+        "idea",
+        "validation",
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "game-theory",
+      "tags": [
+        "first-mover-advantage",
+        "second-mover-advantage",
+        "credible-commitment",
+        "credible-threat",
+        "market-entry",
+        "competitive-timing",
+        "stackelberg",
+        "strategic-positioning"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\game-theory\\first-mover-strategy.md"
+    },
+    {
+      "name": "game-theory-fundamentals",
+      "description": "Introduces the foundational concepts of game theory for strategic business decisions: players, strategies, payoffs, game matrices, Nash equilibrium, and the distinction between static and dynamic games. Use when analyzing competitive dynamics, mapping market interactions, identifying stable outcomes in multi-player business situations, or structuring strategic choices under uncertainty.",
+      "stage": [
+        "idea",
+        "validation",
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "game-theory",
+      "tags": [
+        "game-theory",
+        "nash-equilibrium",
+        "competitive-strategy",
+        "strategic-thinking",
+        "decision-making",
+        "payoff-matrix"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\game-theory\\game-theory-fundamentals.md"
+    },
+    {
+      "name": "information-asymmetry",
+      "description": "Applies game theory concepts of asymmetric information to entrepreneurial decisions: the free rider problem in teams, adverse selection (Akerlof's lemons market), moral hazard in principal-agent relationships, and separating equilibrium as a solution mechanism. Use when diagnosing hiring failures, fundraising challenges, quality signaling problems, partnership trust issues, team incentive misalignment, or any situation where one party holds materially more information than the other.",
+      "stage": [
+        "validation",
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "game-theory",
+      "tags": [
+        "information-asymmetry",
+        "adverse-selection",
+        "moral-hazard",
+        "free-rider",
+        "signaling",
+        "screening",
+        "lemons-market",
+        "incentive-design"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\game-theory\\information-asymmetry.md"
+    },
+    {
+      "name": "negotiation-game-theory",
+      "description": "Structures negotiations as formal games with mathematically defined bottom lines, solution sets, and optimal agreement points using the Nash Product Solution. Provides the strategic and quantitative complement to relationship-based negotiation frameworks. Use when calculating walk-away points for fundraising rounds, modelling acquisition pricing, determining fair splits in partnership deals, preparing for salary or compensation negotiations, structuring vendor contracts with measurable payoffs, or analysing why a negotiation reached a specific outcome.",
+      "stage": [
+        "validation",
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "game-theory",
+      "tags": [
+        "negotiation",
+        "nash-product",
+        "bottom-line",
+        "deal-making",
+        "zopa",
+        "game-theory",
+        "term-sheets",
+        "pricing"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\game-theory\\negotiation-game-theory.md"
+    },
+    {
+      "name": "prisoners-dilemma-and-cooperation",
+      "description": "Analyzes the Prisoner's Dilemma and related non-cooperative game structures that cause rational actors to produce collectively suboptimal outcomes. Covers price war dynamics via the Cournot duopoly model, the Tragedy of the Commons for shared resources, and mechanisms for escaping destructive equilibria through repeated games, reputation, and contracts. Use when facing price wars, market overcrowding, shared resource conflicts, cofounder tensions, or any situation where individual incentives conflict with collective benefit.",
+      "stage": [
+        "validation",
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "game-theory",
+      "tags": [
+        "prisoners-dilemma",
+        "cooperation",
+        "price-wars",
+        "tragedy-of-the-commons",
+        "competition",
+        "collective-action",
+        "market-dynamics"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\game-theory\\prisoners-dilemma-and-cooperation.md"
+    },
+    {
+      "name": "ai-era-leadership",
+      "description": "Prepares leaders for daily effectiveness in an AI-augmented workplace by focusing on the human capabilities that machines cannot replicate. Covers five irreplaceable leadership skills (interpersonal intelligence, analog relationship-building, creative unpredictability, domain credibility, and preskilling), practical routines for leading hybrid human-AI teams, and strategies for staying relevant as automation reshapes every function. Use when planning workforce development around AI adoption, when leaders feel threatened by automation, when building AI-human collaboration norms, or when advising on career resilience in technology-disrupted industries.",
+      "stage": [
+        "validation",
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "leadership",
+      "tags": [
+        "artificial-intelligence",
+        "future-of-work",
+        "human-skills",
+        "adaptability",
+        "workforce-development",
+        "preskilling",
+        "career-resilience"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\leadership\\ai-era-leadership.md"
+    },
+    {
+      "name": "business-writing-for-leaders",
+      "description": "Sharpens leadership writing through four principles: write for the reader, lead with clarity, keep it simple, and sound human. Use when drafting company-wide announcements, writing investor updates, composing emails that require action, editing team communications for clarity, or noticing that written messages consistently generate confusion or non-response.",
+      "stage": [
+        "idea",
+        "validation",
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "leadership",
+      "tags": [
+        "writing",
+        "communication",
+        "clarity",
+        "email",
+        "announcements",
+        "simplicity"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\leadership\\business-writing-for-leaders.md"
+    },
+    {
+      "name": "career-strategy-for-leaders",
+      "description": "Guides leaders through deliberate career design -- calculating timelines, auditing career fuel, breaking career-limiting habits, avoiding success traps, and aligning trade-offs with evolving values. Use when a leader feels stuck, faces a career crossroads, suspects their success has become a cage, needs to break a recurring bad habit, or wants to shift from reactive career drift to intentional career architecture.",
+      "stage": [
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "leadership",
+      "tags": [
+        "career-planning",
+        "success-traps",
+        "habits",
+        "self-management",
+        "growth-mindset",
+        "career-fuel",
+        "trade-offs"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\leadership\\career-strategy-for-leaders.md"
+    },
+    {
+      "name": "decision-making-under-pressure",
+      "description": "Provides practical habits for making better decisions faster -- reframing problems before solving them, knowing when to stop deliberating, balancing intuition with analysis, resisting 'just this once' compromises, and breaking overthinking cycles. Use when facing a high-stakes choice with incomplete data, sensing that deliberation has become procrastination, noticing a pattern of deferred decisions, needing to explain decision-making rationale to a team, or recognising that overthinking is degrading output quality.",
+      "stage": [
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "leadership",
+      "tags": [
+        "decision-making",
+        "critical-thinking",
+        "pressure",
+        "intuition",
+        "ethics",
+        "problem-framing",
+        "overthinking"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\leadership\\decision-making-under-pressure.md"
+    },
+    {
+      "name": "delegation-and-empowerment",
+      "description": "Develops the daily practice of effective delegation, accountability diagnosis, and team empowerment. Covers assessing which tasks require personal attention, clarifying scope and context for delegated work, allowing productive struggle, recognising and correcting micromanagement, and leading through influence rather than control. Use when feeling overwhelmed by operational tasks, noticing accountability gaps on a team, receiving feedback about micromanagement, transitioning from individual contributor to manager, or leading a team with more expertise than oneself.",
+      "stage": [
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "leadership",
+      "tags": [
+        "delegation",
+        "empowerment",
+        "accountability",
+        "micromanagement",
+        "autonomy",
+        "trust",
+        "leadership-transition",
+        "team-development"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\leadership\\delegation-and-empowerment.md"
+    },
+    {
+      "name": "emotional-courage",
+      "description": "Builds the capacity for daily acts of leadership courage, from raising difficult issues and sharing vulnerability appropriately to channelling anxiety productively and taking principled stands. Provides incremental practices for developing courage as a skill rather than treating it as an innate trait. Use when avoiding a difficult conversation, feeling paralysed by anxiety before a high-stakes situation, sensing that you are holding back from necessary confrontation, wanting to build vulnerability into your leadership style without oversharing, or preparing to advocate for an unpopular position.",
+      "stage": [
+        "validation",
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "leadership",
+      "tags": [
+        "courage",
+        "vulnerability",
+        "anxiety",
+        "emotional-regulation",
+        "difficult-conversations",
+        "authenticity",
+        "leadership-presence",
+        "risk-taking"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\leadership\\emotional-courage.md"
+    },
+    {
+      "name": "employee-engagement-retention",
+      "description": "Provides a practical, behaviour-level guide to why employees stay, why they leave, and what leaders do daily that determines which outcome occurs. Covers the eight retention-destroying behaviours, recognition versus appreciation, purpose-building, learning as a retention lever, and structured check-in practices that surface dissatisfaction before it becomes a resignation letter. Use when experiencing unexpected attrition, when exit interviews reveal leadership failures, when designing retention programmes, when coaching managers on engagement, or when building a culture people do not want to leave.",
+      "stage": [
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "leadership",
+      "tags": [
+        "retention",
+        "engagement",
+        "employee-experience",
+        "recognition",
+        "appreciation",
+        "purpose",
+        "motivation",
+        "turnover"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\leadership\\employee-engagement-retention.md"
+    },
+    {
+      "name": "focus-and-priority-management",
+      "description": "Delivers daily scheduling habits, meeting hygiene, attention management, and boundary-setting techniques for leaders whose calendars have become their strategy by default. Use when urgent tasks crowd out important ones, when meeting load exceeds productive work time, when a leader cannot recall their last hour of uninterrupted deep work, or when data presentations fail to land because preparation time was consumed by low-value obligations.",
+      "stage": [
+        "validation",
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "leadership",
+      "tags": [
+        "focus",
+        "priorities",
+        "time-management",
+        "meetings",
+        "deep-work",
+        "calendar",
+        "attention",
+        "saying-no",
+        "data-presentation"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\leadership\\focus-and-priority-management.md"
+    },
+    {
+      "name": "humility-and-power",
+      "description": "Addresses the corrosive effects of power on leadership and prescribes humility as the primary antidote. Covers staying humble as authority grows, recognising the early signs of ego distortion, creating channels for honest feedback, acknowledging weaknesses as a strength, and maintaining genuine connection with the people one leads. Use when sensing disconnection from the team, receiving less bad news than seems realistic, noticing sycophantic behaviour in direct reports, struggling with ego after a promotion, or seeking to prevent the corruption that accompanies institutional power.",
+      "stage": [
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "leadership",
+      "tags": [
+        "humility",
+        "power",
+        "ego",
+        "self-awareness",
+        "vulnerability",
+        "inclusive-leadership",
+        "feedback",
+        "corruption"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\leadership\\humility-and-power.md"
+    },
+    {
+      "name": "inclusive-leadership",
+      "description": "Provides daily practices for building genuinely inclusive teams through language audits, bias interruption, equitable hiring, cross-cultural sensitivity, and systemic fairness. Use when team composition lacks diversity, when DEI initiatives face backlash, when women or underrepresented groups stall in advancement, when networking events inadvertently exclude, or when a leader's inclusive intent does not match their observable behaviour.",
+      "stage": [
+        "validation",
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "leadership",
+      "tags": [
+        "inclusion",
+        "diversity",
+        "equity",
+        "bias",
+        "gender",
+        "culture",
+        "hiring",
+        "belonging"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\leadership\\inclusive-leadership.md"
+    },
+    {
+      "name": "introvert-leadership",
+      "description": "Reframes introversion as a leadership asset and provides practical strategies for introverted leaders -- managing energy, deploying extroversion selectively, scheduling around social depletion, protecting reflection time, and supporting extroverted team members. Use when an introverted leader feels pressure to perform extroversion, struggles with energy management around high-social-demand periods, or needs to design a leadership style that leverages quiet strengths rather than compensating for perceived deficits.",
+      "stage": [
+        "idea",
+        "validation",
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "leadership",
+      "tags": [
+        "introversion",
+        "energy-management",
+        "leadership-style",
+        "self-awareness",
+        "quiet-leadership",
+        "hybrid-work"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\leadership\\introvert-leadership.md"
+    },
+    {
+      "name": "leader-resilience-and-wellbeing",
+      "description": "Addresses the physical, emotional, and psychological dimensions of leader sustainability, including sleep, stress management, mindfulness, anxiety channelling, emotional courage, vulnerability, and recovery practices. Use when a leader shows signs of burnout, when sleep deprivation affects judgement and team morale, when overwhelm becomes chronic rather than episodic, when a leader confuses endurance with strength, or when the pressure to appear invulnerable is eroding authentic connection with the team.",
+      "stage": [
+        "validation",
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "leadership",
+      "tags": [
+        "resilience",
+        "wellbeing",
+        "sleep",
+        "stress",
+        "mindfulness",
+        "anxiety",
+        "vulnerability",
+        "courage",
+        "burnout",
+        "self-care"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\leadership\\leader-resilience-and-wellbeing.md"
+    },
+    {
+      "name": "leader-self-reflection",
+      "description": "Establishes a structured introspection practice for leaders through recurring self-diagnostic questions, performance pattern analysis, and emotional impact awareness. Covers seven reflection domains (vision, time, feedback given, feedback received, strengths and weaknesses, authenticity, and pressure behaviour), techniques for joint analysis of failures and successes, and methods for surfacing blind spots that others will not voluntarily reveal. Use when a leader feels stuck in repetitive patterns, when self-awareness gaps are damaging team trust, when preparing for a leadership transition, or when establishing a personal development discipline.",
+      "stage": [
+        "validation",
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "leadership",
+      "tags": [
+        "self-awareness",
+        "introspection",
+        "feedback",
+        "emotional-intelligence",
+        "personal-development",
+        "strengths",
+        "weaknesses",
+        "reflection"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\leadership\\leader-self-reflection.md"
+    },
+    {
+      "name": "leadership-style-adaptation",
+      "description": "Provides practical self-diagnosis exercises and daily habits for recognising when a leader's default style fails and adapting in real time. Focuses on behavioural flexibility rather than theory -- how to read the room, when to shift approach, and how to stay authentic while flexing. Complements the theoretical models in Lewin Leadership Styles and Situational Leadership with actionable daily practice. Use when a leader's default approach stops working, when team dynamics shift, when coaching managers on flexibility, or when preparing to lead a new team with different needs.",
+      "stage": [
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "leadership",
+      "tags": [
+        "leadership-style",
+        "adaptability",
+        "self-awareness",
+        "authenticity",
+        "management",
+        "flexibility",
+        "team-dynamics"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\leadership\\leadership-style-adaptation.md"
+    },
+    {
+      "name": "leadership-voice-and-presence",
+      "description": "Develops the multi-dimensional leadership voice that senior leaders need to communicate authentically across audiences and situations. Covers the five voice dimensions (character, context, clarity, curiosity, connection), the present-past-future introduction framework, elevator pitch evolution, and personal story as a leadership instrument. Use when preparing for a senior role introduction, refining executive communication style, building authentic presence, crafting a leadership narrative, or coaching leaders who struggle to connect with their teams.",
+      "stage": [
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "leadership",
+      "tags": [
+        "communication",
+        "executive-presence",
+        "authenticity",
+        "storytelling",
+        "personal-brand",
+        "introduction",
+        "elevator-pitch"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\leadership\\leadership-voice-and-presence.md"
+    },
+    {
+      "name": "leading-through-change",
+      "description": "Guides leaders through the emotional, communicative, and practical dimensions of organisational change, with emphasis on empathetic communication, giving people time and choices, managing personal identity transitions, and finding opportunity in chaos. Use when announcing restructuring, when teams resist a strategic pivot, when post-change morale collapses, when employees feel unheard during transitions, or when a leader's own identity is disrupted by professional upheaval.",
+      "stage": [
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "leadership",
+      "tags": [
+        "change-management",
+        "communication",
+        "empathy",
+        "transitions",
+        "resilience",
+        "uncertainty",
+        "identity",
+        "patience"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\leadership\\leading-through-change.md"
+    },
+    {
+      "name": "learning-agility",
+      "description": "Builds the leader's capacity for rapid, continuous learning through humility, curiosity, feedback receptivity, cross-training, reflective practice, and deliberate skill selection. Use when a leader's expertise has become stale, when the organisation faces skills gaps that training alone cannot close, when setbacks trigger defensiveness rather than growth, or when a leader senses that what got them here will not get them there.",
+      "stage": [
+        "idea",
+        "validation",
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "leadership",
+      "tags": [
+        "learning",
+        "growth",
+        "adaptability",
+        "feedback",
+        "curiosity",
+        "skills",
+        "cross-training",
+        "reflection"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\leadership\\learning-agility.md"
+    },
+    {
+      "name": "learning-from-failure",
+      "description": "Builds the leadership capacity to lose well, share mistakes productively, analyse failures alongside successes, overcome perfectionism, and create team environments where setbacks accelerate growth rather than trigger blame. Use when recovering from a major project failure, noticing a blame culture on the team, struggling with personal perfectionism, conducting post-mortems, or seeking to build psychological safety through vulnerability about past errors.",
+      "stage": [
+        "idea",
+        "validation",
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "leadership",
+      "tags": [
+        "failure",
+        "psychological-safety",
+        "perfectionism",
+        "resilience",
+        "post-mortem",
+        "learning",
+        "vulnerability",
+        "growth-mindset"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\leadership\\learning-from-failure.md"
+    },
+    {
+      "name": "managing-up",
+      "description": "Guides leaders in building effective upward relationships with their managers and senior executives. Covers keeping bosses informed, demonstrating strategic thinking to skip-level leaders, understanding a manager's goals and pressures, setting realistic expectations, and proactively managing the information flow. Use when feeling undervalued by leadership, preparing for skip-level meetings, navigating a new boss relationship, seeking promotion readiness, or clarifying expectations with a manager.",
+      "stage": [
+        "validation",
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "leadership",
+      "tags": [
+        "managing-up",
+        "boss-relationship",
+        "career-advancement",
+        "strategic-visibility",
+        "communication",
+        "skip-level",
+        "expectations"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\leadership\\managing-up.md"
+    },
+    {
+      "name": "mentoring-and-coaching",
+      "description": "Provides a practical system for being an effective mentor and coach -- selecting mentees, building mentorship teams, setting ground rules, heading off rifts, avoiding power misuse, preparing successors, and finding daily coaching micro-moments. Use when a leader takes on a new mentee, notices a protege stalling, needs to structure informal development conversations, wants to shift from directing to coaching, or seeks to scale mentoring across an organisation without formal programmes.",
+      "stage": [
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "leadership",
+      "tags": [
+        "mentoring",
+        "coaching",
+        "talent-development",
+        "succession",
+        "feedback",
+        "protege",
+        "daily-practice"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\leadership\\mentoring-and-coaching.md"
+    },
+    {
+      "name": "persuasion-and-influence",
+      "description": "Equips leaders with daily micro-influence tactics -- reading emotional temperature in meetings, deploying peer power, establishing authority organically, using consistency commitments, and knowing when to compromise. Use when preparing for a difficult one-on-one, navigating a meeting where buy-in is needed, responding to an ultimatum, auditing informal influence networks, or needing to persuade without positional authority. Complements the theoretical Cialdini and Fisher/Ury frameworks with practical, moment-to-moment application.",
+      "stage": [
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "leadership",
+      "tags": [
+        "influence",
+        "persuasion",
+        "meetings",
+        "negotiation",
+        "micro-tactics",
+        "reading-the-room",
+        "compromise"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\leadership\\persuasion-and-influence.md"
+    },
+    {
+      "name": "psychological-safety-practice",
+      "description": "Translates psychological safety theory into daily leader behaviours -- the specific words, reactions, and micro-actions that build or destroy a team's willingness to speak up. Covers misconceptions, responding to mistakes, inviting honest feedback, modelling healthy conflict, addressing bad behaviour immediately, and making mental health discussable. Use when meetings have gone quiet, when a post-mortem reveals that someone saw the failure coming but said nothing, when a leader suspects enforced politeness is masking dysfunction, or when feedback from direct reports has become vague and uninformative.",
+      "stage": [
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "leadership",
+      "tags": [
+        "psychological-safety",
+        "trust",
+        "feedback",
+        "culture",
+        "meetings",
+        "conflict",
+        "mental-health",
+        "daily-practice"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\leadership\\psychological-safety-practice.md"
+    },
+    {
+      "name": "purpose-driven-leadership",
+      "description": "Helps leaders connect their work and their teams' work to authentic meaning, rethink outdated notions of dedication, anchor in purpose over perception, and lead with integrity as a continuous practice. Use when experiencing career malaise or questioning professional direction, noticing disengagement on a team, struggling to articulate why the work matters, preparing to realign team priorities around meaning, or sensing that performance metrics have crowded out purpose.",
+      "stage": [
+        "idea",
+        "validation",
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "leadership",
+      "tags": [
+        "purpose",
+        "meaning",
+        "authenticity",
+        "dedication",
+        "integrity",
+        "motivation",
+        "work-life",
+        "values"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\leadership\\purpose-driven-leadership.md"
+    },
+    {
+      "name": "senior-leadership-transition",
+      "description": "Guides leaders through the identity shift required when moving from functional management to enterprise leadership. Covers the seven role transformations (agenda setter, integrator, strategist, architect, diplomat, role model, successor builder), leading former peers, succession planning, and the mental recalibration that separates executives from promoted managers. Use when preparing for a C-suite role, navigating the first 90 days as VP or above, managing former peers, planning leadership succession, or coaching newly promoted executives.",
+      "stage": [
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "leadership",
+      "tags": [
+        "executive-transition",
+        "succession-planning",
+        "leadership-identity",
+        "peer-to-boss",
+        "senior-leadership",
+        "promotion",
+        "role-change"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\leadership\\senior-leadership-transition.md"
+    },
+    {
+      "name": "storytelling-for-leaders",
+      "description": "Equips leaders with practical storytelling techniques for driving organisational change, building empathy, simplifying complexity, and creating shared narratives. Use when launching a transformation initiative, when data alone fails to persuade, when teams need emotional alignment around a vision, or when a leader's communication is technically sound but fails to move people.",
+      "stage": [
+        "validation",
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "leadership",
+      "tags": [
+        "storytelling",
+        "communication",
+        "change-management",
+        "persuasion",
+        "narrative",
+        "empathy",
+        "vision"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\leadership\\storytelling-for-leaders.md"
+    },
+    {
+      "name": "strategic-questioning",
+      "description": "Transforms leaders from directive communicators into strategic questioners who use inquiry to inspire thinking, surface hidden problems, build ownership, and drive better decisions. Covers five essential leadership questions, the art of context-rich inquiry, question-driven meeting design, and techniques for using questions to lead without dictating. Use when meetings produce compliance instead of commitment, when teams wait for answers instead of generating them, when a leader talks more than they listen, when preparing for difficult or ambiguous decisions, or when building a culture of curiosity.",
+      "stage": [
+        "idea",
+        "validation",
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "leadership",
+      "tags": [
+        "questioning",
+        "inquiry",
+        "curiosity",
+        "decision-making",
+        "meetings",
+        "coaching",
+        "listening",
+        "facilitation"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\leadership\\strategic-questioning.md"
+    },
+    {
+      "name": "strategic-thinking-and-alignment",
+      "description": "Develops the daily habits and communication practices that separate strategic leaders from operational ones. Covers carving out time for strategic thinking, communicating strategic changes effectively, building organisational alignment, challenging the status quo, and fostering competitive innovation without duplicating formal strategy frameworks. Use when feeling trapped in operational detail, struggling to communicate a strategic shift, discovering that teams are pursuing divergent goals, preparing for strategy offsites, or sensing that the organisation is coasting on inertia.",
+      "stage": [
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "leadership",
+      "tags": [
+        "strategy",
+        "alignment",
+        "vision",
+        "competitive-thinking",
+        "strategic-intent",
+        "communication",
+        "status-quo",
+        "change-leadership"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\leadership\\strategic-thinking-and-alignment.md"
+    },
+    {
+      "name": "team-culture-and-dynamics",
+      "description": "Provides daily practices for reading team energy, shaping culture deliberately, writing unwritten rules, diagnosing accountability gaps, balancing personality types, and building high-performing teams through social connection. Use when a team feels stuck or stale, when collaboration derails despite good intentions, when unwritten norms produce confusion, when new hires struggle to decode the culture, or when a leader suspects the team's vibe is off but cannot articulate why.",
+      "stage": [
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "leadership",
+      "tags": [
+        "team-dynamics",
+        "culture",
+        "norms",
+        "accountability",
+        "collaboration",
+        "personality",
+        "engagement",
+        "high-performance"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\leadership\\team-culture-and-dynamics.md"
+    },
+    {
+      "name": "competitive-negotiation",
+      "description": "Executes the competitive negotiation process from opening move through final concession: anchoring strategy, ambitious asking, concession architecture, midpoint management, impasse-breaking through linkage, and closing discipline. Provides actionable protocols for value-claiming negotiations. Use when setting price in a sales negotiation, responding to an aggressive counter-offer, planning concession sequences for fundraising, structuring opening bids in acquisition talks, countering procurement hardball in enterprise deals, or coaching a sales team to stop discounting reflexively.",
+      "stage": [
+        "idea",
+        "validation",
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "negotiation",
+      "tags": [
+        "negotiation",
+        "competitive",
+        "anchoring",
+        "concessions",
+        "opening-offer",
+        "pricing",
+        "deal-making",
+        "value-claiming"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\negotiation\\competitive-negotiation.md"
+    },
+    {
+      "name": "cooperative-negotiation",
+      "description": "Guides the practitioner through cooperative negotiation execution: transitioning from positions to interests, deploying empathy strategically, and following a structured six-step roadmap to resolution. Use when a competitive stance has stalled, when the relationship matters as much as the deal, when negotiating with a more powerful counterparty, when seeking creative value that positional bargaining cannot unlock, or when preparing for partnership, licensing, or joint-venture conversations.",
+      "stage": [
+        "idea",
+        "validation",
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "negotiation",
+      "tags": [
+        "negotiation",
+        "cooperation",
+        "empathy",
+        "interests",
+        "value-creation",
+        "conflict-resolution",
+        "deal-making",
+        "rapport"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\negotiation\\cooperative-negotiation.md"
+    },
+    {
+      "name": "delivering-the-deal",
+      "description": "Provides the complete execution toolkit for closing negotiations: a 21-point preparation checklist, a framework for overcoming obstacles and disarming tactics, and the three-part satisfaction model for durable agreements. Includes a self-assessment instrument for measuring negotiation competence. Use when preparing for a high-stakes negotiation, when a deal has stalled or hit tactical obstacles, when managing post-deal satisfaction and buyer's remorse, or when conducting a negotiation capability audit.",
+      "stage": [
+        "idea",
+        "validation",
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "negotiation",
+      "tags": [
+        "negotiation",
+        "preparation",
+        "tactics",
+        "closing",
+        "satisfaction",
+        "obstacles",
+        "deal-making",
+        "self-assessment",
+        "due-diligence"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\negotiation\\delivering-the-deal.md"
+    },
+    {
+      "name": "negotiation-mindset-and-self",
+      "description": "Builds the internal foundation required before entering any negotiation: identity as a negotiator, strategic self-awareness, emotional self-management, assumption auditing, and deliberate style selection. Provides practical self-assessment checklists and pre-negotiation protocols. Use when preparing mentally for a high-stakes conversation, diagnosing why past negotiations underperformed, recognising negotiation dynamics in daily business interactions, coaching team members on negotiation readiness, or choosing between competitive and cooperative approaches for an upcoming deal.",
+      "stage": [
+        "idea",
+        "validation",
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "negotiation",
+      "tags": [
+        "negotiation",
+        "self-awareness",
+        "emotional-management",
+        "strategy",
+        "preparation",
+        "mindset",
+        "decision-making"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\negotiation\\negotiation-mindset-and-self.md"
+    },
+    {
+      "name": "connecting-with-people",
+      "description": "Applies advanced interpersonal techniques for building genuine, lasting connections in entrepreneurial contexts. Covers the power of validation as the deepest form of listening, leading with 'How can I help you?' as a first-meeting strategy, maintaining authentic online identity, vulnerability as a professional strength, and the Platinum Rule that supersedes the Golden Rule by treating others as they want to be treated. Use when building investor relationships, resolving cofounder conflicts, designing customer-experience strategy, navigating cultural differences in international partnerships, or cultivating the authentic personal brand that underlies fundraising, hiring, and sales.",
+      "stage": [
+        "idea",
+        "validation",
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "people",
+      "tags": [
+        "validation",
+        "vulnerability",
+        "platinum-rule",
+        "authenticity",
+        "online-identity",
+        "empathy",
+        "connection"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\people\\connecting-with-people.md"
+    },
+    {
+      "name": "influencing-and-persuading",
+      "description": "Provides founders with Socratic influence techniques, confidence projection methods, and patience-based persuasion strategies for converting stakeholders without overt selling. Covers idea-seeding (making others believe your idea is theirs), the paradox of persuasion (listening as the primary influence tool), storytelling over selling, persistence mechanics, strategic asks, choosing happiness over rightness, managing up, authentic self-promotion, and time as a persuasion ally. Use when pitching investors, aligning cofounders on direction, winning a reluctant customer, navigating board resistance, asking for something audacious, or needing to influence without positional authority.",
+      "stage": [
+        "idea",
+        "validation",
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "people",
+      "tags": [
+        "persuasion",
+        "influence",
+        "socratic-method",
+        "storytelling",
+        "listening",
+        "confidence",
+        "persistence",
+        "managing-up",
+        "asking",
+        "patience"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\people\\influencing-and-persuading.md"
+    },
+    {
+      "name": "inspiring-and-retaining",
+      "description": "Equips founders with practical retention and inspiration techniques grounded in selfless leadership, strategic kindness, and relationship maintenance at scale. Covers making it about the audience (not you), the random-act-of-kindness mood reset, the homelessness perspective technique, praise-to-criticism ratios, surprise-and-delight as a variable reward system, handwritten thank-you cards as strategic instruments, daily introductions as network compounding, personalised gift-giving for investor and client retention, and content curation for staying top of mind. Use when team morale is declining, investor relationships need warming, key employees are at flight risk, preparing an inspiring presentation, or building a personal brand that sustains professional relationships at scale.",
+      "stage": [
+        "idea",
+        "validation",
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "people",
+      "tags": [
+        "inspiration",
+        "retention",
+        "gratitude",
+        "thank-you-cards",
+        "praise",
+        "networking",
+        "personal-brand",
+        "surprise-and-delight",
+        "introductions",
+        "gifts"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\people\\inspiring-and-retaining.md"
+    },
+    {
+      "name": "meeting-the-right-people",
+      "description": "Applies modern networking and relationship-curation methods for entrepreneurs who need to build strategic networks efficiently. Covers standing out through signature differentiation, the warm-introduction chain for reaching anyone, building a personal advisory board, the discipline of hiring slow and firing fast in all relationships, and the art of the productive blowoff. Use when preparing for conferences and networking events, seeking introductions to investors or partners, assembling advisory boards, evaluating whether to continue or exit relationships, or protecting time from low-value interactions.",
+      "stage": [
+        "idea",
+        "validation",
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "people",
+      "tags": [
+        "networking",
+        "advisory-board",
+        "introductions",
+        "time-management",
+        "personal-brand",
+        "relationship-curation"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\people\\meeting-the-right-people.md"
+    },
+    {
+      "name": "reading-people",
+      "description": "Applies practical techniques for decoding what people actually mean beyond their words, through nonverbal communication, active listening, rapport micro-signals, bluff detection, and mirroring. Covers listening with eyes rather than ears, the 55/38/7 communication model, accepting rapport signals, reading dishonesty tells, and the mirroring technique that builds trust through verbal reflection. Use when preparing for high-stakes negotiations, conducting investor meetings, managing difficult client conversations, interviewing candidates, or diagnosing misalignment between what stakeholders say and what they mean.",
+      "stage": [
+        "idea",
+        "validation",
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "people",
+      "tags": [
+        "nonverbal-communication",
+        "body-language",
+        "active-listening",
+        "mirroring",
+        "negotiation",
+        "rapport",
+        "bluff-detection"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\people\\reading-people.md"
+    },
+    {
+      "name": "resolving-people-conflict",
+      "description": "Delivers specific behavioural systems for resolving interpersonal conflict in real time -- reframing conflict as a helping stance, the 24-hour cooling rule, strategic surrender of what cannot be controlled, and the bulletproof vest protocol (a structured seven-step system for safe conflict resolution). Use when a cofounder disagreement is escalating, an employee conflict is disrupting team performance, a client relationship is strained, a personal relationship is leaking into work effectiveness, or any situation where two parties need a structured de-escalation process. Complements the theoretical Thomas-Kilmann conflict modes with tactical, script-level behavioural techniques.",
+      "stage": [
+        "idea",
+        "validation",
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "people",
+      "tags": [
+        "conflict-resolution",
+        "de-escalation",
+        "cofounder-conflict",
+        "emotional-regulation",
+        "bulletproof-vest",
+        "cooling-period",
+        "letting-go",
+        "active-listening",
+        "mediation"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\people\\resolving-people-conflict.md"
+    },
+    {
+      "name": "teaching-and-leading",
+      "description": "Guides founders in leading through modelling behaviour, coaching (not managing), leveraging mirror neurons for mood contagion, distributing leadership titles generously, and using gratitude as a pre-meeting performance enhancer. Covers showing rather than telling, strengths-based leadership, the coach-and-student mindset, external accountability systems, vision-people-resources leadership triad, delivering bad news transparently, energy-state management, and making everyone a leader. Use when onboarding a first direct report, preparing to deliver difficult news to a team, noticing declining team morale, struggling with micromanagement tendencies, or building a leadership culture in an early-stage company.",
+      "stage": [
+        "idea",
+        "validation",
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "people",
+      "tags": [
+        "leadership",
+        "coaching",
+        "mirror-neurons",
+        "modelling",
+        "accountability",
+        "gratitude",
+        "transparency",
+        "mood-contagion",
+        "team-building",
+        "delegation"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\people\\teaching-and-leading.md"
+    },
+    {
+      "name": "understanding-people",
+      "description": "Applies modern personality-decoding and rapid-understanding techniques to entrepreneurial relationships. Covers the Enneagram as a superior alternative to Myers-Briggs for self-awareness and team communication, the discipline of getting anyone even when chemistry is absent, three-question rapid-understanding for first meetings, being interested rather than interesting, and addressing the pervasive loneliness that shapes professional interactions. Use when building cofounder relationships, conducting customer discovery, onboarding new hires, preparing for investor meetings, or diagnosing communication breakdowns within teams.",
+      "stage": [
+        "idea",
+        "validation",
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "people",
+      "tags": [
+        "personality-assessment",
+        "enneagram",
+        "listening",
+        "self-awareness",
+        "empathy",
+        "first-meetings",
+        "rapport"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\people\\understanding-people.md"
+    },
+    {
+      "name": "stoic-acceptance-amor-fati",
+      "description": "Teaches the advanced Stoic practice of amor fati -- not merely accepting what cannot be changed but actively loving one's fate, including its setbacks, losses, and disappointments. Provides the philosophical foundation for transforming suffering into fuel, releasing attachment to 'what should have been,' and reframing every event as material for growth. Use when an entrepreneur is stuck in resentment over a past failure, when a pivot feels like defeat rather than evolution, when loss or disappointment has calcified into bitterness, when learning-from-failure techniques feel insufficient because the problem is not tactical but existential, or when the founder needs a paradigm shift from enduring fate to embracing it.",
+      "stage": [
+        "idea",
+        "validation",
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "stoic",
+      "tags": [
+        "amor-fati",
+        "acceptance",
+        "fate",
+        "letting-go",
+        "reframing",
+        "loss",
+        "disappointment",
+        "attachment",
+        "stoic",
+        "radical-acceptance"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\stoic\\stoic-acceptance-amor-fati.md"
+    },
+    {
+      "name": "stoic-control-and-clarity",
+      "description": "Applies Epictetus's dichotomy of control to entrepreneurial decision-making, separating what founders can influence from what they cannot. Synthesises the foundational Stoic practice of mental clarity through intentionality, purpose, and disciplined focus. Use when overwhelmed by variables outside your control, paralysed by uncertainty, struggling to prioritise amid chaos, losing focus on core purpose, or needing a philosophical framework for saying no.",
+      "stage": [
+        "idea",
+        "validation",
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "stoic",
+      "tags": [
+        "stoic",
+        "dichotomy-of-control",
+        "clarity",
+        "focus",
+        "prioritisation",
+        "decision-making",
+        "intentionality",
+        "epictetus"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\stoic\\stoic-control-and-clarity.md"
+    },
+    {
+      "name": "stoic-duty-and-service",
+      "description": "Explores the Stoic conception of duty, sympatheia (universal interconnection), and service-oriented leadership as the foundation of entrepreneurial purpose. Use when founders struggle with motivation beyond profit, when leadership feels like burden rather than calling, when building a culture of accountability and mutual obligation, when navigating tensions between personal ambition and collective responsibility, or when aligning team purpose with organisational mission.",
+      "stage": [
+        "idea",
+        "validation",
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "stoic",
+      "tags": [
+        "duty",
+        "service",
+        "leadership",
+        "purpose",
+        "accountability",
+        "team-culture",
+        "sympatheia",
+        "obligation"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\stoic\\stoic-duty-and-service.md"
+    },
+    {
+      "name": "stoic-emotional-mastery",
+      "description": "Applies the Stoic approach to emotions -- not suppression but reframing -- to entrepreneurial leadership. Covers the distinction between first impressions and considered judgments, Seneca's anger management method, the practice of responding rather than reacting, and the Stoic treatment of fear, desire, pleasure, and grief. Use when anger is clouding judgment, fear is driving decisions, desire is distorting priorities, struggling to separate emotional reactions from rational assessment, or seeking a philosophical alternative to conventional emotional intelligence models.",
+      "stage": [
+        "idea",
+        "validation",
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "stoic",
+      "tags": [
+        "stoic",
+        "emotions",
+        "anger-management",
+        "fear",
+        "desire",
+        "self-control",
+        "reframing",
+        "seneca",
+        "marcus-aurelius"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\stoic\\stoic-emotional-mastery.md"
+    },
+    {
+      "name": "stoic-fortitude-and-resilience",
+      "description": "Provides the philosophical foundations of inner strength, endurance, and anti-fragility drawn from Stoic thought, teaching entrepreneurs why hardship strengthens character, how to prepare mentally for adversity through voluntary discomfort, and why patience and perseverance outperform luck as long-term competitive assets. Use when facing sustained business adversity, preparing mentally for a high-stakes launch or fundraise, building psychological toughness before a difficult transition, questioning whether a setback signals failure or formation, or seeking the philosophical basis for resilience practices covered in leader-resilience-and-wellbeing.",
+      "stage": [
+        "idea",
+        "validation",
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "stoic",
+      "tags": [
+        "fortitude",
+        "resilience",
+        "adversity",
+        "perseverance",
+        "anti-fragility",
+        "voluntary-discomfort",
+        "inner-strength",
+        "endurance",
+        "stoic",
+        "mental-preparation"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\stoic\\stoic-fortitude-and-resilience.md"
+    },
+    {
+      "name": "stoic-mortality-and-perspective",
+      "description": "Applies the Stoic practice of memento mori -- meditation on mortality -- as a tool for entrepreneurial clarity, urgency, and perspective. Teaches how the awareness of death sharpens focus, eliminates trivial distractions, accelerates decision-making, informs legacy thinking, and provides the 'view from above' that rescales problems to their actual size. Use when an entrepreneur is paralysed by indecision, when petty concerns are consuming disproportionate energy, when time management lacks urgency, when succession or legacy questions arise, when perspective has been lost to operational detail, or when the founder needs the ultimate clarifying question: what would matter if this were the last year?",
+      "stage": [
+        "idea",
+        "validation",
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "stoic",
+      "tags": [
+        "memento-mori",
+        "mortality",
+        "perspective",
+        "time-management",
+        "legacy",
+        "urgency",
+        "focus",
+        "priorities",
+        "stoic",
+        "view-from-above"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\stoic\\stoic-mortality-and-perspective.md"
+    },
+    {
+      "name": "stoic-pragmatism",
+      "description": "Distills the Stoic insistence on philosophy as action rather than theory, covering simplicity, efficiency, realism, the primacy of practice over abstraction, and the elimination of unnecessary complexity. Use when founders are overthinking strategy at the expense of execution, when organisations are drowning in process without progress, when the gap between stated philosophy and daily behaviour needs closing, or when a team needs to cut through complexity and focus on what actually works.",
+      "stage": [
+        "idea",
+        "validation",
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "stoic",
+      "tags": [
+        "pragmatism",
+        "execution",
+        "simplicity",
+        "action",
+        "efficiency",
+        "realism",
+        "practice"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\stoic\\stoic-pragmatism.md"
+    },
+    {
+      "name": "stoic-problem-solving",
+      "description": "Teaches Marcus Aurelius's central method for converting obstacles into advantages, covering the reverse clause, creative reframing, persistence under adversity, and the discipline of focused action. Use when a startup faces setbacks that feel terminal, when market conditions shift against you, when key plans fail and alternatives seem absent, or when the team needs a framework for resilience and resourcefulness under pressure.",
+      "stage": [
+        "idea",
+        "validation",
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "stoic",
+      "tags": [
+        "resilience",
+        "obstacles",
+        "reframing",
+        "adversity",
+        "persistence",
+        "problem-solving",
+        "resourcefulness"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\stoic\\stoic-problem-solving.md"
+    },
+    {
+      "name": "stoic-right-action",
+      "description": "Applies Stoic ethics of right action to entrepreneurial decision-making, covering the four cardinal virtues (courage, justice, temperance, wisdom), ethical leadership under pressure, and the discipline of choosing the harder right over the easier wrong. Use when facing ethical dilemmas in business, building a values-driven culture, making decisions with imperfect information, navigating conflicts between profit and principle, or establishing personal and organizational codes of conduct.",
+      "stage": [
+        "idea",
+        "validation",
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "stoic",
+      "tags": [
+        "ethics",
+        "decision-making",
+        "leadership",
+        "character",
+        "values",
+        "courage",
+        "integrity"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\stoic\\stoic-right-action.md"
+    },
+    {
+      "name": "stoic-self-awareness",
+      "description": "Applies Stoic practices of self-examination to entrepreneurial leadership, drawing on Seneca's evening review, Epictetus's teaching on honest self-assessment, and Marcus Aurelius's private journaling discipline. Covers blind spots, the gap between self-image and reality, integration of character, and continuous philosophical self-scrutiny. Use when suspecting blind spots in leadership, receiving feedback that contradicts self-image, seeking a structured introspection practice, struggling with integrity under pressure, or building habits of ongoing self-examination.",
+      "stage": [
+        "idea",
+        "validation",
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "stoic",
+      "tags": [
+        "stoic",
+        "self-awareness",
+        "self-examination",
+        "evening-review",
+        "blind-spots",
+        "integrity",
+        "seneca",
+        "marcus-aurelius",
+        "journaling"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\stoic\\stoic-self-awareness.md"
+    },
+    {
+      "name": "stoic-unbiased-thought",
+      "description": "Applies the Stoic discipline of objective perception to entrepreneurial thinking, drawing on Marcus Aurelius's practice of describing things in their simplest terms, the 'view from above' technique, and the Stoic method of stripping value judgments from events. Covers cognitive distortions through a Stoic lens, the difference between observation and interpretation, and the practice of seeing things as they are. Use when distorted thinking is driving poor decisions, when hype or panic is clouding judgment, when strong opinions need stress-testing, or when seeking objectivity amid emotionally charged situations.",
+      "stage": [
+        "idea",
+        "validation",
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "stoic",
+      "tags": [
+        "stoic",
+        "objectivity",
+        "perception",
+        "cognitive-distortion",
+        "judgment",
+        "view-from-above",
+        "marcus-aurelius",
+        "epictetus",
+        "critical-thinking"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\stoic\\stoic-unbiased-thought.md"
+    },
+    {
+      "name": "stoic-virtue-and-kindness",
+      "description": "Presents the Stoic argument that character is the ultimate competitive advantage and that virtue -- encompassing honesty, kindness, justice, and moral courage -- is not a means to success but constitutes success itself. Use when an entrepreneur faces ethical dilemmas, when competitive pressure tempts shortcuts, when building company culture around values rather than metrics, when kindness is dismissed as weakness in a high-stakes environment, or when seeking philosophical grounding for why doing right and doing well are the same endeavour.",
+      "stage": [
+        "idea",
+        "validation",
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "stoic",
+      "tags": [
+        "virtue",
+        "kindness",
+        "character",
+        "ethics",
+        "moral-courage",
+        "honesty",
+        "forgiveness",
+        "integrity",
+        "stoic",
+        "values"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\stoic\\stoic-virtue-and-kindness.md"
+    },
+    {
+      "name": "building-story-stakes",
+      "description": "Teaches five named techniques for creating and sustaining narrative tension in any story. Applies when a founder needs to hold an audience's attention through a pitch, investor update, all-hands talk, or customer case study. Use when a narrative feels flat, when attention wanders mid-presentation, or when the storyteller senses the audience could walk away without consequence.",
+      "stage": [
+        "idea",
+        "validation",
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "storytelling",
+      "tags": [
+        "storytelling",
+        "stakes",
+        "narrative-tension",
+        "audience-engagement",
+        "pitching",
+        "suspense",
+        "persuasion",
+        "elephant",
+        "backpack",
+        "breadcrumbs",
+        "hourglass",
+        "crystal-ball"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\storytelling\\building-story-stakes.md"
+    },
+    {
+      "name": "emotional-impact-in-stories",
+      "description": "Explains the singular mechanism for making audiences cry (surprise, not sadness) and two named techniques for making them laugh (Milk Cans and Baseballs, Babies and Blenders). Applies when a founder is crafting a keynote, investor narrative, brand story, or any communication designed to move an audience emotionally. Use when a story feels informative but flat, when humour falls short, or when a narrative needs to land in the heart rather than the head.",
+      "stage": [
+        "idea",
+        "validation",
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "storytelling",
+      "tags": [
+        "storytelling",
+        "emotion",
+        "surprise",
+        "humour",
+        "crying",
+        "laughter",
+        "milk-cans-and-baseballs",
+        "babies-and-blenders",
+        "contrast",
+        "pitching",
+        "brand-narrative"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\storytelling\\emotional-impact-in-stories.md"
+    },
+    {
+      "name": "finding-your-stories",
+      "description": "Teaches three systematic methods for discovering story-worthy moments in everyday life: Homework for Life, Crash and Burn freewriting, and First Last Best Worst. Use when an entrepreneur feels they have no interesting stories to tell, when a leader needs fresh material for presentations and pitches, when preparing for fundraising and struggling to find a personal angle, or when building a long-term practice of narrative awareness.",
+      "stage": [
+        "idea",
+        "validation",
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "storytelling",
+      "tags": [
+        "storytelling",
+        "homework-for-life",
+        "freewriting",
+        "story-discovery",
+        "narrative",
+        "daily-practice",
+        "creativity",
+        "pitch-preparation",
+        "personal-narrative"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\storytelling\\finding-your-stories.md"
+    },
+    {
+      "name": "story-beginnings-and-endings",
+      "description": "Teaches the opposite-of-the-end rule for finding a story's beginning, the discipline of starting as close to the end as possible, the use of forward movement in opening lines, and the art of frayed endings that resonate without neatly resolving. Use when a pitch or talk starts in the wrong place, when an audience loses interest in the first thirty seconds, when a story's conclusion feels forced or anticlimactic, or when refining any narrative for maximum structural impact.",
+      "stage": [
+        "idea",
+        "validation",
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "storytelling",
+      "tags": [
+        "storytelling",
+        "narrative-structure",
+        "beginnings",
+        "endings",
+        "pitch-craft",
+        "opening-lines",
+        "presentation",
+        "arc",
+        "forward-movement",
+        "opposite-of-the-end"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\storytelling\\story-beginnings-and-endings.md"
+    },
+    {
+      "name": "story-performance-and-delivery",
+      "description": "Covers the practical mechanics of performing a story: present tense as default, tense shifting, the two strategies for telling success stories without sounding like a braggart, scene-based memorisation, eye contact, microphone technique, emotional control, word selection, and adapting delivery across contexts from stages to boardrooms. Use when preparing to deliver a story live, when rehearsing a pitch or keynote, or when a narrative reads well on paper but falls flat in the room.",
+      "stage": [
+        "idea",
+        "validation",
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "storytelling",
+      "tags": [
+        "storytelling",
+        "performance",
+        "delivery",
+        "present-tense",
+        "hero-story",
+        "public-speaking",
+        "pitching",
+        "rehearsal",
+        "pacing",
+        "eye-contact",
+        "vulnerability",
+        "word-choice"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\storytelling\\story-performance-and-delivery.md"
+    },
+    {
+      "name": "story-structure-and-arc",
+      "description": "Teaches the five-second moment principle, the relationship between surface spectacle and underlying transformation, and the But and Therefore technique for creating narrative momentum. Use when a pitch or presentation feels flat despite containing good material, when a founder's narrative lacks forward movement, when replacing chronological recounting with cause-and-effect storytelling, or when diagnosing why an audience disengages midway through a talk.",
+      "stage": [
+        "idea",
+        "validation",
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "storytelling",
+      "tags": [
+        "storytelling",
+        "narrative-arc",
+        "five-second-moment",
+        "but-and-therefore",
+        "story-structure",
+        "pitch",
+        "presentation",
+        "persuasion",
+        "transformation",
+        "momentum"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\storytelling\\story-structure-and-arc.md"
+    },
+    {
+      "name": "storytelling-truth-and-vividness",
+      "description": "Provides an ethical framework for nonfiction storytelling (the Five Permissible Lies) and techniques for creating vivid mental imagery (Cinema of the Mind). Applies when a founder is crafting a company origin story, preparing a keynote, refining a customer case study, or deciding how much to compress or omit from a real narrative. Use when the question is not what to say but how truthfully and vividly to say it.",
+      "stage": [
+        "idea",
+        "validation",
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "storytelling",
+      "tags": [
+        "storytelling",
+        "truth",
+        "ethics",
+        "vividness",
+        "cinema-of-the-mind",
+        "omission",
+        "compression",
+        "sensory-detail",
+        "nonfiction",
+        "pitching",
+        "narrative-craft"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\storytelling\\storytelling-truth-and-vividness.md"
+    },
+    {
+      "name": "what-is-a-story",
+      "description": "Defines what qualifies as a genuine story versus an anecdote, romp, or report. Teaches the transformation requirement, the Dinner Test, and the personal-narrative principle. Use when a founder's pitch feels flat despite good content, when team presentations list facts without landing emotionally, when someone confuses a sequence of events with a compelling narrative, or when preparing any communication that must move people rather than merely inform them.",
+      "stage": [
+        "idea",
+        "validation",
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "storytelling",
+      "tags": [
+        "storytelling",
+        "narrative",
+        "communication",
+        "pitch",
+        "transformation",
+        "anecdote",
+        "dinner-test",
+        "personal-narrative",
+        "persuasion"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\storytelling\\what-is-a-story.md"
+    },
+    {
+      "name": "building-thinking-strength",
+      "description": "Develops the four internal muscles required for clear thinking -- self-accountability, self-knowledge, self-control, and self-confidence -- using the Clear Thinking strength-building system. Covers setting personal standards above external requirements, choosing exemplars, building a personal board of directors, and practising in sandboxes. Use when blaming external factors for poor outcomes, struggling to say no under social pressure, lacking the confidence to execute a difficult decision, noticing that team standards have drifted toward mediocrity, or seeking a structured approach to personal operating system design.",
+      "stage": [
+        "idea",
+        "validation",
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "thinking",
+      "tags": [
+        "clear-thinking",
+        "self-accountability",
+        "self-knowledge",
+        "self-control",
+        "self-confidence",
+        "personal-standards",
+        "exemplars",
+        "mental-models",
+        "clear-thinking-framework",
+        "deliberate-practice"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\thinking\\building-thinking-strength.md"
+    },
+    {
+      "name": "defining-and-exploring-problems",
+      "description": "Teaches the discipline of correct problem definition and structured solution exploration before any evaluation begins. Covers the problem-solution firewall, root cause identification, the premortem, second-order thinking ('and then what?'), binary thinking traps, integrative Both-And options, and opportunity cost analysis through the 3-Lens Principle. Use when a team is jumping to solutions before understanding the problem, when a founder suspects they are treating symptoms rather than causes, when only two options seem to exist, when opportunity costs are unclear, or when first-conclusion bias is narrowing the solution space.",
+      "stage": [
+        "idea",
+        "validation",
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "thinking",
+      "tags": [
+        "problem-definition",
+        "root-cause-analysis",
+        "second-order-thinking",
+        "binary-thinking",
+        "opportunity-cost",
+        "premortem",
+        "integrative-thinking",
+        "decision-making",
+        "solution-space"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\thinking\\defining-and-exploring-problems.md"
+    },
+    {
+      "name": "enemies-of-clear-thinking",
+      "description": "Diagnoses the four biological defaults that hijack entrepreneurial judgment -- emotion, ego, social conformity, and inertia -- using the Clear Thinking framework. Maps how each default manifests in startup contexts and provides recognition patterns for identifying when autopilot has seized control. Use when reacting impulsively to bad news, defending a position for ego rather than merit, conforming to industry consensus without independent analysis, or resisting a necessary pivot despite mounting evidence.",
+      "stage": [
+        "idea",
+        "validation",
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "thinking",
+      "tags": [
+        "cognitive-defaults",
+        "clear-thinking",
+        "decision-making",
+        "self-awareness",
+        "emotion",
+        "ego",
+        "social-pressure",
+        "inertia",
+        "autopilot",
+        "clear-thinking-framework"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\thinking\\enemies-of-clear-thinking.md"
+    },
+    {
+      "name": "evaluating-and-deciding",
+      "description": "Covers the full arc from option evaluation through execution and post-decision learning: criteria weighting and the 'most important thing' discipline, high-fidelity and high-expertise information gathering, margin of safety as a buffer against being wrong, the irreversibility test for calibrating decision speed, bullets-before-cannonballs experimentation, execution fail-safes (trip wires, commander's intent, Ulysses pacts), and the process-over-outcome principle for decision journals. Use when evaluating multiple options against competing criteria, when the cost of being wrong is high and margin of safety is needed, when deciding how fast to move, when building execution safeguards, or when conducting post-mortems that separate luck from skill.",
+      "stage": [
+        "idea",
+        "validation",
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "thinking",
+      "tags": [
+        "margin-of-safety",
+        "decision-evaluation",
+        "irreversibility",
+        "second-order-thinking",
+        "inversion",
+        "decision-journal",
+        "execution",
+        "fail-safes",
+        "criteria-weighting",
+        "bullets-before-cannonballs"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\thinking\\evaluating-and-deciding.md"
+    },
+    {
+      "name": "managing-weakness-and-mistakes",
+      "description": "Provides a systematic approach to protecting against predictable decision failures and extracting maximum learning from errors, using the Clear Thinking safeguard architecture and mistake-handling protocol. Covers knowing your weaknesses (biological and acquired), building safeguards (prevention, automatic rules, friction, guardrails, perspective shifts), and the four-step process for handling mistakes without ego contamination. Use when repeating the same errors across decisions, needing to design pre-commitment rules for high-pressure situations, building organisational error-recovery processes, or recognising that a cover-up is compounding an initial mistake.",
+      "stage": [
+        "idea",
+        "validation",
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "thinking",
+      "tags": [
+        "clear-thinking",
+        "safeguards",
+        "decision-rules",
+        "mistake-handling",
+        "weakness-management",
+        "blind-spots",
+        "checklists",
+        "pre-commitment",
+        "error-recovery",
+        "clear-thinking-framework"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\thinking\\managing-weakness-and-mistakes.md"
+    },
+    {
+      "name": "wanting-what-matters",
+      "description": "Addresses the meta-question behind all decision-making: whether the entrepreneur is optimising for the right things. Covers the hedonic treadmill and 'happy-when' trap, Dickens's A Christmas Carol as a decision-making parable, what happiness research from the elderly consistently reveals, memento mori as a practical decision filter (the deathbed test), the regret-minimisation framework, and the distinction between ordinary moments and defining moments. Use when a founder suspects they are chasing metrics that do not produce satisfaction, when strategic priorities feel misaligned with personal values, when mortality awareness could sharpen decision-making, or when the question shifts from 'how do I get what I want?' to 'is what I want worth wanting?'",
+      "stage": [
+        "idea",
+        "validation",
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "thinking",
+      "tags": [
+        "purpose",
+        "hedonic-treadmill",
+        "mortality",
+        "regret-minimisation",
+        "happiness",
+        "values",
+        "ordinary-moments",
+        "wisdom",
+        "deathbed-test",
+        "phronesis"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\thinking\\wanting-what-matters.md"
+    },
+    {
+      "name": "clarity-and-concision",
+      "description": "Teaches techniques for achieving relentless clarity and ruthless concision in business writing, including the 20-word sentence rule, concrete detail over abstraction, word economy tactics, and the reader's perspective test. Features extensive before/after examples demonstrating how bloated corporate prose can be cut by 50-70% without losing meaning. Use when tightening any business document, eliminating wordiness, improving readability scores, preparing executive summaries, or when writing feels vague or overlong.",
+      "stage": [
+        "idea",
+        "validation",
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "writing",
+      "tags": [
+        "writing",
+        "clarity",
+        "concision",
+        "word-economy",
+        "readability",
+        "editing",
+        "plain-language",
+        "business-writing"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\writing\\clarity-and-concision.md"
+    },
+    {
+      "name": "grammar-and-mechanics",
+      "description": "Provides a structured reference for the grammar and punctuation rules that most frequently undermine credibility in business writing. Covers subject-verb agreement, pronoun case, dangling modifiers, parallel construction, comma splices, and the most common usage confusions (affect/effect, that/which, who/whom). Use when proofreading pitch decks, investor updates, client proposals, or any external-facing document where a single error can erode perceived competence.",
+      "stage": [
+        "idea",
+        "validation",
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "writing",
+      "tags": [
+        "grammar",
+        "punctuation",
+        "proofreading",
+        "credibility",
+        "usage",
+        "writing-mechanics"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\writing\\grammar-and-mechanics.md"
+    },
+    {
+      "name": "plain-language-and-flow",
+      "description": "Teaches how to eliminate corporate jargon (bizspeak), use chronological ordering for factual accounts, and create smooth document flow through transitional words, signposting, and paragraph continuity. Features a bizspeak blacklist, before/after translations of corporate prose, and a taxonomy of transitional phrases. Use when writing sounds too corporate, when documents lack narrative flow, when readers report confusion about the sequence of events, or when establishing plain-language standards for an organisation.",
+      "stage": [
+        "idea",
+        "validation",
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "writing",
+      "tags": [
+        "writing",
+        "plain-language",
+        "jargon",
+        "transitions",
+        "flow",
+        "chronology",
+        "readability",
+        "business-writing"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\writing\\plain-language-and-flow.md"
+    },
+    {
+      "name": "reader-psychology",
+      "description": "Teaches the cognitive science behind how busy readers actually process written communications. Covers working memory limits, the F-pattern scanning behaviour, selective attention, and the four-stage triage process readers apply to every message. Use when diagnosing why communications fail to land, designing high-stakes messages for distracted audiences, auditing existing copy for cognitive overload, or training a team to write with the reader's brain in mind.",
+      "stage": [
+        "idea",
+        "validation",
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "writing",
+      "tags": [
+        "cognitive-science",
+        "attention",
+        "reading-behaviour",
+        "working-memory",
+        "F-pattern",
+        "busy-readers",
+        "communication"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\writing\\reader-psychology.md"
+    },
+    {
+      "name": "revising-and-editing",
+      "description": "Teaches the distinct disciplines of revising (rethinking content and structure) and editing (refining sentences and word choices), with a concrete three-draft evolution showing how a mediocre memo transforms into an excellent one. Covers revision checklists, editing checklists, and the peer feedback process. Use when polishing any business document, preparing final drafts for stakeholders, training teams on writing quality, or establishing editorial review processes.",
+      "stage": [
+        "idea",
+        "validation",
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "writing",
+      "tags": [
+        "writing",
+        "editing",
+        "revision",
+        "feedback",
+        "quality",
+        "drafting",
+        "business-writing"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\writing\\revising-and-editing.md"
+    },
+    {
+      "name": "tone-and-engagement",
+      "description": "Diagnoses and corrects the tonal failures that cause business writing to anaesthetise readers rather than persuade them. Addresses passive voice, nominalizations, hyperformality, sarcasm, and the specific calibration of tone to audience and relationship. Use when drafting client communications, revising documents that feel lifeless or overly formal, preparing sensitive messages that require tonal precision, or building writing standards for a team.",
+      "stage": [
+        "validation",
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "writing",
+      "tags": [
+        "tone",
+        "engagement",
+        "passive-voice",
+        "reader-focus",
+        "business-etiquette",
+        "plain-language"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\writing\\tone-and-engagement.md"
+    },
+    {
+      "name": "writing-effective-emails",
+      "description": "Provides a practical system for writing emails that get read, answered, and acted upon. Covers subject line craft, optimal length, formatting for scanning, tone calibration, CC/BCC etiquette, and when to choose a different medium entirely. Use when composing high-stakes emails to investors or clients, establishing email standards for a team, preparing sensitive written communications, or diagnosing why outreach emails receive poor response rates.",
+      "stage": [
+        "idea",
+        "validation",
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "writing",
+      "tags": [
+        "email",
+        "communication",
+        "subject-lines",
+        "brevity",
+        "etiquette",
+        "professional-writing"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\writing\\writing-effective-emails.md"
+    },
+    {
+      "name": "writing-for-navigation",
+      "description": "Provides a structural system for arranging written content so busy readers can find what matters within seconds. Covers BLUF (Bottom Line Up Front), visual hierarchy, headings as signposts, bullet point strategy, formatting discipline, and the map metaphor for document design. Use when structuring investor updates, redesigning internal communications, formatting product announcements, or diagnosing why well-written messages still fail to land.",
+      "stage": [
+        "idea",
+        "validation",
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "writing",
+      "tags": [
+        "navigation",
+        "BLUF",
+        "visual-hierarchy",
+        "formatting",
+        "headings",
+        "bullet-points",
+        "document-design"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\writing\\writing-for-navigation.md"
+    },
+    {
+      "name": "writing-for-response",
+      "description": "Teaches how to write messages that convert reader understanding into reader action. Covers friction reduction, default design, the power of constrained choices, response-oriented formatting, and the 30-second response test. Use when crafting calls to action in emails or product copy, designing opt-in or enrolment flows, diagnosing low response rates on surveys or meeting requests, or building templates for action-oriented team communications.",
+      "stage": [
+        "idea",
+        "validation",
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "writing",
+      "tags": [
+        "response-rate",
+        "call-to-action",
+        "friction",
+        "defaults",
+        "behavioural-design",
+        "enrolment",
+        "action-oriented-writing"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\writing\\writing-for-response.md"
+    },
+    {
+      "name": "writing-memos-and-reports",
+      "description": "Provides a systematic approach to structuring memos, reports, and business letters that inform decisions and drive action. Covers the Issue-Solution-Reason summary framework, the Who-Why-What-When-How planning chart, visual aids, three-audience writing, and business letter conventions. Use when drafting board memos, internal recommendations, market analysis reports, strategic proposals, client-facing letters, or any document longer than an email that must survive scrutiny from multiple readers.",
+      "stage": [
+        "validation",
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "writing",
+      "tags": [
+        "memos",
+        "reports",
+        "business-letters",
+        "document-structure",
+        "executive-summary",
+        "decision-making"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\writing\\writing-memos-and-reports.md"
+    },
+    {
+      "name": "writing-performance-reviews",
+      "description": "Guides the high-stakes process of writing performance appraisals that are specific, fair, legally defensible, and genuinely useful for employee development. Covers the seven evaluation dimensions (attitude, efficiency, human relations, judgment, knowledge, reliability, communication), the spectrum from superb to poor, the discipline of pairing evaluative language with concrete evidence, and the legal implications of imprecise writing. Use when preparing annual or quarterly reviews, designing performance evaluation templates, training first-time managers on review writing, or auditing existing review practices for fairness and consistency.",
+      "stage": [
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "writing",
+      "tags": [
+        "performance-reviews",
+        "employee-evaluation",
+        "management",
+        "hr-writing",
+        "legal-risk",
+        "feedback",
+        "talent-development"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\writing\\writing-performance-reviews.md"
+    },
+    {
+      "name": "writing-process",
+      "description": "Teaches the MACJ writing process -- Madman, Architect, Carpenter, Judge -- a four-phase method for producing effective business documents by separating idea generation, organisation, drafting, and editing into distinct sequential tasks. Covers brainstorming, outlining in sets of three, speed writing, and disciplined revision. Use when facing writer's block, struggling to organise complex material, drafting reports or proposals, or when any business document feels overwhelming to start.",
+      "stage": [
+        "idea",
+        "validation",
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "writing",
+      "tags": [
+        "writing",
+        "process",
+        "drafting",
+        "brainstorming",
+        "outlining",
+        "editing",
+        "productivity",
+        "business-writing"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\writing\\writing-process.md"
+    },
+    {
+      "name": "writing-with-purpose",
+      "description": "Teaches how purpose and audience analysis determine the form, tone, and content of every business communication. Applies the principle that the same facts, addressed to the same reader, produce radically different letters depending on the writer's objective. Use when drafting any business document, preparing investor updates, writing customer communications, crafting fundraising emails, or any situation where the writer is unsure what tone to strike or how to frame a message.",
+      "stage": [
+        "idea",
+        "validation",
+        "early-traction",
+        "growth",
+        "scale"
+      ],
+      "category": "writing",
+      "tags": [
+        "writing",
+        "communication",
+        "purpose",
+        "audience",
+        "tone",
+        "persuasion",
+        "business-writing"
+      ],
+      "path": ".claude\\plugins\\marketplaces\\foreman-marketplace\\.claude\\skills\\writing\\writing-with-purpose.md"
+    }
+  ]
+}

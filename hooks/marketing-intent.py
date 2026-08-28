@@ -58,11 +58,18 @@ WEAK_INTENT = re.compile(
     r"copy|headline|rubrik|keyword|s(ö|o)kord|blogg|blog\s*post|"
     r"email|mejl|utskick|"
     r"social(\s*media)?|linkedin|instagram|tiktok|reels|inl(ä|a)gg|post(a|ar|ning)?|publicera|"
-    r"ads|conversion|konvertering|signup|onboarding|popup|"
+    r"ads|conversion|konverter|signup|onboarding|popup|"
     r"pricing|priss(ä|a)ttning|launch|lansering|"
     r"competitor|konkurrent|m(å|a)lgrupp|persona|"
     r"referral|churn|retention|community|"
-    r"growth|tillv(ä|a)xt"
+    r"growth|tillv(ä|a)xt|"
+    # Uppmatt lucka 2026-08-29 (molnsession cse_01JnzPa...): fragan "vilken
+    # KANAL ska jag satsa pa for fler LEADS ... rubrik som KONVERTERAR" gav
+    # noll skills -- kanal/leads saknades helt, och "konvertering" matchar
+    # inte den boejda formen "konverterar" (darfor stammen "konverter" ovan).
+    # Detta ar kardinalvokabular for GTM; utan det ar gaten blind for den
+    # vanligaste sortens marknadsforingsfraga.
+    r"kanal|channel|leads?|trafik|traffic|r(ä|a)ckvidd|m(ä|a)ssa|webbinar|webinar"
     r")\w*",
     re.I,
 )
@@ -80,6 +87,16 @@ def has_intent(prompt: str) -> bool:
 
 # Words that share a prefix with an intent term but are not marketing.
 # Cheaper than tightening every alternation above.
+# "kanal" bar tva betydelser: marknadsforingskanal (rätt) och slack/discord/
+# youtube/tv-kanal (fel). Utan den har raden fyrar "vilken kanal i slack ska
+# jag posta i" pa kanal+posta -- uppmatt falsk positiv 2026-08-29 nar
+# kanal/leads lades till i WEAK. Bara den tekniska betydelsen exkluderas.
+CHANNEL_NOT_MARKETING = re.compile(
+    r"\bkanal\w*\s+(i|pa|på|för|for)\s+(slack|discord|teams|youtube|twitch|tv)\b"
+    r"|\b(slack|discord|teams|youtube|twitch|tv)[- ]?kanal\w*"
+    r"|\b(rss|yt|irc|telegram)[- ]?kanal\w*",
+    re.I,
+)
 NOT_MARKETING = re.compile(r"\bcopyright|copyleft\b", re.I)
 
 VERBS = [
@@ -203,7 +220,8 @@ def main() -> None:
         ))
         return
 
-    if not has_intent(prompt) or NOT_MARKETING.search(prompt):
+    if not has_intent(prompt) or NOT_MARKETING.search(prompt) \
+            or CHANNEL_NOT_MARKETING.search(prompt):
         # A pure design prompt has no marketing words, but a NEW surface still
         # ships customer-facing copy -- hand design the baton rule so the copy
         # chain runs exactly when new text gets written.

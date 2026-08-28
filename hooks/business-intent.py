@@ -347,8 +347,10 @@ def build_block(domains, coaching_labels, foreman_names) -> str:
                  + ". Reason with it BEFORE touching the KB -- it is the analytical base, "
                  "not an afterthought.")
     step = 2
-    lines.append(f"{step}. Load Skill(business-principles-integration) -- this layer fills "
-                 "in on top of the foreman framework, it does not replace it.")
+    lines.append(f"{step}. Load Skill(business-principles-integration) -- check your "
+                 "available-skills list for the exact name, it may be namespaced e.g. "
+                 "super-intelligence:business-principles-integration. This layer fills in "
+                 "on top of the foreman framework, it does not replace it.")
     step += 1
     if coaching_labels:
         proto = ", ".join(sorted(set(coaching_labels)))

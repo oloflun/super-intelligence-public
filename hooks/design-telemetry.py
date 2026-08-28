@@ -16,12 +16,8 @@ skill was ever invoked, so front-loading does not create false gaps.
 Emits nothing into context. Pure instrumentation.
 """
 
-import os
 import sys
 from pathlib import Path
-
-if os.environ.get("CLAUDE_HOOKS_DISABLED", "").strip() not in ("", "0", "false"):
-    sys.exit(0)
 
 sys.path.insert(0, str(Path(__file__).parent))
 

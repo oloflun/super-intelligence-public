@@ -14,14 +14,10 @@ passed — it got lucky, and there is no way to tell which.
 
 import hashlib
 import json
-import os
 import sys
 from collections import OrderedDict, defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
-
-if os.environ.get("CLAUDE_HOOKS_DISABLED", "").strip() not in ("", "0", "false"):
-    sys.exit(0)
 
 sys.path.insert(0, str(Path(__file__).parent))
 

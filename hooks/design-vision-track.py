@@ -12,12 +12,8 @@ tree (a shots dir inside the site being built), to that root's ledger too, so
 cross-project sessions stay visible from both sides.
 """
 
-import os
 import sys
 from pathlib import Path
-
-if os.environ.get("CLAUDE_HOOKS_DISABLED", "").strip() not in ("", "0", "false"):
-    sys.exit(0)
 
 sys.path.insert(0, str(Path(__file__).parent))
 

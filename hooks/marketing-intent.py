@@ -14,13 +14,9 @@ hooks are what hold across a long session. This exists so the route is in
 context before the first tool call.
 """
 
-import os
 import re
 import sys
 from pathlib import Path
-
-if os.environ.get("CLAUDE_HOOKS_DISABLED", "").strip() not in ("", "0", "false"):
-    sys.exit(0)
 
 sys.path.insert(0, str(Path(__file__).parent))
 
@@ -116,7 +112,7 @@ def detect_verb(prompt: str) -> str:
 def match_surfaces(prompt: str, table: dict) -> list:
     """Match on a leading word boundary, never raw substring.
 
-    Raw `in` matching routed "redo the copy on project-b" to `paid-ads`,
+    Raw `in` matching routed "redo the copy on the leads app" to `paid-ads`,
     because "leads" contains "ads". Short terms are common substrings of
     unrelated words and a confident wrong route is worse than no route.
 
@@ -136,7 +132,7 @@ def match_surfaces(prompt: str, table: dict) -> list:
 
 # A design build that will CONTAIN customer-facing text. These prompts carry
 # no marketing vocabulary, but the copy on a NEW surface still needs the chain
-# ({{USER_NAME}}s regel 2026-08-25): nytt kundfaceande innehall => copy-kedjan MASTE
+# (Antons regel 2026-08-25): nytt kundfaceande innehall => copy-kedjan MASTE
 # kora via batonen; befintlig text => bevaras ordagrant, ingen kedja.
 NEW_SURFACE = re.compile(
     r"\b(landing\s*page|landningssida|"

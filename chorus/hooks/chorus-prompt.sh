@@ -6,8 +6,8 @@ if [ -n "${CLAUDE_HOOKS_DISABLED:-}" ] && [ "${CLAUDE_HOOKS_DISABLED}" != "0" ] 
   exit 0  # Fas 6 assistant-bench arm B: all hooks off, incl. chorus presence capture
 fi
 
-VAULT="${CHORUS_VAULT:-{{VAULT_PATH_FWD}}}"
-FORK="{{USER_HOME_FWD}}/agent-chorus-fork"
+VAULT="${CHORUS_VAULT:-$HOME/OneDrive/Dokument/Obsidian/Knowledge Base}"
+FORK="${CHORUS_FORK:-$HOME/agent-chorus-fork}"
 
 CHORUS_AGENT_NAME="claude" \
 CHORUS_PROJECT_ROOT="$VAULT" \

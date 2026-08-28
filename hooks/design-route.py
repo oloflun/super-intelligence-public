@@ -11,12 +11,8 @@ Output is deliberately terse — one line per route. A paragraph here would be
 ignored by turn three of a long build.
 """
 
-import os
 import sys
 from pathlib import Path
-
-if os.environ.get("CLAUDE_HOOKS_DISABLED", "").strip() not in ("", "0", "false"):
-    sys.exit(0)
 
 sys.path.insert(0, str(Path(__file__).parent))
 

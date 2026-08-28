@@ -16,13 +16,9 @@ per-edit hooks are what actually hold across a long session. This exists so
 the gate order is in context before the first edit, not to carry the session.
 """
 
-import os
 import re
 import sys
 from pathlib import Path
-
-if os.environ.get("CLAUDE_HOOKS_DISABLED", "").strip() not in ("", "0", "false"):
-    sys.exit(0)
 
 sys.path.insert(0, str(Path(__file__).parent))
 

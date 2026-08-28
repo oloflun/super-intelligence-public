@@ -1,4 +1,4 @@
-# Agent Checkpoint
+﻿# Agent Checkpoint
 **Agent:** {agent}
 **Timestamp:** {timestamp}
 **Branch:** {branch}

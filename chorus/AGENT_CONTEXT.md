@@ -1,4 +1,4 @@
-# Agent Context — {agent_name}
+﻿# Agent Context — {agent_name}
 
 **Agent:** {agent_name}
 **Platform:** {platform}

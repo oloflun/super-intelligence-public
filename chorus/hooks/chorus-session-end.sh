@@ -25,6 +25,13 @@
 
 set -euo pipefail
 
+# Killswitch guard, added here to match every other hook in this repo (see
+# chorus-prompt.sh / chorus-heartbeat.sh) -- neither the agent-chorus-fork
+# source nor the public fork's copy of this file had it.
+if [ -n "${CLAUDE_HOOKS_DISABLED:-}" ] && [ "${CLAUDE_HOOKS_DISABLED}" != "0" ] && [ "${CLAUDE_HOOKS_DISABLED}" != "false" ]; then
+  exit 0  # Fas 6 assistant-bench arm B: all hooks off
+fi
+
 # Canonicalize to prevent env-var-based path traversal. Fallback to cwd.
 CWD="$(realpath "${CLAUDE_PROJECT_DIR:-$PWD}" 2>/dev/null || printf '%s' "$PWD")"
 

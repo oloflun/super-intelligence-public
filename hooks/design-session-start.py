@@ -12,12 +12,8 @@ Runs on source=startup and source=clear only — resume and compact continue an
 existing conversation, so their state is still live.
 """
 
-import os
 import sys
 from pathlib import Path
-
-if os.environ.get("CLAUDE_HOOKS_DISABLED", "").strip() not in ("", "0", "false"):
-    sys.exit(0)
 
 sys.path.insert(0, str(Path(__file__).parent))
 

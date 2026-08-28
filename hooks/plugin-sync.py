@@ -178,8 +178,18 @@ def dedupe_legacy_hooks():
 
 
 def sync_skills():
-    """Copy-if-newer, additive only. Returns count of files copied, or -1
-    on failure (source/dest unreadable)."""
+    """Copy-if-MISSING, additive only. Returns count of files copied, or -1
+    on failure (source/dest unreadable).
+
+    Deliberately NOT copy-if-newer: ~/.agents/skills is an NTFS junction into
+    the Obsidian vault, and vault content gets hand-edited directly (that's
+    the whole point of the junction -- Obsidian and this stack share one
+    copy). An mtime-based overwrite meant a plugin reinstall could stomp a
+    newer hand-edit in the vault just because the plugin's packaged copy
+    happened to have a later mtime (e.g. from a fresh git checkout, where
+    every file's mtime is "now" regardless of content history). Never
+    overwrite something that already exists -- only fill in what's missing.
+    """
     src = PLUGIN_ROOT / "skills"
     if not src.is_dir():
         return -1
@@ -192,7 +202,7 @@ def sync_skills():
             for fname in files:
                 s = Path(root) / fname
                 d = target_dir / fname
-                if not d.exists() or s.stat().st_mtime > d.stat().st_mtime:
+                if not d.exists():
                     target_dir.mkdir(parents=True, exist_ok=True)
                     shutil.copy2(s, d)
                     n += 1

@@ -354,7 +354,7 @@ INVENTED = [
     (r"\b\d{1,3}(?:[.,]\d)?\s?/\s?5\b|\b\d{1,3}(?:[.,]\d)?\s+stars?\b",
      "a rating claim"),
     # A percentage RANGE is almost always a proof claim in marketing copy, and
-    # needs no trigger verb near it. Missed live on project-b' shipped
+    # needs no trigger verb near it. Missed live on a shipped lead-gen app's
     # "Vi räknar med att ta bort 50-70 % av det repetitiva jobbet": en-dash
     # separator, space before %, and "ta bort" was not a trigger verb.
     (r"\b\d{1,3}\s?[-–—]\s?\d{1,3}\s?%",
@@ -390,7 +390,7 @@ def is_marketing_artifact(path: str, content: str = "") -> bool:
     low = path.replace("\\", "/").lower()
     stem = Path(low).stem
 
-    # A copy module is a marketing artifact whatever its extension. project-b
+    # A copy module is a marketing artifact whatever its extension. The lead-gen app
     # keeps every user-facing string in components/marketing/copy.ts and
     # copy-sections.ts -- the exact files this gate exists for, and the
     # extension filter below was silently skipping all of them.

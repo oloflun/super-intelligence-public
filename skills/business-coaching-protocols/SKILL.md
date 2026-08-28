@@ -29,6 +29,15 @@ Check for local filesystem access first, then fall back to GitHub:
 
 **The KB is not coaching-only.** The same knowledge base feeds ALL strategic analysis via `business-principles-integration`. This skill is the coaching overlay — tone + protocols on top of framework analysis.
 
+## Marknadskontext: svensk som default
+
+**Om inget annat anges är marknaden Sverige.** Vid hiring-, kapital- och
+skalningsfrågor gäller svenska förutsättningar: LAS och uppsägningstider gör
+en felrekrytering dyrare än i USA (vilket skärper "en tom stol är bättre än
+fel person"), enskild firma/AB-skillnaden påverkar risktagandet, och svensk
+riskkapitalmarknad är tunnare — bootstrapping är oftare det realistiska
+alternativet, inte ett andrahandsval. Använd svenska jämförelser i exempel.
+
 ## Framework-First Protocol
 
 Coaching runs ON TOP of framework analysis, never instead of it. Sequence per engagement:

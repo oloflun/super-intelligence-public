@@ -21,6 +21,25 @@ Check for local filesystem access first, then fall back to GitHub:
 - **Else** (a Code session in a project repo, no vault cloned, no connector configured yet): neither of the above is reachable. Do NOT spend tool calls probing for KB paths that don't exist in this repo (Glob/Read against `wiki/` here will just fail). Fall back to the **named principles already listed in the Domain Routing table below** — they are real, citable KB entries (name + § + one-line gist), just without the fuller paragraph the source file would give. Say explicitly in the answer that this is the routing-table-level citation, not the full KB passage, so the gap is visible rather than silently patched over.
 - **Never quote-dump.** Whichever path you read from, extract 1-3 principles — each as NAME + SOURCE + one-sentence APPLICATION — never the raw section text.
 
+## Marknadskontext: svensk som default
+
+Anton driver svenska bolag mot svenska/nordiska kunder. **Om inget annat anges är
+marknaden Sverige** — konkurrenter, prisnivåer, kanaler, regelverk, kundbeteende
+och exempel ska vara svenska eller nordiska.
+
+- Använd svenska/nordiska jämförelsebolag, inte amerikanska, när du illustrerar
+  ett läge. Amerikanska jättar (Manhattan Associates, SAP EWM, HubSpot...) är
+  relevanta bara när de faktiskt konkurrerar om samma svenska kund, och då ska
+  det sägas uttryckligen.
+- Svenska realiteter som ändrar svaret: mindre TAM (bygger inte samma
+  volymlogik), moms/F-skatt/enskild firma vs AB, GDPR-tolkning i praktiken,
+  längre och mer relationsdrivna B2B-säljcykler, LAS/anställningskostnad vid
+  hiring-frågor, offentlig upphandling som kanal.
+- Frameworken själva (Porter, BCG, Four Ps, Cialdini) är marknadsneutrala —
+  det är EXEMPLEN och kalibreringen som ska vara svenska.
+- Anta aldrig amerikansk kontext tyst. Är marknaden oklar och det ändrar svaret:
+  fråga, eller säg vilket antagande du gjort.
+
 ## Domain Routing (question type → KB domain)
 
 | Question | Domain | Example principles (name / number) |

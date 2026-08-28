@@ -19,6 +19,21 @@ Files (same relative path on both surfaces):
 - `wiki/domains/marketing/CONTEXT.md` — domain purpose and retrieval rules, read this first
 - `wiki/domains/marketing/marketing-principles.md` — canonical KB, 32 principles across 8 numbered groups, with a Cite index table near the top
 
+## Marknadskontext: svensk som default
+
+**Om inget annat anges är marknaden Sverige.** Kanaler, kostnadsnivåer,
+konkurrenter, tonalitet och exempel ska vara svenska/nordiska.
+
+- Kanalverkligheten skiljer sig: LinkedIn och branschmedia väger tyngre i
+  svensk B2B än i amerikansk; Meta/Google-CPM ligger på andra nivåer; svensk
+  e-post-kultur tål mindre volym; kallmail regleras av GDPR:s berättigade
+  intresse, inte CAN-SPAM.
+- Principerna (Ogilvy, Hopkins, Lasker) är tidlösa och marknadsneutrala —
+  men tillämpningen och jämförelseexemplen ska vara svenska.
+- Skriv svensk copy som svensk copy: inte översatt amerikansk säljretorik.
+  Superlativ och hype-ton fungerar sämre mot svenska köpare.
+- Anta aldrig amerikansk marknad tyst. Ändrar marknadsvalet svaret: säg det.
+
 ## Protocol
 
 1. **C1 — orient.** Read `wiki/domains/marketing/CONTEXT.md`, then the Cite index table at the top of `marketing-principles.md` (source keys + best sections). This is enough to route the question.

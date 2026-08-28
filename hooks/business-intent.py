@@ -360,6 +360,12 @@ def build_block(domains, coaching_labels, foreman_names) -> str:
     lines.append(f"{step}. Synthesize: foreman framework result FIRST, THEN 1-3 KB principles "
                  "cited by name + source + one-sentence application on top of it. Never "
                  "quote-dump; never force-fit if nothing fits.")
+    step += 1
+    lines.append(f"{step}. MARKNAD: svensk som default. Konkurrenter, prisnivaer, kanaler, "
+                 "regelverk och EXEMPEL ska vara svenska/nordiska om inget annat anges -- "
+                 "amerikanska bolag namns bara nar de faktiskt konkurrerar om samma svenska "
+                 "kund, och da uttryckligen. Frameworken ar marknadsneutrala; kalibreringen "
+                 "ar det inte. Anta aldrig amerikansk kontext tyst.")
     for d in dom_list:
         fname = SECTION_FILES.get(d)
         if fname:

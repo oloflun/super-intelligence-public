@@ -357,9 +357,13 @@ def build_block(domains, coaching_labels, foreman_names) -> str:
         lines.append(f"{step}. Coaching trigger matched (Protocol {proto}) -- also load "
                      "Skill(business-coaching-protocols).")
         step += 1
-    lines.append(f"{step}. Synthesize: foreman framework result FIRST, THEN 1-3 KB principles "
-                 "cited by name + source + one-sentence application on top of it. Never "
-                 "quote-dump; never force-fit if nothing fits.")
+    lines.append(f"{step}. Synthesize: foreman framework result FIRST, THEN 1-3 KB insights "
+                 "on top of it. Deliver the actual move -- a threshold, a test, a named "
+                 "tradeoff. A platitude that would hold for any company in any situation "
+                 "is not an answer. Name the source when it adds traceability or when the "
+                 "wording IS the message, but never build the answer on the citation: the "
+                 "insight carries it, not the reference. Never quote-dump; never force-fit "
+                 "if nothing fits.")
     step += 1
     lines.append(f"{step}. MARKNAD: svensk som default. Konkurrenter, prisnivaer, kanaler, "
                  "regelverk och EXEMPEL ska vara svenska/nordiska om inget annat anges -- "

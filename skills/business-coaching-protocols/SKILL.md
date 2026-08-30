@@ -5,6 +5,21 @@ description: "Coaching overlay on top of framework-first business reasoning — 
 
 # Business Coaching Protocols
 
+## Load order: foreman first
+
+This layer fills in **on top of** a foreman framework — it never replaces it.
+Before applying anything below, load the closest-matching `Skill(foreman:<name>)`
+and reason with that framework first. It is the analytical base, not an
+afterthought.
+
+In Claude Code a hook states this on every fire. In chat and Cowork there is no
+hook, so it is stated here instead — the requirement is identical on every
+surface, and this file is the only thing carrying it where hooks do not run.
+
+If no foreman skill is available (the `foreman` marketplace is not installed on
+this account), say so once and continue with the principles alone — never drop
+the framework step silently.
+
 This skill overlays a principle-based coaching layer onto framework-first business reasoning. It enriches diagnostics with entrepreneurial wisdom organised into 8 domains in the business-principles knowledge base.
 
 ## Källåtkomst

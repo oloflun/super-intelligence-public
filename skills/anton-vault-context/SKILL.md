@@ -25,9 +25,26 @@ changes the answer. Read in this order, and stop as soon as you can answer:
 
 1. `wiki/projects/_index/portfolio.md` — every project, status and weight, in one
    file. This is the cheapest way to know what exists and what is parked.
-2. `wiki/projects/<slug>/<slug>.md` — the hub for each project that turned out to
-   be relevant. Frontmatter carries `goal`, `next_milestone`, `milestone_blockers`,
-   `status` and `updated`. A hub whose `updated` is old is a warning, not a fact.
+2. The hub for each project that turned out to be relevant. **Most hubs are not
+   in the vault repo** — read this before hunting for them, it is the single
+   easiest way to waste a dozen tool calls:
+
+   - `wiki/projects/<slug>/` in the vault holds a real directory for only a
+     handful of projects (the ones with no separate repo). For everything else
+     the local vault has a *junction* there, and junctions are deliberately
+     excluded from the vault repo — so the directory simply does not exist over
+     the network, even though `portfolio.md` lists the project.
+   - **The hub for a project with its own repo lives in that repo**, at the root,
+     named `<slug>.md`. Fetch `<owner>/<slug>` → `<slug>.md`.
+   - If that 404s, the hub is real but unpushed — it is tracked on a working
+     branch that has not been pushed. Say that plainly instead of guessing at
+     spellings; the file exists, you just cannot reach it.
+
+   Frontmatter carries `goal`, `next_milestone`, `milestone_blockers`, `status`
+   and `updated`. A hub whose `updated` is old is a warning, not a fact.
+
+   A mismatch between `portfolio.md` and what you can actually open is therefore
+   expected and does **not** mean the index is stale. Do not conclude that.
 3. The most recent session log for those projects:
    `.agents/memory/<slug>/sessions/<YYYY-MM-DD>-session-log.md` (mirrors of every
    project's own logs, so they are reachable without cloning each repo). Read the
@@ -74,8 +91,21 @@ keeping. Instead:
 The plan file being a real artifact is the point: it survives the session, Anton
 can read and correct it before it runs, and a failed run can be resumed from it.
 
-## What this skill does not do
+## When the question is a judgment call, not a lookup
 
-It does not decide business questions — for those, load the foreman framework
-first and then `Skill(business-principles-integration)`, per those skills' own
-load order. This skill only establishes where the facts live.
+Locating the facts is half the job. If the question underneath is a *decision* —
+should I shut this down, raise the price, hire, pivot, keep going — then finding
+the hub is only the setup, and answering from the hub alone produces a competent
+summary of the metadata and no actual judgment.
+
+In that case, once the facts are in hand: load the closest `Skill(foreman:<name>)`
+and reason with the framework first, then `Skill(business-principles-integration)`
+on top of it. On a surface without hooks (chat, Cowork) nothing will do that for
+you, so it has to happen here.
+
+The failure mode this prevents is specific and easy to fall into: reciting weight,
+stage and blockers back to Anton, then offering a list of questions for him to
+answer himself. He has the metadata already. What he does not have is the
+framework applied to it and the one move that follows — a threshold, a test, a
+named tradeoff. Ask a clarifying question when the answer genuinely turns on
+something only he knows, not as a substitute for reasoning.

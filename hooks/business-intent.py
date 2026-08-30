@@ -47,6 +47,12 @@ FOREMAN_INDEX = resolve_foreman_index()
 
 BP_REL = Path("wiki") / "entrepreneurship" / "bp-sections"
 
+# Molnets/chattens kalla nar ingen lokal disk finns. Samma repo och gren som de
+# tre principle-skillsen redan pekar pa i sina Kallatkomst-avsnitt -- hallis de
+# i synk om nagon av dem andras.
+VAULT_REPO = "oloflun/anton-vault"
+VAULT_BRANCH = "vault-main"
+
 
 def resolve_bp_root():
     """Var ligger bp-sections? Returnerar en ABSOLUT sokvag, eller None.
@@ -422,9 +428,12 @@ def build_block(domains, coaching_labels, foreman_names) -> str:
         if BP_ROOT is not None:
             lines.append(f"   KB section for {d}: {BP_ROOT / (fname + '.md')}")
         else:
-            lines.append(f"   KB section for {d}: <valvroten hittades inte pa den "
-                         f"har maskinen -- sok upp den, gissa inte> "
-                         f"wiki/entrepreneurship/bp-sections/{fname}.md")
+            lines.append(
+                f"   KB section for {d}: no local vault on this machine -- read it "
+                f"from the private GitHub repo {VAULT_REPO} (branch {VAULT_BRANCH}) "
+                f"via the GitHub connector, path "
+                f"wiki/entrepreneurship/bp-sections/{fname}.md. Do NOT probe the "
+                f"filesystem for it and do NOT guess a local root.")
     lines.append("</business-brief>")
     return "\n".join(lines)
 

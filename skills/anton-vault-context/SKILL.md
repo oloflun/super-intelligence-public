@@ -29,16 +29,20 @@ changes the answer. Read in this order, and stop as soon as you can answer:
    in the vault repo** — read this before hunting for them, it is the single
    easiest way to waste a dozen tool calls:
 
-   - `wiki/projects/<slug>/` in the vault holds a real directory for only a
-     handful of projects (the ones with no separate repo). For everything else
-     the local vault has a *junction* there, and junctions are deliberately
-     excluded from the vault repo — so the directory simply does not exist over
-     the network, even though `portfolio.md` lists the project.
-   - **The hub for a project with its own repo lives in that repo**, at the root,
-     named `<slug>.md`. Fetch `<owner>/<slug>` → `<slug>.md`.
-   - If that 404s, the hub is real but unpushed — it is tracked on a working
-     branch that has not been pushed. Say that plainly instead of guessing at
-     spellings; the file exists, you just cannot reach it.
+   - **Read `wiki/projects/_index/hubs/<slug>.md`.** This is a generated mirror
+     of every hub, it lives in the vault repo, and it is the one path that works
+     from every surface. Use it by default.
+   - `wiki/projects/<slug>/` holds a real directory for only a handful of
+     projects. For the rest the local vault has a *junction* there, and junctions
+     are deliberately excluded from the vault repo — so that directory does not
+     exist over the network even though `portfolio.md` lists the project. Do not
+     conclude from this that the index is stale; it is expected.
+   - The source hub lives in the project's own repo at `<slug>.md`, but reaching
+     it requires that repo to be pushed, which it often is not mid-work. The
+     mirror exists precisely so status does not depend on that.
+   - A mirror carries a `GENERATED` comment and may lag the source by up to the
+     vault sync interval. Its `updated:` field is the honest answer to "how
+     current is this".
 
    Frontmatter carries `goal`, `next_milestone`, `milestone_blockers`, `status`
    and `updated`. A hub whose `updated` is old is a warning, not a fact.

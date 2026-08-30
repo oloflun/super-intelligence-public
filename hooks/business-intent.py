@@ -45,6 +45,49 @@ def resolve_foreman_index() -> Path:
 
 FOREMAN_INDEX = resolve_foreman_index()
 
+BP_REL = Path("wiki") / "entrepreneurship" / "bp-sections"
+
+
+def resolve_bp_root():
+    """Var ligger bp-sections? Returnerar en ABSOLUT sokvag, eller None.
+
+    Uppmatt 2026-08-30: nar briefen skickade en relativ sokvag utan rot gissade
+    modellen roten sjalv, och gissade fel -- fem av atta evalrader probade
+    `~/vault-local/wiki/entrepreneurship/bp-sections/`, som inte existerar
+    (vault-local ar den gamla ofullstandiga kopian och har inga bp-sections
+    alls). Anropen gav tomt och modellen foll tillbaka pa OneDrive-vagen. Ratt
+    svar till slut, men brenda turer varje gang.
+
+    Ordningen foljer brief-context.py:s resolve_vault(), plus ett fjarde steg
+    for molnets multi-repo-fall: dar ligger valvet som SYSKONKATALOG till
+    projektet (/home/user/anton-vault bredvid /home/user/<repo>), inte som
+    CLAUDE_PROJECT_DIR.
+    """
+    cands = []
+    env_override = os.environ.get("CLAUDE_VAULT")
+    if env_override:
+        cands.append(Path(env_override))
+    cands.append(HOME / "OneDrive" / "Dokument" / "Obsidian" / "Knowledge Base")
+    project_dir = os.environ.get("CLAUDE_PROJECT_DIR")
+    if project_dir:
+        p = Path(project_dir)
+        cands.append(p)
+        # Molnets multi-repo-layout: valvet ar en syskonkatalog.
+        try:
+            cands.extend(sib for sib in p.parent.iterdir() if sib.is_dir())
+        except Exception:
+            pass
+    for c in cands:
+        try:
+            if (c / BP_REL).is_dir():
+                return c / BP_REL
+        except Exception:
+            continue
+    return None
+
+
+BP_ROOT = resolve_bp_root()
+
 KILL_SWITCH = "BUSINESS_HOOKS_DISABLED"
 UNIVERSAL_KILL_SWITCH = "CLAUDE_HOOKS_DISABLED"  # shared with every other hook family
 
@@ -372,8 +415,16 @@ def build_block(domains, coaching_labels, foreman_names) -> str:
                  "ar det inte. Anta aldrig amerikansk kontext tyst.")
     for d in dom_list:
         fname = SECTION_FILES.get(d)
-        if fname:
-            lines.append(f"   KB section for {d}: wiki/entrepreneurship/bp-sections/{fname}.md")
+        if not fname:
+            continue
+        # Absolut sokvag nar vi kan losa den -- annars relativ, och da sagt
+        # uttryckligen att roten ar okand sa modellen inte gissar tyst.
+        if BP_ROOT is not None:
+            lines.append(f"   KB section for {d}: {BP_ROOT / (fname + '.md')}")
+        else:
+            lines.append(f"   KB section for {d}: <valvroten hittades inte pa den "
+                         f"har maskinen -- sok upp den, gissa inte> "
+                         f"wiki/entrepreneurship/bp-sections/{fname}.md")
     lines.append("</business-brief>")
     return "\n".join(lines)
 

@@ -4,12 +4,13 @@
 
 ```bash
 # 1. Clone
-git clone https://github.com/oloflun/super-intelligence.git
-cd super-intelligence
+git clone https://github.com/oloflun/super-intelligence-public.git
+cd super-intelligence-public
 
 # 2. Install
 node install.mjs
-# → Enter your Obsidian vault path when prompted
+# → Enter your vault path when prompted (any folder; a git repo is
+#   recommended -- see karpathy/vault-repo-setup.md)
 # → Enter your git username and email
 
 # 3. Index
